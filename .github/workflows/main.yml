@@ -1,4 +1,4 @@
-name: SFTP Deploy Website
+name: S3 Deploy Website
 
 on:
   push:
