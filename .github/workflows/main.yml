@@ -45,7 +45,7 @@ jobs:
       - name: S3 Bucket Sync
         run: |
           ls -la
-        aws s3 cp index.hmtl s3://uala-mex-frontend-websites-dev --profile uala-mex-websites-dev
+          aws s3 cp index.hmtl s3://uala-mex-frontend-websites-dev --profile uala-mex-websites-dev
         # run: aws s3 sync /*.html s3://uala-mex-frontend-websites-dev --profile uala-mex-websites-dev
   
       # - name: CloudFront Invalidation
