@@ -18,7 +18,7 @@ jobs:
         with:
           path: tools
           repository: Bancar/uala-scripts-actions
-          token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
+          token: ${{ secrets.UALA_GLOBAL_GITHUB_TOKEN }}
 
       - name: Setup AWS Credentials
         run: sh setup-credentials-ops-arg.sh
