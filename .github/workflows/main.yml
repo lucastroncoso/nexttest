@@ -43,7 +43,8 @@ jobs:
         run: aws s3 ls --profile uala-mex-websites-dev
 
       - name: S3 Bucket Sync
-        run: aws s3 sync /*.html s3://uala-mex-frontend-websites-dev --profile uala-mex-websites-dev
+        run: aws s3 cp index.html s3://uala-mex-frontend-websites-dev --profile uala-mex-websites-dev
+        # run: aws s3 sync /*.html s3://uala-mex-frontend-websites-dev --profile uala-mex-websites-dev
   
       # - name: CloudFront Invalidation
       #   run: aws cloudfront create-invalidation --distribution-id E2LXQMM3SEEDI --paths "/*" --profile uala-arg-website-prod
