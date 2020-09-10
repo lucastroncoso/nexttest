@@ -1,0 +1,164 @@
+.aboutBanner {
+    background: linear-gradient(to top,#000000ad,#00000061), url(/assets/images/bg/aboutBg.jpg);
+    height: 35vw;
+    background-size: 100%;
+    margin-top: 64px;
+    display: flex;
+    background-position: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+.bannerTitle {
+    font-size: 56px;
+    color: white;
+    padding: 7% 0;
+    margin: 0 15%;
+}
+
+.tabContainer {
+    flex-basis: 100%;
+    display: flex;
+}
+
+.tabs {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapContainer {
+    flex-wrap: wrap;
+}
+
+.tab {
+    flex-basis: 30%;
+    color: var(--color-primary);
+    text-align: center;
+    border-bottom: 2px solid var(--color-primary);
+    padding: 14px 0;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.tab.unselected {
+    opacity: 0.6;
+}
+
+p.aboutText {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #797979;
+    margin-right: 64px;
+}
+
+.aboutDataContainer {
+    display: flex;
+    flex-basis: 100%;
+    margin-top: 64px;
+}
+
+.full {
+    flex-basis: 100%;
+}
+
+.dotOption {
+    display: flex;
+    margin-bottom: 18px;
+    line-height: 1.6;
+    margin-right: 32px;
+}
+
+.dot {
+    color: var(--color-primary);
+    margin-right: 12px;
+    font-size: 16px;
+    padding-top: 4px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.dotList {
+    margin: 24px 0;
+    color: #656565;
+}
+
+.dotOption.founder {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dotOption.founder div {
+    flex-basis: 100%;
+}
+
+.boxList {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.boxContainer {
+    flex-basis: calc(100% / 3);
+    margin-bottom: 16px;
+    display: flex;
+}
+
+.box {
+    background: white;
+    margin: 16px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px #2d2d2d3d;
+    padding: 24px;
+}
+
+.boxTitle {
+    margin-bottom: 12px;
+}
+
+.boxIcon {
+    margin-bottom: 12px;
+}
+
+.boxContent {
+    font-size: 15px;
+}
+
+.paddingContainer {
+    padding: 0 8%;
+}
+
+@media only screen and (max-width: 1080px) {
+
+    .aboutBanner {
+        height: 60vw;
+    }
+
+    .bannerTitle {
+        font-size: 38px;
+        width: 100%;
+    }
+
+    .dotlistContainer .leftContainer {
+        flex-basis: 100%;
+    }
+    
+    .dotlistContainer .rightContainer {
+        flex-basis: 100%;
+    }
+
+    .boxList {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        padding-top: 16px;
+        flex-wrap: nowrap;
+    }
+    
+    .boxContainer {min-width: 80vw;height: 100%;}
+    
+    .boxContent {
+        white-space: break-spaces;
+    }
+
+}

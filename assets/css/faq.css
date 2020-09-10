@@ -1,0 +1,199 @@
+.faqsBanner {
+    background: linear-gradient(to top,#000000ad,#00000061), url(/assets/images/bg/faqBg.png);
+    height: 35vw;
+    background-size: 100%;
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.searchContainer {
+    display: flex;
+    background: white;
+    padding: 0px 24px;
+    margin-top: -10vw;
+    border-radius: 26px;
+    width: 50vw;
+    align-items: center;
+    position: relative;
+}
+
+.searchInput {
+    flex-grow: 1;
+    display: flex;
+}
+
+.searchInput input {
+    width: 100%;
+    height: 52px;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    color: #6b6b6b;
+}
+
+.searchIcon {
+    margin-right: 16px;
+}
+
+.searchIcon {
+    color: var(--color-primary);
+}
+
+.faqList {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.faqCardContainer {
+    flex-basis: calc(100% / 3);
+}
+
+.faqCard {
+    margin: 12px;
+    background: white;
+    box-shadow: 0px 0px 4px 3px #92929233;
+    padding: 24px;
+}
+
+.faqCardTitle {
+    color: var(--color-primary);
+    margin-bottom: 12px;
+}
+
+.faqCardSubtitle {
+    color: #8c8c8c;
+    font-size: 14px;
+}
+
+.smile {
+    background: #c6d5fe;
+    padding: 14px;
+    color: #3e6afbab;
+    font-size: 48px;
+    border-radius: 14px;
+    height: 48px;
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.joinCommunity {
+    flex-basis: 66%;
+    font-size: 20px;
+    color: #797979;
+}
+
+.noResponse {
+    font-size: 21px;
+    padding: 12px;
+    margin-left: 12px;
+    color: #5c5c5c;
+}
+
+.marginContainer.faqCommunity {
+    display: flex;
+    align-items: center;
+}
+
+.faqResponse {
+    margin: 12px 0;
+    box-shadow: 0px 0px 4px 3px #92929233;
+    padding: 24px;
+}
+
+.faqResponseTitle {
+    font-size: 18px;
+}
+
+.faqResponseBody {
+    margin-top: 12px;
+    color: #8e8e8e;
+}
+
+.faqReponseHeader {
+    display: flex;
+}
+
+.faqResponseTitle {
+    flex-grow: 1;
+}
+
+.headerArrow i {
+    color: #3e6afbb5;
+    font-size: 22px;
+}
+
+.faqResponseContainer {
+    flex-basis: 100%;
+}
+
+.sectionBack {
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+}
+
+.sectionBackIcon {
+    margin-right: 12px;
+}
+
+.smileResponse {
+    display: flex;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 1080px) {
+
+    .faqsBanner {
+        margin-top: 72px;
+        height: 220px;
+        background-size: auto 100%;
+        background-position: center;
+    }
+
+    .searchContainer {
+        width: 70vw;
+    }
+    
+    .faqCardContainer {
+        flex-basis: 100%;
+    }
+
+    .faqContainer .sectionTitle h5 {
+        padding: 0 16px;
+    }
+
+    .marginContainer.faqCommunity {
+        flex-wrap: wrap;
+    }
+    
+    .smileResponse {
+        flex-basis: 100%;
+        padding: 16px;
+    }
+    
+    .joinCommunity {
+        flex-basis: 100%;
+        padding: 16px;
+        font-size: 18px;
+    }
+
+    .sectionTitle .sectionBack {
+        padding: 0 16px;
+    }
+    
+    .marginContainer.faqList {
+        padding: 16px;
+    }
+
+    .faqCard {
+        margin: 12px 0;
+    }
+
+}
