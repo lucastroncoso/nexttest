@@ -125,8 +125,10 @@ p.aboutText {
 }
 
 .paddingContainer {
-    padding: 0 8%;
+    padding: 16px 8%;
 }
+
+
 
 @media only screen and (max-width: 1080px) {
 
@@ -159,6 +161,14 @@ p.aboutText {
     
     .boxContent {
         white-space: break-spaces;
+    }
+
+    p.aboutText {
+        margin: 0;
+    }
+
+    .paddingContainerMobile {
+        padding: 16px 8%;
     }
 
 }

@@ -11,6 +11,7 @@
 
 .searchContainer {
     display: flex;
+    z-index: 1;
     background: white;
     padding: 0px 24px;
     margin-top: -10vw;
@@ -49,10 +50,13 @@
 }
 
 .faqCardContainer {
+    display: flex;
     flex-basis: calc(100% / 3);
 }
 
 .faqCard {
+    cursor: pointer;
+    flex-basis: 100%;
     margin: 12px;
     background: white;
     box-shadow: 0px 0px 4px 3px #92929233;
@@ -101,6 +105,7 @@
 }
 
 .faqResponse {
+    cursor: pointer;
     margin: 12px 0;
     box-shadow: 0px 0px 4px 3px #92929233;
     padding: 24px;
@@ -111,7 +116,8 @@
 }
 
 .faqResponseBody {
-    margin-top: 12px;
+    line-height: 1.6;
+    margin-top: 16px;
     color: #8e8e8e;
 }
 
@@ -133,6 +139,7 @@
 }
 
 .sectionBack {
+    cursor: pointer;
     display: flex;
     font-size: 16px;
     align-items: center;
@@ -147,6 +154,21 @@
     align-items: center;
 }
 
+.close .faqResponseBody {
+    display: none;
+}
+
+.faqResponseContainer .headerArrow .fa-chevron-down {
+    display: none;
+}
+
+.faqResponseContainer.close .headerArrow .fa-chevron-up {
+    display: none;
+}
+
+.faqResponseContainer.close .headerArrow .fa-chevron-down {
+    display: block;
+}
 
 @media only screen and (max-width: 1080px) {
 

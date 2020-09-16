@@ -40,7 +40,7 @@
 }
 
 .promoLogo img {
-    width: 72px;
+    width: 150px;
 }
 
 .promotion {
@@ -73,6 +73,7 @@
 
 .promoConditionLogo {
     margin-right: 32px;
+    display: contents;
 }
 
 .promoConditionTitle {
@@ -118,10 +119,19 @@ p.conditions {
 
 .promoHomeConditionContainer {
     display: flex;
+    margin-top: 32px;
 }
 
 .promoConditionsContainer {
     margin-top: 64px;
+}
+
+.promoLogo {
+    height: 72px;
+}
+
+.promoConditionLogo img {
+    margin-bottom: 32px;
 }
 
 @media only screen and (max-width: 1080px) {

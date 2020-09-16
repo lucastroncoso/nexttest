@@ -29,11 +29,11 @@ a {
     position: absolute;
     background: #7b7b7b00;
     width: 100%;
-    bottom: 0;
+    bottom: -2px;
 }
 
 .hide {
-    display: none;
+    display: none !important;
 }
 
 .containerSubtitle {
@@ -91,6 +91,26 @@ a {
   display: flex !important;
 }
 
+.flex1 {
+  flex: 1;
+}
+
+.flex0 {
+  flex: 0;
+}
+
+.flexGrow{
+  flex-grow: 1;
+}
+
+.marginRightIcon {
+  margin-right: 12px;
+}
+
+.pageSvg {
+  display: flex;
+  justify-content: center;
+}
 
 @keyframes animateWave {
     0% {
@@ -137,6 +157,9 @@ a {
     flex-basis: 100% !important;
   }
   
+  .pageSvg.mobile img {
+      width: 100%;
+  }
 
   .desktop { display: none !important; } 
 
@@ -241,12 +264,7 @@ a {
 
 /* Download */
 
-.downloadContainer {
-    /* background: url(/assets/images/bg/homeBgTop.svg);
-    background-repeat: no-repeat;
-    height: 657px;
-    background-position: center; */
-}
+
 
 .sectionTitle {
     color: var(--color-primary);
@@ -261,10 +279,20 @@ a {
 
 .downloadSteps {
     display: flex;
+    position: relative;
 }
 
 .downloadStep {
     flex-basis: 25%;
+    z-index: 1;
+}
+
+.downloadStepBar {
+    position: absolute;
+    width: 80%;
+    top: 50px;
+    height: 4px;
+    background: var(--color-primary);
 }
 
 .downloadStepText {
@@ -427,7 +455,7 @@ span.hashtag {
     color: #144bff;
 }
 
-section.phoneContainer .rightContainer h3 {
+section.phoneContainer .rightContainer  {
     font-size: 34px;
     font-family: Sofia Pro;
     line-height: 1.5;
@@ -497,9 +525,101 @@ section.usersContainer .sectionTitle h5 {
 }
 
 
+.fourBoxs .boxContainer {
+    flex-basis: 25%;
+}
 
+.boxContainer .viewMore {
+    margin-top: 32px;
+}
+
+.boxImage {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.fourBoxs .boxImage img {width: 72px;}
+
+.fourBoxs .boxContent {
+    flex: 1;
+}
+
+.fourBoxs .boxTitle, .fourBoxs .viewMore, .fourBoxs .boxImage {
+    flex: 0;
+}
+
+.fourBoxs .boxContent {
+    white-space: initial;
+}
+
+.usesContainer .marginContainer {
+    padding: 0;
+}
+
+.stores {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.store {
+    margin-right: 32px;
+}
+
+.optionIcon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.optionIconLogo {
+    margin-right: 32px;
+}
+
+.depositContainer .leftContainer {
+    padding-right: 20%;
+}
+
+.atentionContainer .rightContainer .image img {
+    width: 100%;
+}
+
+.atentionContainer .rightContainer .image  {
+    width: 100%;
+}
+
+.atentionContainer {
+    padding: 0;
+    margin-bottom: -280px;
+}
+
+.atentionContainer .leftContainer p {margin-right: 20%;}
 
 @media only screen and (max-width: 1080px) {
+
+    .stores {
+        padding: 0 10%;
+    }
+
+    .atentionContainer {
+        margin-bottom: 0;
+        margin: 0 10%;
+    }
+    
+    .optionIcon {
+        margin: 0 10% 24px 10%;
+    }
+
+    .fullImage img {
+        width: 100%;
+    }
+
+
+
+    .depositContainer .leftContainer {
+        padding-right: 0;
+    }
+
     section.marginContainer.homeContainer {
         flex-wrap: wrap;
         flex-direction: column-reverse;
@@ -588,14 +708,7 @@ section.usersContainer .sectionTitle h5 {
         font-size: 28px;
     }
 
-    section.downloadContainer {
-        /* background: url(/assets/images/bg/homeBlueMobile.svg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        height: auto; */
-        /* padding-top: 60px; */
-    }
-    
+
     section.downloadContainer .marginContainer {
         padding: 0px 10% 32px 10%;
     }
@@ -655,6 +768,10 @@ section.usersContainer .sectionTitle h5 {
     position: relative;
 }
 
+.optionContainer a {
+    color: #707070;
+}
+
 .optionMenu {
     display: none;
     position: absolute;
@@ -663,6 +780,11 @@ section.usersContainer .sectionTitle h5 {
     box-shadow: 0px 0px 8px #d2d2d2;
     margin-top: 16px;
     border-radius: 6px;
+}
+
+.optionMenu ul a {
+    flex-basis: 100%;
+    color: #707070;
 }
 
 .headerMenuContainer {
@@ -907,6 +1029,7 @@ ul.securityContentList li {
 
 .searchContainer {
     display: flex;
+    z-index: 1;
     background: white;
     padding: 0px 24px;
     margin-top: -10vw;
@@ -945,10 +1068,13 @@ ul.securityContentList li {
 }
 
 .faqCardContainer {
+    display: flex;
     flex-basis: calc(100% / 3);
 }
 
 .faqCard {
+    cursor: pointer;
+    flex-basis: 100%;
     margin: 12px;
     background: white;
     box-shadow: 0px 0px 4px 3px #92929233;
@@ -997,6 +1123,7 @@ ul.securityContentList li {
 }
 
 .faqResponse {
+    cursor: pointer;
     margin: 12px 0;
     box-shadow: 0px 0px 4px 3px #92929233;
     padding: 24px;
@@ -1007,7 +1134,8 @@ ul.securityContentList li {
 }
 
 .faqResponseBody {
-    margin-top: 12px;
+    line-height: 1.6;
+    margin-top: 16px;
     color: #8e8e8e;
 }
 
@@ -1029,6 +1157,7 @@ ul.securityContentList li {
 }
 
 .sectionBack {
+    cursor: pointer;
     display: flex;
     font-size: 16px;
     align-items: center;
@@ -1043,6 +1172,21 @@ ul.securityContentList li {
     align-items: center;
 }
 
+.close .faqResponseBody {
+    display: none;
+}
+
+.faqResponseContainer .headerArrow .fa-chevron-down {
+    display: none;
+}
+
+.faqResponseContainer.close .headerArrow .fa-chevron-up {
+    display: none;
+}
+
+.faqResponseContainer.close .headerArrow .fa-chevron-down {
+    display: block;
+}
 
 @media only screen and (max-width: 1080px) {
 
@@ -1100,7 +1244,7 @@ ul.securityContentList li {
     padding: 0;
     height: 100%;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     margin-top: 64px;
 }
 
@@ -1140,9 +1284,14 @@ ul.securityContentList li {
     margin-top: 64px;
 }
 
+ul.footerMapList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 ul.footerMapList li {
-    margin-top: 16px;
-    color: #5a5a5a;
+    flex-basis: calc(100% / 3);
+    margin-bottom: 16px;
 }
 
 .appDownload {
@@ -1167,6 +1316,17 @@ ul.footerMapList li {
     color: #6b6b6b;
 }
 
+footer {
+    position: absolute;
+    width: 100%;
+}
+
+.footerData {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-bottom: 64px;
+    font-size: 13px;
+}
 
 @media only screen and (max-width: 800px) {
 
@@ -1225,6 +1385,14 @@ ul.footerMapList li {
 
     footer {
         background: linear-gradient(transparent, whitesmoke);
+    }
+
+    .footerData {
+        padding: 0 24px 24px 24px;
+    }
+
+    ul.footerMapList li {
+        flex-basis: 100%;
     }
 
 }.legalContainer p, .legalContainer h5 {
@@ -1307,26 +1475,59 @@ ul.footerMapList li {
     display: flex;
     justify-content: center;
 }
-.chargeContainer {
-    
-    height: 1300px;
-} 
+
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logoContainer {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.logoContainer img {
+    height: 50px;
+}
+
+@media only screen and (max-width: 1080px) {
+
+.logoContainer {
+    flex-basis: 25%;
+    align-items: center;
+}
+
+.logoContainer img {
+    width: 100%;
+    height: auto;
+}
+
+.logos {
+    padding: 0 10%;
+}
+
+}
 
 .chargeList {
     display: flex;
     flex-basis: 100%;
     margin-top: 64px;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .charge {
     flex-basis: 50%;
+    display: flex;
 }
 
 .chargeContent {
     background: white;
     margin: 16px;
     padding: 16px;
+    flex-basis: 100%;
     border-radius: 12px;
     text-align: center;
 }
@@ -1550,7 +1751,7 @@ h1.sectionTitle {
 }
 
 .promoLogo img {
-    width: 72px;
+    width: 150px;
 }
 
 .promotion {
@@ -1583,6 +1784,7 @@ h1.sectionTitle {
 
 .promoConditionLogo {
     margin-right: 32px;
+    display: contents;
 }
 
 .promoConditionTitle {
@@ -1628,10 +1830,19 @@ p.conditions {
 
 .promoHomeConditionContainer {
     display: flex;
+    margin-top: 32px;
 }
 
 .promoConditionsContainer {
     margin-top: 64px;
+}
+
+.promoLogo {
+    height: 72px;
+}
+
+.promoConditionLogo img {
+    margin-bottom: 32px;
 }
 
 @media only screen and (max-width: 1080px) {
@@ -1805,8 +2016,10 @@ p.aboutText {
 }
 
 .paddingContainer {
-    padding: 0 8%;
+    padding: 16px 8%;
 }
+
+
 
 @media only screen and (max-width: 1080px) {
 
@@ -1840,6 +2053,265 @@ p.aboutText {
     .boxContent {
         white-space: break-spaces;
     }
+
+    p.aboutText {
+        margin: 0;
+    }
+
+    .paddingContainerMobile {
+        padding: 16px 8%;
+    }
+
+}.boxDate {
+    margin-bottom: 16px;
+    flex: 0;
+}
+
+.pressTitle {
+    font-size: 22px;
+    white-space: normal;
+}
+
+.pressList .box {
+    flex-direction: column;
+    display: flex;
+    flex-basis: 100%;
+}
+
+.pressList .pressTitle {
+
+}
+
+.pressList .boxReadMore {
+    flex: 0;
+    margin-top: 16px;
+}
+
+.downloadBrand {
+    display: flex;
+    justify-content: space-between;
+}
+
+.downloadBrandButton {
+    flex-basis: 30%;
+    border: 1px solid var(--color-primary);
+    border-radius: 8px;
+    display: flex;
+}
+
+.downloadBrandTitle {
+    padding: 16px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    color: var(--color-primary);
+}
+
+.downloadBrandLogo {
+    padding: 16px;
+    display: flex;
+}
+
+.boxLogo {
+    display: flex;
+    flex: 0;
+    margin-bottom: 12px;
+}
+
+.articleContainer{
+    font-size: 20px;
+}
+
+.articleContainer p {
+    line-height: 1.8;
+    margin: 0px 0 48px 0;
+}
+
+.bold {
+    font-weight: 600;
+    color: black;
+}
+
+.articleContainer ul {
+    line-height: 2;
+    margin: 24px 0;
+}
+
+
+.bold {
+    font-weight: 600;
+    color: black;
+}
+
+.articleContainer ul {
+    line-height: 2;
+    margin: 24px 0;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.articleContent {
+    display: flex;
+    flex-basis: 100%;
+}
+
+.articleContent .leftContainer {
+    margin-right: 64px;
+}
+
+p.articleSubtitle {
+    margin-top: 0;
+}
+
+.articleTitle {
+    margin-bottom: 64px;
+}
+
+.boxContainer.doble {
+    flex-basis: 50%;
+}
+
+.boxContainer.doble {
+    flex-basis: 50%;
+}
+
+.boxContainer.doble .box {
+    background: #dee8ff;
+}
+
+
+@media only screen and (max-width: 1080px) {
+
+    .downloadBrand {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    
+    .downloadBrandButton {
+        flex-basis: 100%;
+        margin-bottom: 16px;
+    }
+
+    .articleContent .leftContainer {
+        flex-basis: 100%;
+        margin: 0;
+    }
+    
+    .articleContent .rightContainer {
+        flex-basis: 100%;
+        margin-bottom: 32px;
+    }
+    
+    .articleContent {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        padding: 16px 8%;
+    }
+
+    .articleTitle {
+        margin: 32px 8%;
+    }
+    
+    .articleContainer .sectionTitle {
+        padding: 16px 5% 0px 5%;
+    }
+
+    .boxListMobileFixed {
+        overflow: initial !important;
+        white-space: normal;
+        flex-wrap: wrap;
+        padding: 0 4%;
+    }
+    
+    .boxListMobileFixed .boxContainer {
+        height: auto;
+        flex-basis: 100% !important;
+    }
+    
+    .boxListMobileFixed .box {
+        flex-basis: 100%;
+    }
+
+}ul.boxUl {
+    line-height: 2.4;
+}
+
+ul.boxUl li i {
+    margin-right: 12px;
+    color: var(--color-primary);
+}
+
+.carrousel {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 32px 0;
+}
+
+.carrouselContent {
+    flex-basis: 50%;
+    display: flex;
+}
+
+.carrouselContent .image {
+    display: flex;
+}
+
+.carrouselContent .image img {
+    width: 100%;
+    border-radius: 12px;    
+    box-shadow: 0px 0px 3px 2px #00000073;
+}
+
+.carrouselContent {
+}
+
+.carrouselContent .image {
+    padding: 12px;
+}
+
+.imageFix .image img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.workIn {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.marginContainer.workIn .center {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.marginContainer.workIn .viewMore {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.marginContainer.workIn .viewMore .viewMoreBotton {
+    flex-basis: auto;
+}
+
+@media only screen and (max-width: 1080px) {
+
+.carrouselContent .image {
+    padding: 0;
+}
+
+.carrouselContent {
+    flex-basis: 100%;
+    margin-bottom: 16px;
+}
+
+.carrouselContent .image img {box-shadow: 0px 0px 1px 2px #00000073;}
+
+.imageFix .image {
+    padding: 0 10%;
+}
 
 }
 /*# sourceMappingURL=bundle.min.css.map*/

@@ -34,12 +34,7 @@
 
 /* Download */
 
-.downloadContainer {
-    /* background: url(/assets/images/bg/homeBgTop.svg);
-    background-repeat: no-repeat;
-    height: 657px;
-    background-position: center; */
-}
+
 
 .sectionTitle {
     color: var(--color-primary);
@@ -54,10 +49,20 @@
 
 .downloadSteps {
     display: flex;
+    position: relative;
 }
 
 .downloadStep {
     flex-basis: 25%;
+    z-index: 1;
+}
+
+.downloadStepBar {
+    position: absolute;
+    width: 80%;
+    top: 50px;
+    height: 4px;
+    background: var(--color-primary);
 }
 
 .downloadStepText {
@@ -220,7 +225,7 @@ span.hashtag {
     color: #144bff;
 }
 
-section.phoneContainer .rightContainer h3 {
+section.phoneContainer .rightContainer  {
     font-size: 34px;
     font-family: Sofia Pro;
     line-height: 1.5;
@@ -290,9 +295,101 @@ section.usersContainer .sectionTitle h5 {
 }
 
 
+.fourBoxs .boxContainer {
+    flex-basis: 25%;
+}
 
+.boxContainer .viewMore {
+    margin-top: 32px;
+}
+
+.boxImage {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.fourBoxs .boxImage img {width: 72px;}
+
+.fourBoxs .boxContent {
+    flex: 1;
+}
+
+.fourBoxs .boxTitle, .fourBoxs .viewMore, .fourBoxs .boxImage {
+    flex: 0;
+}
+
+.fourBoxs .boxContent {
+    white-space: initial;
+}
+
+.usesContainer .marginContainer {
+    padding: 0;
+}
+
+.stores {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.store {
+    margin-right: 32px;
+}
+
+.optionIcon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.optionIconLogo {
+    margin-right: 32px;
+}
+
+.depositContainer .leftContainer {
+    padding-right: 20%;
+}
+
+.atentionContainer .rightContainer .image img {
+    width: 100%;
+}
+
+.atentionContainer .rightContainer .image  {
+    width: 100%;
+}
+
+.atentionContainer {
+    padding: 0;
+    margin-bottom: -280px;
+}
+
+.atentionContainer .leftContainer p {margin-right: 20%;}
 
 @media only screen and (max-width: 1080px) {
+
+    .stores {
+        padding: 0 10%;
+    }
+
+    .atentionContainer {
+        margin-bottom: 0;
+        margin: 0 10%;
+    }
+    
+    .optionIcon {
+        margin: 0 10% 24px 10%;
+    }
+
+    .fullImage img {
+        width: 100%;
+    }
+
+
+
+    .depositContainer .leftContainer {
+        padding-right: 0;
+    }
+
     section.marginContainer.homeContainer {
         flex-wrap: wrap;
         flex-direction: column-reverse;
@@ -381,14 +478,7 @@ section.usersContainer .sectionTitle h5 {
         font-size: 28px;
     }
 
-    section.downloadContainer {
-        /* background: url(/assets/images/bg/homeBlueMobile.svg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        height: auto; */
-        /* padding-top: 60px; */
-    }
-    
+
     section.downloadContainer .marginContainer {
         padding: 0px 10% 32px 10%;
     }

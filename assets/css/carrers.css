@@ -1,0 +1,80 @@
+ul.boxUl {
+    line-height: 2.4;
+}
+
+ul.boxUl li i {
+    margin-right: 12px;
+    color: var(--color-primary);
+}
+
+.carrousel {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 32px 0;
+}
+
+.carrouselContent {
+    flex-basis: 50%;
+    display: flex;
+}
+
+.carrouselContent .image {
+    display: flex;
+}
+
+.carrouselContent .image img {
+    width: 100%;
+    border-radius: 12px;    
+    box-shadow: 0px 0px 3px 2px #00000073;
+}
+
+.carrouselContent {
+}
+
+.carrouselContent .image {
+    padding: 12px;
+}
+
+.imageFix .image img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.workIn {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.marginContainer.workIn .center {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.marginContainer.workIn .viewMore {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.marginContainer.workIn .viewMore .viewMoreBotton {
+    flex-basis: auto;
+}
+
+@media only screen and (max-width: 1080px) {
+
+.carrouselContent .image {
+    padding: 0;
+}
+
+.carrouselContent {
+    flex-basis: 100%;
+    margin-bottom: 16px;
+}
+
+.carrouselContent .image img {box-shadow: 0px 0px 1px 2px #00000073;}
+
+.imageFix .image {
+    padding: 0 10%;
+}
+
+}

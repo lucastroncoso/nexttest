@@ -29,11 +29,11 @@ a {
     position: absolute;
     background: #7b7b7b00;
     width: 100%;
-    bottom: 0;
+    bottom: -2px;
 }
 
 .hide {
-    display: none;
+    display: none !important;
 }
 
 .containerSubtitle {
@@ -91,6 +91,26 @@ a {
   display: flex !important;
 }
 
+.flex1 {
+  flex: 1;
+}
+
+.flex0 {
+  flex: 0;
+}
+
+.flexGrow{
+  flex-grow: 1;
+}
+
+.marginRightIcon {
+  margin-right: 12px;
+}
+
+.pageSvg {
+  display: flex;
+  justify-content: center;
+}
 
 @keyframes animateWave {
     0% {
@@ -137,6 +157,9 @@ a {
     flex-basis: 100% !important;
   }
   
+  .pageSvg.mobile img {
+      width: 100%;
+  }
 
   .desktop { display: none !important; } 
 
