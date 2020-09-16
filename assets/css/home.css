@@ -507,5 +507,11 @@ section.usersContainer .sectionTitle h5 {
         margin-left: calc(10% - 16px);
     }
 
+    .downloadStepBar {
+        height: 70%;
+        width: 4px;
+        left: 34px;
+    }
+
 
 }
