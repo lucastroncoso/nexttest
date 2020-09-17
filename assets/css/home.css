@@ -55,6 +55,8 @@
 .downloadStep {
     flex-basis: 25%;
     z-index: 1;
+    opacity: 0;
+    transition: 2s;
 }
 
 .downloadStepBar {
@@ -193,6 +195,9 @@ section.usesContainer .sectionTitle h5 {
     line-height: 1.3;
 }
 
+.downloadStep.opacityDisable {
+    opacity: 1;
+}
 
 .optionContainer {
     color: #707070;
