@@ -5,6 +5,7 @@ const modulesFolder = "assets/html/modules";
 
 import { Navbar } from './navbar'
 import { Faq } from './faq'
+import { Home } from './home'
 
 export class Routes {
  
@@ -39,7 +40,8 @@ export class Routes {
 
     constructor(
         private _navbar = new Navbar(),
-        private _faq = new Faq()
+        private _faq = new Faq(),
+        private _home = new Home()
     ){
         this.actualRoute = this.routes[path];
     }
@@ -58,6 +60,9 @@ export class Routes {
             
             
             switch(this.actualRoute.page){
+                case "home":
+                    this._home.load()
+                break
                 case "faq":
                     this._faq.load()
                 break

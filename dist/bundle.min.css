@@ -6,6 +6,7 @@ body {
 /* Variables */
 
 :root {
+    --register-step: 0%;
     --color-primary: #3e6afb;
 }
 
@@ -289,10 +290,12 @@ a {
 
 .downloadStepBar {
     position: absolute;
-    width: 80%;
-    top: 50px;
+    width: var(--register-step);
     height: 4px;
+    left: 34px;
+    transition: 4s;
     background: var(--color-primary);
+    top: 25%;
 }
 
 .downloadStepText {
@@ -738,9 +741,11 @@ section.usersContainer .sectionTitle h5 {
     }
 
     .downloadStepBar {
-        height: 70%;
         width: 4px;
+        top: 10%;
+        height: var(--register-step);
         left: 34px;
+        transition: 2s;
     }
 
 

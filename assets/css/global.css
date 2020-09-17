@@ -6,6 +6,7 @@ body {
 /* Variables */
 
 :root {
+    --register-step: 0%;
     --color-primary: #3e6afb;
 }
 
