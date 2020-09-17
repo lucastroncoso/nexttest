@@ -514,7 +514,7 @@ section.usersContainer .sectionTitle h5 {
         top: 10%;
         height: var(--register-step);
         left: 34px;
-        transition: 2s;
+        transition: 4s;
     }
 
 
