@@ -293,7 +293,7 @@ a {
     width: var(--register-step);
     height: 4px;
     left: 34px;
-    transition: 4s;
+    transition: 6s;
     background: var(--color-primary);
     top: 25%;
 }
