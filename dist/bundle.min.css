@@ -2211,7 +2211,6 @@ p.articleSubtitle {
     }
     
     .articleContent {
-        flex-wrap: wrap;
         flex-direction: column-reverse;
         padding: 16px 8%;
     }
