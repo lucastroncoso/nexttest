@@ -113,6 +113,7 @@ a {
   justify-content: center;
 }
 
+
 @keyframes animateWave {
     0% {
       transform: scale(1,0);
@@ -216,7 +217,7 @@ a {
   }
 
   .image {
-    display: flex;
+    display: block;
     justify-content: center;
   }
 
@@ -394,7 +395,7 @@ span.stepNumer {
 }
 
 .viewMore {
-    display: flex;
+    display: block;
 }
 
 .viewMoreBotton {
@@ -542,7 +543,7 @@ section.usersContainer .sectionTitle h5 {
 }
 
 .boxImage {
-    display: flex;
+    display: block;
     margin-bottom: 16px;
 }
 
@@ -638,13 +639,7 @@ section.usersContainer .sectionTitle h5 {
         margin: 0;
     }
 
-    section.marginContainer.homeContainer .rightContainer img {
-        width: 100%;
-    }
-
-    section.marginContainer.homeContainer .rightContainer {
-        display: flex;
-    }
+  
 
     .downloadSteps {
         flex-wrap: wrap;
@@ -1399,12 +1394,9 @@ footer {
         font-size: 14px;
     }
 
-    footer {
-        background: linear-gradient(transparent, whitesmoke);
-    }
-
     .footerData {
         padding: 0 24px 24px 24px;
+        background: whitesmoke;
     }
 
     ul.footerMapList li {
@@ -2126,7 +2118,7 @@ p.aboutText {
 }
 
 .boxLogo {
-    display: flex;
+    /* display: flex; */
     flex: 0;
     margin-bottom: 12px;
 }
@@ -2267,7 +2259,7 @@ ul.boxUl li i {
 }
 
 .carrouselContent .image {
-    display: flex;
+    /* display: flex; */
 }
 
 .carrouselContent .image img {

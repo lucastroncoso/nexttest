@@ -163,7 +163,7 @@ span.stepNumer {
 }
 
 .viewMore {
-    display: flex;
+    display: block;
 }
 
 .viewMoreBotton {
@@ -311,7 +311,7 @@ section.usersContainer .sectionTitle h5 {
 }
 
 .boxImage {
-    display: flex;
+    display: block;
     margin-bottom: 16px;
 }
 
@@ -407,13 +407,7 @@ section.usersContainer .sectionTitle h5 {
         margin: 0;
     }
 
-    section.marginContainer.homeContainer .rightContainer img {
-        width: 100%;
-    }
-
-    section.marginContainer.homeContainer .rightContainer {
-        display: flex;
-    }
+  
 
     .downloadSteps {
         flex-wrap: wrap;

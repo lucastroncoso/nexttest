@@ -46,7 +46,7 @@
 }
 
 .boxLogo {
-    display: flex;
+    /* display: flex; */
     flex: 0;
     margin-bottom: 12px;
 }

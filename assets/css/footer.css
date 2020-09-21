@@ -145,12 +145,9 @@ footer {
         font-size: 14px;
     }
 
-    footer {
-        background: linear-gradient(transparent, whitesmoke);
-    }
-
     .footerData {
         padding: 0 24px 24px 24px;
+        background: whitesmoke;
     }
 
     ul.footerMapList li {

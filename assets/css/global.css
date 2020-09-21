@@ -113,6 +113,7 @@ a {
   justify-content: center;
 }
 
+
 @keyframes animateWave {
     0% {
       transform: scale(1,0);
@@ -216,7 +217,7 @@ a {
   }
 
   .image {
-    display: flex;
+    display: block;
     justify-content: center;
   }
 

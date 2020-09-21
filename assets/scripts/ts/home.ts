@@ -11,8 +11,6 @@ export class Home {
 
         window.onscroll = function(event) {
 
-            
-
                 let registerStepsElement = (<HTMLElement>document.querySelector("#registerSteps"));
                 let diff = registerStepsElement.offsetTop - (window.pageYOffset || document.documentElement.scrollTop) - window.innerHeight;
                 let percent = Math.abs(diff) / registerStepsElement.clientHeight * 100;
@@ -27,27 +25,21 @@ export class Home {
                 if(diff < 0){
 
 
-            if(registerStepActive){
+                if(registerStepActive){
+                    if(percent < 25){
+                        if(registerStep < 1) registerStep++;
+                    }else if(percent > 40 && percent < 60){
+                        if(registerStep < 2) registerStep++;
+                    }else if(percent > 60 && percent < 75 ){
+                        if(registerStep < 3) registerStep++;
+                    }else if(percent > 75 && percent < 90 ){
+                        if(registerStep < 4) registerStep++;
+                    }else if(percent > 90){
+                        if(registerStep == 4) registerStepActive = false;
+                    }
 
-                    
-
-                if(percent < 25){
-                    if(registerStep < 1) registerStep = 1;
-                }else if(percent > 40 && percent < 60){
-                    if(registerStep < 2) registerStep = 2;
-                }else if(percent > 60 && percent < 75 ){
-                    if(registerStep < 3) registerStep = 3;
-                }else if(percent > 75 && percent < 90 ){
-                    if(registerStep < 4) registerStep = 4;
-                }else if(percent > 90){
-                    if(registerStep == 4) registerStepActive = false;
-                }
-
-                document.documentElement.style.setProperty('--register-step', `${value[registerStep]}%`);
-                document.querySelector(`#registerStep${registerStep}`).classList.add("opacityDisable")
-                     
-
-
+                    document.documentElement.style.setProperty('--register-step', `${value[registerStep]}%`);
+                    document.querySelector(`#registerStep${registerStep}`).classList.add("opacityDisable")
                 }
             }
         };
