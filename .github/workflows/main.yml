@@ -48,10 +48,10 @@ jobs:
       - name: CloudFront Invalidation
         run: aws cloudfront create-invalidation --distribution-id E3CGS3UAQQ9X5Y --paths "/*" --profile uala-mex-websites-dev
       
-      - name: Send Slack Message
-        run: python3 slack.py
-        env:
-            SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-            ACTION_STATUS: ${{ job.status }}
-        working-directory: .github/actions/uala-ftp-deploy-action
+      # - name: Send Slack Message
+      #   run: python3 slack.py
+      #   env:
+      #       SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+      #       ACTION_STATUS: ${{ job.status }}
+      #   working-directory: .github/actions/uala-ftp-deploy-action
       
