@@ -1,18 +1,25 @@
 body { 
     margin: 0;
-    font-family: Roboto;
+    font-family: 'Public Sans', sans-serif;
 }
 
 /* Variables */
 
 :root {
     --register-step: 0%;
-    --color-primary: #3e6afb;
+    --color-primary: #3E6BFD;
 }
 
+ul.footerMapList a {
+  text-decoration: none;
+}
+
+.headerMenuContainer a {
+  text-decoration: none;
+}
 
 a {
-    text-decoration: none;
+    /* text-decoration: none; */
     color: var(--color-primary);
 }
 
@@ -39,7 +46,7 @@ a {
 
 .containerSubtitle {
   font-size: 20px;
-  color: #747474;
+  color: #757575;
   line-height: 1.6;
 }
 
@@ -52,7 +59,7 @@ a {
 }
 
 .gray {
-  color: #656565;
+  color: #757575;
 }
 
 .blueWaveContainer {
@@ -100,6 +107,18 @@ a {
   flex: 0;
 }
 
+.medium {
+  font-weight: 500;
+}
+
+.sectionSubtitle {
+  font-size: 20px;
+}
+
+.black {
+  color: #3a3a3a;
+}
+
 .flexGrow{
   flex-grow: 1;
 }
@@ -113,6 +132,37 @@ a {
   justify-content: center;
 }
 
+.pageSvg.desktop {
+  margin-bottom: -665px;
+}
+
+.pageSvg.mobile {
+  margin-bottom: -1300px;
+}
+
+.marginBottom {
+  margin-bottom: 64px !important;
+}
+
+.justifyCenter{
+  justify-content: center;
+}
+
+.homeContainer .rightContainer.image img {
+  width: 100%;
+}
+
+.alingBottom {
+  align-items: flex-end;
+}
+
+.blueWaveFooter {
+  margin-bottom: -300px;
+}
+
+.blueWaveFooter .marginContainer:last-child {
+  padding-bottom: 300px;
+}
 
 @keyframes animateWave {
     0% {
@@ -148,6 +198,10 @@ a {
 
   .mid {
     width: 75%;
+  }
+
+  .justifyCenterDesktop {
+   justify-content: center;
   }
 
 }
@@ -211,6 +265,7 @@ a {
     width: auto;
   }
 
+  
   .principalSubtitle {
     margin: 0 10%;
     width: auto !important;
@@ -230,11 +285,12 @@ a {
     width: auto;
   }
 
+  
 }.marginContainer {
     max-width: 1080px;
     margin: 0 auto;
     display: flex;
-    padding: 90px 0;
+    padding: 90px 0px 0px 0px;
 }
 
 .leftContainer {
@@ -257,7 +313,8 @@ a {
 }
 
 .roundButton {
-    padding: 14px 32px;
+    padding: 20px 42px;
+    font-size: 18px;
     background: linear-gradient(#537bfc, #7b99fc);
     border-radius: 50px;
     color: white;
@@ -275,8 +332,16 @@ a {
     width: 100%;
 }
 
+.secondTitle {
+    color: var(--color-primary);
+    font-size: 32px;
+    font-family: "Sofia Pro";
+}
+
 .downloadContainer .marginContainer {
     flex-wrap: wrap;
+    padding-bottom: 64px;
+    padding-top: 0px;
 }
 
 .downloadSteps {
@@ -445,11 +510,7 @@ section.phoneContainer {
     width: 100%;
     margin: 72px 0px;
     display: flex;
-    height: 700px;
     align-items: center;
-    background: url(/assets/images/bg/homeBgMid.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .innerContainer {
@@ -535,7 +596,7 @@ section.usersContainer .sectionTitle h5 {
 
 
 .fourBoxs .boxContainer {
-    flex-basis: 25%;
+    flex-basis: calc(100% / 3.7);
 }
 
 .boxContainer .viewMore {
@@ -585,6 +646,10 @@ section.usersContainer .sectionTitle h5 {
     margin-right: 32px;
 }
 
+.optionIconLogo img {
+    width: 64px;
+}
+
 .depositContainer .leftContainer {
     padding-right: 20%;
 }
@@ -603,6 +668,10 @@ section.usersContainer .sectionTitle h5 {
 }
 
 .atentionContainer .leftContainer p {margin-right: 20%;}
+
+.optionIconLogo.fullImage img {
+    width: 100%;
+}
 
 @media only screen and (max-width: 1080px) {
 
@@ -631,6 +700,7 @@ section.usersContainer .sectionTitle h5 {
 
     section.marginContainer.homeContainer {
         flex-wrap: wrap;
+        margin-bottom: 64px;
         flex-direction: column-reverse;
     }
 
@@ -748,6 +818,9 @@ section.usersContainer .sectionTitle h5 {
         transition: 4s;
     }
 
+    .blueTitle {
+        line-height: 1.2;
+    }
 
 }.headerContainer {
     display: flex;
@@ -838,6 +911,14 @@ ul {
     width: 100%;
 }
 
+.headerMenuContainer .roundButtonContainer {
+    margin: 0;
+    margin-top: 16px;
+}
+
+.headerMenuContainer .roundButtonContainer .roundButton {
+    padding: 16px 42px;
+}
 
 @media only screen and (min-width: 1080px) {
 
@@ -929,7 +1010,7 @@ ul {
     }
 
 }.principalSubtitle {
-    color: #656565;
+    color: #3a3a3a;
     font-size: 24px;
     width: 370px;
 }
@@ -992,6 +1073,11 @@ ul.securityContentList li {
     font-size: 16px;
 }
 
+h3.securityLink {
+    margin-top: 120px;
+    font-family: Sofia Pro;
+}
+
 @media only screen and (max-width: 1080px) {
 
     .securityContent {
@@ -1028,10 +1114,11 @@ ul.securityContentList li {
         width: 100%;
     }
 }.faqsBanner {
-    background: linear-gradient(to top,#000000ad,#00000061), url(/assets/images/bg/faqBg.png);
+    background: linear-gradient(to top,#000000ad,#00000061), url(/assets/images/bg/hero-image.jpg);
     height: 35vw;
     background-size: 100%;
     margin-top: 64px;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1076,30 +1163,37 @@ ul.securityContentList li {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+    justify-content: space-between;
 }
 
 .faqCardContainer {
     display: flex;
-    flex-basis: calc(100% / 3);
+    flex-basis: calc((100% / 3) - 16px);
 }
 
 .faqCard {
     cursor: pointer;
     flex-basis: 100%;
-    margin: 12px;
+    margin: 12px 0;
     background: white;
     box-shadow: 0px 0px 4px 3px #92929233;
     padding: 24px;
+    border-radius: 4px;
+}
+
+.faqCard:hover {
+    box-shadow: 0px 0px 4px 3px #9292924a;
 }
 
 .faqCardTitle {
     color: var(--color-primary);
     margin-bottom: 12px;
+    font-size: 18px;
 }
 
 .faqCardSubtitle {
     color: #8c8c8c;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .smile {
@@ -1431,7 +1525,7 @@ footer {
 }
 
 }.transferTitle {
-    font-size: 38px;
+    font-size: 32px;
     margin-top: 32px;
     margin-bottom: 16px;
 }
@@ -1500,6 +1594,10 @@ footer {
     height: 50px;
 }
 
+.paymentContainer{
+    padding: 64px 0;
+}
+
 @media only screen and (max-width: 1080px) {
 
 .logoContainer {
@@ -1542,12 +1640,17 @@ footer {
 
 .chargeContent .price {
     margin-top: 24px;
-    color: #5c5c5c;
+    color: #3a3a3a;
     font-size: 78px;
 }
 
 .chargeTitle {
     font-size: 22px;
+}
+
+.chargeContainerPadding{
+    padding: 0;
+    padding-bottom: 64px;
 }
 
 @media only screen and (max-width: 1080px) {
@@ -1670,7 +1773,10 @@ h1.sectionTitle {
 }
 
 
-
+.sectionCardTitle {
+    color: #3a3a3a;
+    font-size: 18px;
+}
 
 @media only screen and (max-width: 1080px) {
 
@@ -1721,6 +1827,7 @@ h1.sectionTitle {
 
 .promoListContainer {
     flex-wrap: wrap;
+    padding: 64px 0;
 }
 
 .promoListContainer .searchContainer {
@@ -1803,7 +1910,7 @@ h1.sectionTitle {
 .promoConditionSubtitle {
     color: #787878;
     font-size: 20px;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
 }
 
 .promoConditionTime {
@@ -1851,6 +1958,31 @@ p.conditions {
 
 .promoConditionLogo img {
     margin-bottom: 32px;
+}
+
+.promoConditionData {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.promoConditionTitle {
+    flex-basis: 100%;
+}
+
+.promoConditionSubtitle {
+    flex-basis: 100%;
+}
+
+.promoConditionButtom {
+    flex-basis: 100%;
+}
+
+.promoConditionTime {
+    margin-right: 16px;
+}
+
+.promoConditionLocation .fas {
+    color: #1f97de;
 }
 
 @media only screen and (max-width: 1080px) {
@@ -1924,6 +2056,10 @@ p.conditions {
     flex-basis: 100%;
     display: flex;
     justify-content: space-between;
+}
+
+.tabs a {
+    text-decoration: none;
 }
 
 .wrapContainer {
@@ -2070,6 +2206,10 @@ p.aboutText {
         padding: 16px 8%;
     }
 
+    .aboutDataContainer .image {
+        margin-top: 16px;
+    }
+
 }.boxDate {
     margin-bottom: 16px;
     flex: 0;
@@ -2095,6 +2235,7 @@ p.aboutText {
 .downloadBrand {
     display: flex;
     justify-content: space-between;
+    margin-top: 32px;
 }
 
 .downloadBrandButton {
@@ -2186,6 +2327,14 @@ p.articleSubtitle {
     background: #dee8ff;
 }
 
+.pressCom{
+    font-size: 20px;
+}
+
+.aboutContainer {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
 
 @media only screen and (max-width: 1080px) {
 

@@ -1,8 +1,9 @@
 .faqsBanner {
-    background: linear-gradient(to top,#000000ad,#00000061), url(/assets/images/bg/faqBg.png);
+    background: linear-gradient(to top,#000000ad,#00000061), url(/assets/images/bg/hero-image.jpg);
     height: 35vw;
     background-size: 100%;
     margin-top: 64px;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,30 +48,37 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+    justify-content: space-between;
 }
 
 .faqCardContainer {
     display: flex;
-    flex-basis: calc(100% / 3);
+    flex-basis: calc((100% / 3) - 16px);
 }
 
 .faqCard {
     cursor: pointer;
     flex-basis: 100%;
-    margin: 12px;
+    margin: 12px 0;
     background: white;
     box-shadow: 0px 0px 4px 3px #92929233;
     padding: 24px;
+    border-radius: 4px;
+}
+
+.faqCard:hover {
+    box-shadow: 0px 0px 4px 3px #9292924a;
 }
 
 .faqCardTitle {
     color: var(--color-primary);
     margin-bottom: 12px;
+    font-size: 18px;
 }
 
 .faqCardSubtitle {
     color: #8c8c8c;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .smile {

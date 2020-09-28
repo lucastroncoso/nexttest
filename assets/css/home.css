@@ -2,7 +2,7 @@
     max-width: 1080px;
     margin: 0 auto;
     display: flex;
-    padding: 90px 0;
+    padding: 90px 0px 0px 0px;
 }
 
 .leftContainer {
@@ -25,7 +25,8 @@
 }
 
 .roundButton {
-    padding: 14px 32px;
+    padding: 20px 42px;
+    font-size: 18px;
     background: linear-gradient(#537bfc, #7b99fc);
     border-radius: 50px;
     color: white;
@@ -43,8 +44,16 @@
     width: 100%;
 }
 
+.secondTitle {
+    color: var(--color-primary);
+    font-size: 32px;
+    font-family: "Sofia Pro";
+}
+
 .downloadContainer .marginContainer {
     flex-wrap: wrap;
+    padding-bottom: 64px;
+    padding-top: 0px;
 }
 
 .downloadSteps {
@@ -213,11 +222,7 @@ section.phoneContainer {
     width: 100%;
     margin: 72px 0px;
     display: flex;
-    height: 700px;
     align-items: center;
-    background: url(/assets/images/bg/homeBgMid.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .innerContainer {
@@ -303,7 +308,7 @@ section.usersContainer .sectionTitle h5 {
 
 
 .fourBoxs .boxContainer {
-    flex-basis: 25%;
+    flex-basis: calc(100% / 3.7);
 }
 
 .boxContainer .viewMore {
@@ -353,6 +358,10 @@ section.usersContainer .sectionTitle h5 {
     margin-right: 32px;
 }
 
+.optionIconLogo img {
+    width: 64px;
+}
+
 .depositContainer .leftContainer {
     padding-right: 20%;
 }
@@ -371,6 +380,10 @@ section.usersContainer .sectionTitle h5 {
 }
 
 .atentionContainer .leftContainer p {margin-right: 20%;}
+
+.optionIconLogo.fullImage img {
+    width: 100%;
+}
 
 @media only screen and (max-width: 1080px) {
 
@@ -399,6 +412,7 @@ section.usersContainer .sectionTitle h5 {
 
     section.marginContainer.homeContainer {
         flex-wrap: wrap;
+        margin-bottom: 64px;
         flex-direction: column-reverse;
     }
 
@@ -516,5 +530,8 @@ section.usersContainer .sectionTitle h5 {
         transition: 4s;
     }
 
+    .blueTitle {
+        line-height: 1.2;
+    }
 
 }

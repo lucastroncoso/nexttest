@@ -87,6 +87,14 @@ ul {
     width: 100%;
 }
 
+.headerMenuContainer .roundButtonContainer {
+    margin: 0;
+    margin-top: 16px;
+}
+
+.headerMenuContainer .roundButtonContainer .roundButton {
+    padding: 16px 42px;
+}
 
 @media only screen and (min-width: 1080px) {
 

@@ -104,6 +104,11 @@ export class Faq {
         document.getElementById("faqsContent").childNodes.forEach((element:HTMLElement) => {
 
             element.addEventListener("click", () => {
+                
+                document.querySelectorAll(".faqResponseContainer").forEach(e => {
+                    if(e != element) e.classList.add("close");
+                })
+
                 element.classList.toggle("close")
             })
         })

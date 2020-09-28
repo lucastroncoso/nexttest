@@ -24,12 +24,17 @@
 
 .chargeContent .price {
     margin-top: 24px;
-    color: #5c5c5c;
+    color: #3a3a3a;
     font-size: 78px;
 }
 
 .chargeTitle {
     font-size: 22px;
+}
+
+.chargeContainerPadding{
+    padding: 0;
+    padding-bottom: 64px;
 }
 
 @media only screen and (max-width: 1080px) {
