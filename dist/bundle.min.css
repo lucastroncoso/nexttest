@@ -317,7 +317,8 @@ a {
     font-size: 18px;
     background: linear-gradient(#537bfc, #7b99fc);
     border-radius: 50px;
-    color: white;
+    color: white !important;
+    text-decoration: none;
     box-shadow: 0px 1px 3px #8282826e;
 }
 
