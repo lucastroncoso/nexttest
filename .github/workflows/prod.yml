@@ -36,7 +36,7 @@ jobs:
           echo "[profile uala-mex-websites-prod]" > ~/.aws/config
           echo "region = us-east-1" >> ~/.aws/config
         env:
-          AWS_IAM_GITHUB_ACTIONS_ROLE_ARN_DEV: ${{ secrets.AWS_IAM_GITHUB_ACTIONS_ROLE_ARN_PROD }}
+          AWS_IAM_GITHUB_ACTIONS_ROLE_ARN_PROD: ${{ secrets.AWS_IAM_GITHUB_ACTIONS_ROLE_ARN_PROD }}
         working-directory: tools/scripts         
 
       - name: S3 Bucket Sync
