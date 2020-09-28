@@ -1,0 +1,157 @@
+.footerContainer {
+    margin-top: 128px;
+}
+
+.footerContainer .marginContainer {
+    padding: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 64px;
+}
+
+.footerBrand, .footerMap, .footerCopy {
+    flex-basis: calc(100% / 3);
+    height: calc(100% - 42px);
+    display: flex;
+    align-content: flex-end;
+    padding-bottom: 42px;
+    flex-wrap: wrap;
+}
+
+.brandLogo {
+    flex-basis: 100%;
+}
+
+.brandSocial {
+    flex-basis: 100%;
+    margin-top: 24px;
+    font-size: 32px;
+}
+
+.appDownloadLinks {
+    flex-basis: 100%;
+    display: flex;
+    margin-top: 72px;
+}
+
+.brandSocial a {
+    color: #9a9a9a;
+}
+
+
+.stickers {
+    font-size: 14px;
+    color: var(--color-primary);
+    margin-top: 64px;
+}
+
+ul.footerMapList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul.footerMapList li {
+    flex-basis: calc(100% / 3);
+    margin-bottom: 16px;
+}
+
+.appDownload {
+    margin-right: 12px;
+}
+
+.aaipContainer {
+    display: flex;
+}
+
+.ualaLocation {
+    font-size: 14px;
+    color: #737373;
+    margin-top: 64px;
+}
+
+.aaipLeft {
+    margin-right: 16px;
+}
+
+.aaipRight {
+    color: #6b6b6b;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+}
+
+.footerData {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-bottom: 64px;
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .footerContainer .marginContainer {
+        flex-wrap: wrap;
+    }
+    
+    .footerBrand, .footerMap, .footerCopy {
+        flex-basis: 100%;
+        height: auto;
+        padding-bottom: 0px;
+    }
+    
+    ul.footerMapList {
+        flex-basis: 100%;
+        padding: 16px 24px;
+    }
+    
+    .brandLogo, .brandSocial, .appDownloadLinks {
+        padding: 0 24px;
+    }
+    
+    .appDownloadLinks {
+        margin-top: 32px;
+        flex-wrap: wrap;
+    }
+    
+    .aaipContainer {
+        padding: 16px 24px;
+    }
+    
+    a.stickers {
+        padding: 0 24px;
+        margin-top: 12px;
+        width: 100%;
+    }
+
+    .ualaLocation {
+        flex-basis: 100%;
+        padding: 8px 24px;
+        margin: 0;
+    }
+
+    .footerContainer {
+        background: url(/assets/images/bg/homeFooterMobile.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: top;
+        height: auto;
+        padding-top: 60px;
+    }
+
+    ul.footerMapList li {
+        font-size: 14px;
+    }
+
+    .footerData {
+        padding: 0 24px 24px 24px;
+        background: whitesmoke;
+    }
+
+    ul.footerMapList li {
+        flex-basis: 100%;
+    }
+
+}

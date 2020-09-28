@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="375px" height="1647px" viewBox="0 0 375 1647" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="3.0685513%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#5C81FC" offset="0%"></stop>
+            <stop stop-color="#6488FC" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.15">
+        <g id="Home---Mobile---2" transform="translate(0.000000, -583.000000)" fill="url(#linearGradient-1)">
+            <path d="M304.70822,585.112993 C338.376869,580.880241 360.833439,583.159479 375.753185,590.582593 C376.082272,592.524306 376.082272,1138.99678 375.753185,2230 L375.753185,2230 L374.94523,2229.95968 C375.059461,1637.82949 374.995008,1341.04787 374.751873,1339.61482 C359.752766,1332.16016 337.176746,1329.87123 303.329009,1334.12197 C239.864827,1345.06186 183.8592,1373.34954 125.707702,1373.34954 C94.488663,1373.34954 52.7599665,1365.47842 0.521612181,1349.73619 L0,599.597335 C53.6025824,615.982137 96.2781519,624.174538 128.026709,624.174538 C185.870527,624.174538 241.579828,596.006581 304.70822,585.112993 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

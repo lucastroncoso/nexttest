@@ -1,0 +1,14 @@
+.bankLogo img {
+    height: 72px;
+}
+
+.bankExtract {
+    text-align: center;
+}
+
+.bankLogo {
+    margin: 16px 0;
+}
+
+.videoCenterContainer .image {display: flex;margin: 0 10%;}
+

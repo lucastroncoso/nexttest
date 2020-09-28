@@ -1,0 +1,193 @@
+.marginContainer.promotionContainer {align-items: center;}
+
+.promoListContainer {
+    flex-wrap: wrap;
+    padding: 64px 0;
+}
+
+.promoListContainer .searchContainer {
+    flex-basis: 100%;
+    margin: 32px 0;
+}
+
+.promotionList {
+    margin: 32px 0;
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+}
+
+.promotionContainer {
+    flex-basis: calc(100% / 3);
+    display: flex;
+}
+
+.promotion {
+    background: white;
+    flex-basis: 100%;
+    margin: 16px;
+    border-radius: 4px;
+    padding: 16px;
+    height: 15vw;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.promoLogo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.promoLogo img {
+    width: 150px;
+}
+
+.promotion {
+    text-align: center;
+}
+
+.promoTime, .promoText, .promoMore {
+    margin-top: 16px;
+}
+
+.promoText {
+    font-weight: 600;
+}
+
+.promoTime {
+    font-size: 14px;
+}
+
+.promoLogo, .promoTime, .promoText, .promoMore {
+    flex-basis: 100%;
+}
+
+.marginContainer.promoListContainer .searchContainer {margin: 32px 10%;}
+
+
+.promoHomeConditionContainer .leftContainer {
+    display: flex;
+    margin-right: 62px;
+}
+
+.promoConditionLogo {
+    margin-right: 32px;
+    display: contents;
+}
+
+.promoConditionTitle {
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+
+.promoConditionSubtitle {
+    color: #787878;
+    font-size: 20px;
+    margin-bottom: 32px;
+}
+
+.promoConditionTime {
+    color: #787878;
+    margin-bottom: 16px;
+}
+
+.promoConditionLocation {
+    color: #787878;
+    margin-bottom: 32px;
+}
+
+.promoConditionButtom {
+    display: flex;
+}
+
+.conditionButtom {
+    padding: 12px 32px;
+    border: 1px solid #3e69fb;
+    border-radius: 50px;
+    color: #3e69fb;
+}
+
+p.conditions {
+    color: #888888;
+}
+
+.conditionContainer {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.promoHomeConditionContainer {
+    display: flex;
+    margin-top: 32px;
+}
+
+.promoConditionsContainer {
+    margin-top: 64px;
+}
+
+.promoLogo {
+    height: 72px;
+}
+
+.promoConditionLogo img {
+    margin-bottom: 32px;
+}
+
+.promoConditionData {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.promoConditionTitle {
+    flex-basis: 100%;
+}
+
+.promoConditionSubtitle {
+    flex-basis: 100%;
+}
+
+.promoConditionButtom {
+    flex-basis: 100%;
+}
+
+.promoConditionTime {
+    margin-right: 16px;
+}
+
+.promoConditionLocation .fas {
+    color: #1f97de;
+}
+
+@media only screen and (max-width: 1080px) {
+
+    .promotionContainer {
+        flex-basis: 100%;
+    }
+    
+    .promotion {
+        height: auto;
+    }
+
+    .promoHomeConditionContainer .leftContainer {
+        margin-right: 0;    
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .conditionContainer{
+        padding: 90px 16px;
+    }
+
+    .promoConditionButtom {
+        justify-content: center;
+    }
+
+    .promoConditionLogo {
+        margin-right: 0px;
+        margin-bottom: 32px;
+    }
+
+}

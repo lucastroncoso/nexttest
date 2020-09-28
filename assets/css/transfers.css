@@ -1,0 +1,50 @@
+.transferTitle {
+    font-size: 32px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.transferContent {
+    line-height: 1.7;
+    font-size: 18px;
+    color: #737373;
+    margin-bottom: 12px;
+}
+
+.leftContainer .transferTypeContainer {
+    margin-right: 48px;
+}
+
+.rightContainer .transferTypeContainer {
+    margin-left: 48px;
+}
+
+.transferIcon img {
+    width: 68px;
+}
+
+.videoImage {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.videoImage img {width: 80%;}
+
+.numberList ul li {
+    display: flex;
+    margin-top: 20px;
+}
+
+.listNumber {
+    color: var(--color-primary);
+    margin-right: 16px;
+}
+
+.disableMargin {
+    margin: 0;
+}
+
+.leftContainer.videoImage {
+    justify-content: flex-start;
+}

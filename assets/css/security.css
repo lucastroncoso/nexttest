@@ -1,0 +1,105 @@
+.principalSubtitle {
+    color: #3a3a3a;
+    font-size: 24px;
+    width: 370px;
+}
+
+.securityContainer .rightContainer {
+    display: flex;
+    justify-content: center;
+}
+
+section.marginContainer.securityDataContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.securityStep {
+    flex-basis: 100%;
+    display: flex;
+}
+
+.division {
+    flex-basis: 85%;
+    background: #f3f0f0;
+    height: 2px;
+    margin: 64px 0;
+}
+
+.securityLogo {
+    margin-right: 32px;
+}
+
+span.red {
+    color: salmon;
+}
+
+.securityContentTitle {
+    font-size: 28px;
+    color: #6f6f6f;
+    margin-bottom: 24px;
+}
+
+ul.securityContentList {
+    margin-left: 25px;
+}
+
+
+ul.securityContentList  li::before {
+  content: "\2022"; 
+  color: #3e6afb;
+  font-weight: bold; 
+  display: inline-block; 
+  width: 1em; 
+  margin-left: -20px;
+  position: absolute;
+}
+
+ul.securityContentList li {
+    margin-bottom: 16px;
+    color: grey;
+    font-size: 16px;
+}
+
+h3.securityLink {
+    margin-top: 120px;
+    font-family: Sofia Pro;
+}
+
+@media only screen and (max-width: 1080px) {
+
+    .securityContent {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .securityLogo.mobile {
+        flex-basis: 110px;
+        margin: 0;
+        display: flex;
+    }
+    
+    .securityContentTitle {
+        flex-basis: 0;
+        flex-grow: 1;
+        align-items: center;
+        display: flex;    
+        font-size: 22px;
+        margin-left: 16px;
+        margin-bottom: 0;
+    }
+
+    .securityStep {
+        margin: 0 10%;
+    }
+    
+    ul.securityContentList {
+        flex-basis: 100%;
+        margin-top: 32px;
+    }
+
+    .securityLogo.mobile img {
+        width: 100%;
+    }
+}

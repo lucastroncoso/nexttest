@@ -1,0 +1,289 @@
+body { 
+    margin: 0;
+    font-family: 'Public Sans', sans-serif;
+}
+
+/* Variables */
+
+:root {
+    --register-step: 0%;
+    --color-primary: #3E6BFD;
+}
+
+ul.footerMapList a {
+  text-decoration: none;
+}
+
+.headerMenuContainer a {
+  text-decoration: none;
+}
+
+a {
+    /* text-decoration: none; */
+    color: var(--color-primary);
+}
+
+
+.waveContainer > svg {
+    display: block;
+  transform-origin: bottom;
+  animation: animateWave 2000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.waveContainer {
+    color: #FFF;
+    text-align: center;
+    overflow: hidden;
+    position: absolute;
+    background: #7b7b7b00;
+    width: 100%;
+    bottom: -2px;
+}
+
+.hide {
+    display: none !important;
+}
+
+.containerSubtitle {
+  font-size: 20px;
+  color: #757575;
+  line-height: 1.6;
+}
+
+.videoContent img {
+  width: 90%;
+}
+
+.red { 
+  color: salmon !important;
+}
+
+.gray {
+  color: #757575;
+}
+
+.blueWaveContainer {
+  background: url(/assets/images/bg/waveTopDesktopBlue.svg) top   /100% auto,    url(/assets/images/bg/waveBottomDesktopBlue.svg) bottom/100% auto,    linear-gradient(#dee8ff,#f2f7ff) content-box; /* Color between the shapes only on the content and not the padding*/
+  background-repeat:no-repeat;
+  padding-bottom: 3.2vw;
+  padding-top: 4vw;
+} 
+
+.grayTopWaveContainer {
+  background: url(/assets/images/bg/waveTopDesktopGray.svg) top /100% auto, linear-gradient(#eeeeee,#eeeeee) content-box;
+  background-repeat:no-repeat;
+  padding-top: 4vw;
+} 
+
+.alingCenter {
+  align-items: center;
+}
+
+.flexContent{
+  display: flex;
+}
+
+.marginContainer.centerContainer {
+  justify-content: center;
+}
+
+.flex30 {
+  flex-basis: 30% !important;
+}
+
+.flex70 {
+  flex-basis: 70% !important;
+}
+
+.flex {
+  display: flex !important;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.flex0 {
+  flex: 0;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.sectionSubtitle {
+  font-size: 20px;
+}
+
+.black {
+  color: #3a3a3a;
+}
+
+.flexGrow{
+  flex-grow: 1;
+}
+
+.marginRightIcon {
+  margin-right: 12px;
+}
+
+.pageSvg {
+  display: flex;
+  justify-content: center;
+}
+
+.pageSvg.desktop {
+  margin-bottom: -665px;
+}
+
+.pageSvg.mobile {
+  margin-bottom: -1300px;
+}
+
+.marginBottom {
+  margin-bottom: 64px !important;
+}
+
+.justifyCenter{
+  justify-content: center;
+}
+
+.homeContainer .rightContainer.image img {
+  width: 100%;
+}
+
+.alingBottom {
+  align-items: flex-end;
+}
+
+.blueWaveFooter {
+  margin-bottom: -300px;
+}
+
+.blueWaveFooter .marginContainer:last-child {
+  padding-bottom: 300px;
+}
+
+@keyframes animateWave {
+    0% {
+      transform: scale(1,0);
+    }
+    100% {
+      transform: scale(1,1);
+    }
+  }
+
+/* Fuentes */
+@font-face {
+    font-family: "Sofia Pro";
+    font-weight: normal;
+    src: url("/assets/fonts/SofiaProRegular.ttf");
+}
+
+/* Fuentes */
+@font-face {
+    font-family: "Sofia Pro L";
+    font-weight: lighter;
+    src: url("/assets/fonts/sofiapro-light.otf");
+} 
+
+
+@media only screen and (min-width: 1080px) {
+  .mobile { display: none !important ; }
+
+  .alingCenterDesktop{
+    align-items: center;
+  }
+
+
+  .mid {
+    width: 75%;
+  }
+
+  .justifyCenterDesktop {
+   justify-content: center;
+  }
+
+}
+
+
+@media only screen and (max-width: 1080px) {
+
+  .breakContainer .flex30, .breakContainer .flex70 {
+    flex-basis: 100% !important;
+  }
+  
+  .pageSvg.mobile img {
+      width: 100%;
+  }
+
+  .desktop { display: none !important; } 
+
+  .mapContainer .leftContainer {
+    padding: 0 10%;
+  }
+
+  .breakReverseContainer {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  .breakContainer {
+    flex-wrap: wrap;
+  }
+
+  .breakContainer .leftContainer {
+    flex-basis: 100%;
+  }
+
+  .breakContainer .rightContainer {
+    flex-basis: 100%;
+  }
+
+  .breakReverseContainer .leftContainer {
+    flex-basis: 100%;
+  }
+
+  .breakReverseContainer .rightContainer {
+    flex-basis: 100%;
+  }
+
+  .transferTypeContainer {
+    margin: 32px 10% !important;
+  }
+
+  .videoContent {
+    margin: 0 10%;
+  }
+
+  .containerSubtitle {
+    margin: 0 10%;
+  }
+
+  h3.blueTitle {
+    margin: 32px 10% !important;
+    width: auto;
+  }
+
+  
+  .principalSubtitle {
+    margin: 0 10%;
+    width: auto !important;
+  }
+
+  .image {
+    display: block;
+    justify-content: center;
+  }
+
+  .image img {
+      max-width: 100%;
+  }
+
+  .videoContent img {
+    max-width: 100%;
+    width: auto;
+  }
+
+  
+}

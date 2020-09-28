@@ -1,0 +1,538 @@
+.marginContainer {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    padding: 90px 0px 0px 0px;
+}
+
+.leftContainer {
+    flex-basis: 50%;
+}
+
+.rightContainer {
+    flex-basis: 50%;
+}
+
+.blueTitle {
+    font-size: 38px;
+    width: 370px;
+    color: var(--color-primary);
+    line-height: 1.4;
+    font-family: Sofia Pro;
+}
+.roundButtonContainer {
+    display: flex;
+}
+
+.roundButton {
+    padding: 20px 42px;
+    font-size: 18px;
+    background: linear-gradient(#537bfc, #7b99fc);
+    border-radius: 50px;
+    color: white !important;
+    text-decoration: none;
+    box-shadow: 0px 1px 3px #8282826e;
+}
+
+/* Download */
+
+
+
+.sectionTitle {
+    color: var(--color-primary);
+    font-size: 32px;
+    font-family: "Sofia Pro";
+    width: 100%;
+}
+
+.secondTitle {
+    color: var(--color-primary);
+    font-size: 32px;
+    font-family: "Sofia Pro";
+}
+
+.downloadContainer .marginContainer {
+    flex-wrap: wrap;
+    padding-bottom: 64px;
+    padding-top: 0px;
+}
+
+.downloadSteps {
+    display: flex;
+    position: relative;
+}
+
+.downloadStep {
+    flex-basis: 25%;
+    z-index: 1;
+    opacity: 0;
+    transition: 2s;
+}
+
+.downloadStepBar {
+    position: absolute;
+    width: var(--register-step);
+    height: 4px;
+    left: 34px;
+    transition: 6s;
+    background: var(--color-primary);
+    top: 25%;
+}
+
+.downloadStepText {
+    color: #909094;
+    font-size: 16px;
+    margin-right: 30%;
+    margin-top: 16px;
+}
+
+span.stepNumer {
+    color: var(--color-primary);
+    margin-right: 4px;
+}
+
+.downloadFooter {
+    flex-basis: 100%;
+    display: flex;
+    margin-top: 48px;
+}
+
+.rechargue {
+    color: #eb6364;
+    font-size: 22px;
+    margin-right: 48px;
+}
+
+.rechargue.text {
+    margin-right: 48px;
+    font-family: Sofia Pro;
+    flex-basis: 250px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.rapipago.rechargue {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Cards */
+
+.useCards {
+    display: flex;
+    /* width: calc((285px + 48px) * 6); */
+    width: 100%;
+    margin: 0 auto;
+    overflow: scroll;
+    white-space: nowrap;
+    height: 450px;
+}
+
+.useCard {
+    min-width: 285px;
+    border-radius: 12px;
+    white-space: nowrap;
+    margin-right: 48px;
+    box-shadow: 0px 0px 9px 3px #9a9a9a26;
+    display: inline-block;
+    height: 420px;
+    margin-top: 16px;
+}
+
+
+.optionContainer {
+    color: #707070;
+    font-size: 17px;
+    text-align: right;
+    margin-left: 48px;
+    padding: 8px 0px;
+}
+
+.useCardContainer {
+    padding: 28px;
+}
+
+.useCardContainer h5 {
+    font-size: 22px;
+    color: var(--color-primary);
+    font-family: Sofia Pro;
+    margin: 24px 0px 16px 0px;
+}
+
+.subtitle {
+    color: #5a5a5a;
+    font-size: 17px;
+}
+
+.useCardContainer p {
+    line-height: 1.5;
+    color: #8c8c8c;
+    white-space: break-spaces;
+}
+
+.viewMore {
+    display: block;
+}
+
+.viewMoreBotton {
+    border: 1px solid var(--color-primary);
+    border-radius: 40px;
+    padding: 12px 52px;
+    font-size: 14px;
+    color: var(--color-primary);
+    background: #fdfdfd;
+}
+
+section.marginContainer.usesContainer {
+    flex-wrap: wrap;
+}
+
+section.marginContainer.usesContainer .sectionTitle {
+    width: 400px;
+    line-height: 1.5;
+}
+
+section.usesContainer .sectionTitle {
+    width: 1080px;
+    margin: auto;
+}
+
+section.usesContainer .sectionTitle h5 {
+    width: 350px;
+    font-size: 32px;
+    line-height: 1.3;
+}
+
+.downloadStep.opacityDisable {
+    opacity: 1;
+}
+
+.optionContainer {
+    color: #707070;
+    font-size: 17px;
+    text-align: right;
+    margin-left: 48px;
+    padding: 8px 0px;
+}
+
+/* Phone */
+
+section.phoneContainer {
+    width: 100%;
+    margin: 72px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.innerContainer {
+    display: flex;
+    width: 1080px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+span.hashtag {
+    font-weight: 600;
+    color: #144bff;
+}
+
+section.phoneContainer .rightContainer  {
+    font-size: 34px;
+    font-family: Sofia Pro;
+    line-height: 1.5;
+    color: #7b7b7b;
+}
+
+/* Users comments */
+
+.usersContainer .innerContainer {
+    flex-wrap: wrap;
+}
+
+section.usersContainer .sectionTitle h5 {
+    margin-top: 0;
+    font-size: 38px;
+}
+
+.userComments {
+    flex-basis: 100%;
+    display: flex;
+}
+
+.userComment {
+    border-radius: 12px;
+}
+
+.userCommentContainer {
+    background: #8ea8ff;
+    margin: 16px;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+}
+
+.userName {
+    font-weight: 600;
+    padding: 0 16px;
+    margin-bottom: 8px;
+}
+
+.userCommentContent {
+    font-weight: 300;
+    font-size: 14px;
+    padding: 0 16px 16px 16px;
+}
+
+.userLocation {
+    padding: 0 16px;
+    font-weight: 300;
+    margin-bottom: 16px;
+}
+
+.userAvatar img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid white;
+    transform: translate(0px, -24px);
+}
+
+.userAvatar {
+    height: 44px;
+}
+
+.optionTitle {
+    cursor: pointer;
+}
+
+
+.fourBoxs .boxContainer {
+    flex-basis: calc(100% / 3.7);
+}
+
+.boxContainer .viewMore {
+    margin-top: 32px;
+}
+
+.boxImage {
+    display: block;
+    margin-bottom: 16px;
+}
+
+.fourBoxs .boxImage img {width: 72px;}
+
+.fourBoxs .boxContent {
+    flex: 1;
+}
+
+.fourBoxs .boxTitle, .fourBoxs .viewMore, .fourBoxs .boxImage {
+    flex: 0;
+}
+
+.fourBoxs .boxContent {
+    white-space: initial;
+}
+
+.usesContainer .marginContainer {
+    padding: 0;
+}
+
+.stores {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.store {
+    margin-right: 32px;
+}
+
+.optionIcon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.optionIconLogo {
+    margin-right: 32px;
+}
+
+.optionIconLogo img {
+    width: 64px;
+}
+
+.depositContainer .leftContainer {
+    padding-right: 20%;
+}
+
+.atentionContainer .rightContainer .image img {
+    width: 100%;
+}
+
+.atentionContainer .rightContainer .image  {
+    width: 100%;
+}
+
+.atentionContainer {
+    padding: 0;
+    margin-bottom: -280px;
+}
+
+.atentionContainer .leftContainer p {margin-right: 20%;}
+
+.optionIconLogo.fullImage img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1080px) {
+
+    .stores {
+        padding: 0 10%;
+    }
+
+    .atentionContainer {
+        margin-bottom: 0;
+        margin: 0 10%;
+    }
+    
+    .optionIcon {
+        margin: 0 10% 24px 10%;
+    }
+
+    .fullImage img {
+        width: 100%;
+    }
+
+
+
+    .depositContainer .leftContainer {
+        padding-right: 0;
+    }
+
+    section.marginContainer.homeContainer {
+        flex-wrap: wrap;
+        margin-bottom: 64px;
+        flex-direction: column-reverse;
+    }
+
+    section.marginContainer.homeContainer .blueTitle {
+        width: auto;
+        margin: 0;
+    }
+
+  
+
+    .downloadSteps {
+        flex-wrap: wrap;
+    }
+    
+    .downloadStep {
+        flex-basis: 100%;
+        display: flex;
+        margin-bottom: 32px;
+        align-items: center;
+        padding: 16px 0;
+    }
+    
+    section.downloadContainer {
+        height: auto;
+    }
+    
+    .downloadStepImage {
+        margin-right: 32px;
+    }
+    
+    .downloadStepText {
+        margin: 0;
+        display: flex;
+        align-items: flex-start;
+    }
+    
+    .sectionTitle {
+        width: 100% !important;
+    }
+
+    .innerContainer {
+        width: 100%;
+    }
+    
+    .userComments {
+        overflow: scroll;
+        white-space: nowrap;
+        padding-top: 16px;
+    }
+    
+    .userComment {
+        width: 100%;
+    }
+    
+    .userCommentContent {white-space: initial;}
+
+    .userCommentContainer {
+        width: 300px;
+    }
+
+    section.usesContainer .sectionTitle h5 {
+        width: auto;
+    }
+
+   
+
+    .homeContainer .rightContainer {
+        padding: 0 10%;
+    }
+
+    
+    .roundButtonContainer {
+        margin: 48px 10%;
+    }
+    
+    .homeContainer .containerSubtitle.mobile {
+        margin-top: 22px;
+        font-size: 28px;
+    }
+
+
+    section.downloadContainer .marginContainer {
+        padding: 0px 10% 32px 10%;
+    }
+    
+    .downloadStepImage img {
+        width: 72px;
+    }
+
+    .useCard:first-child {
+        margin-left: 10%;
+    }
+
+    .useCard:last-child {
+        margin-right: 10%;
+    }
+
+    .sectionTitle h5 {
+        padding: 0 10%;
+    }
+
+    section.usersContainer {
+        margin-top: 64px;
+    }
+
+    .userComment:first-child {
+        margin-left: calc(10% - 16px);
+    }
+
+    .downloadStepBar {
+        width: 4px;
+        top: 10%;
+        height: var(--register-step);
+        left: 34px;
+        transition: 4s;
+    }
+
+    .blueTitle {
+        line-height: 1.2;
+    }
+
+}

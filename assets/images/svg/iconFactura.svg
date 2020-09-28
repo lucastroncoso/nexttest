@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 9</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.780392 0 0 0 0 0.831373 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <polygon id="path-2" points="0 0 44.9614565 0 44.9614565 44.9615217 0 44.9615217"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Pagos-y-Recargas" transform="translate(-30.000000, -1047.000000)">
+            <g id="Group-9" transform="translate(30.000000, 1047.000000)">
+                <g filter="url(#filter-1)" id="Group-3">
+                    <g>
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-2"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path d="M36.3790652,44.9615217 L8.58232609,44.9615217 C3.84254348,44.9615217 -6.52173913e-05,41.118913 -6.52173913e-05,36.3791304 L-6.52173913e-05,8.5823913 C-6.52173913e-05,3.8426087 3.84254348,0 8.58232609,0 L36.3790652,0 C41.1190652,0 44.9614565,3.8426087 44.9614565,8.5823913 L44.9614565,36.3791304 C44.9614565,41.118913 41.1190652,44.9615217 36.3790652,44.9615217" id="Fill-1" fill="#FF6666" mask="url(#mask-3)"></path>
+                    </g>
+                </g>
+                <g id="Group-5" transform="translate(10.000000, 10.000000)" stroke="#668AFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <polyline id="Stroke-1" points="18.1189 24.80225 24.20815 24.80225 24.20815 18.56475"></polyline>
+                    <polyline id="Stroke-3" points="2.66453526e-15 18.861575 2.66453526e-15 24.950825 6.23775 24.950825"></polyline>
+                    <polyline id="Stroke-5" points="18.1189 3.55271368e-15 24.20815 3.55271368e-15 24.20815 6.23775"></polyline>
+                    <polyline id="Stroke-7" points="2.66453526e-15 6.386225 2.66453526e-15 0.297225 6.23775 0.297225"></polyline>
+                    <line x1="5.940675" y1="5.6438" x2="5.940675" y2="19.6043" id="Stroke-10"></line>
+                    <line x1="19.125" y1="5.6438" x2="19.125" y2="19.6043" id="Stroke-11"></line>
+                    <line x1="15.125" y1="5.6438" x2="15.125" y2="16.9308" id="Stroke-13"></line>
+                    <line x1="10.125" y1="5.6438" x2="10.125" y2="16.9308" id="Stroke-14"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
