@@ -39,9 +39,6 @@ jobs:
           AWS_IAM_GITHUB_ACTIONS_ROLE_ARN_DEV: ${{ secrets.AWS_IAM_GITHUB_ACTIONS_ROLE_ARN_DEV }}
         working-directory: tools/scripts         
 
-      - name: Test Role Assumed
-        run: aws s3 ls --profile uala-mex-websites-dev
-
       - name: S3 Bucket Sync
         run: aws s3 sync . s3://uala-mex-frontend-websites-dev --profile uala-mex-websites-dev --exclude ".git*"
   
