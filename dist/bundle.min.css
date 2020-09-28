@@ -674,6 +674,10 @@ section.usersContainer .sectionTitle h5 {
     width: 100%;
 }
 
+.phoneContainer .leftContainer img {
+    width: 100%;
+}
+
 @media only screen and (max-width: 1080px) {
 
     .stores {
