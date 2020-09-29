@@ -164,6 +164,7 @@ a {
   padding-bottom: 300px;
 }
 
+
 @keyframes animateWave {
     0% {
       transform: scale(1,0);
@@ -286,4 +287,8 @@ a {
   }
 
   
+  .nomargin {
+    margin: 0px !important;
+  }
+
 }

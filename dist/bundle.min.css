@@ -164,6 +164,7 @@ a {
   padding-bottom: 300px;
 }
 
+
 @keyframes animateWave {
     0% {
       transform: scale(1,0);
@@ -286,6 +287,10 @@ a {
   }
 
   
+  .nomargin {
+    margin: 0px !important;
+  }
+
 }.marginContainer {
     max-width: 1080px;
     margin: 0 auto;
@@ -671,6 +676,10 @@ section.usersContainer .sectionTitle h5 {
 .atentionContainer .leftContainer p {margin-right: 20%;}
 
 .optionIconLogo.fullImage img {
+    width: 100%;
+}
+
+.phoneContainer .leftContainer img {
     width: 100%;
 }
 
