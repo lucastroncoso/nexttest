@@ -54,7 +54,10 @@ h1.sectionTitle {
 }
 
 
-
+.sectionCardTitle {
+    color: #3a3a3a;
+    font-size: 18px;
+}
 
 @media only screen and (max-width: 1080px) {
 

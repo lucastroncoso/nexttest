@@ -2,7 +2,7 @@ name: S3 Deploy Website
 
 on:
   push:
-    branches: [addNewInfra]
+    branches: [master]
 
 jobs:
   build:
@@ -30,24 +30,20 @@ jobs:
 
       - name: 'Setup AWS Credentials Profile to Assume Role'
         run: |
-          echo "[uala-mex-websites-dev]" >> ~/.aws/credentials
-          echo "role_arn = $AWS_IAM_GITHUB_ACTIONS_ROLE_ARN_DEV" >> ~/.aws/credentials
+          echo "[uala-mex-websites-prod]" >> ~/.aws/credentials
+          echo "role_arn = $AWS_IAM_GITHUB_ACTIONS_ROLE_ARN_PROD" >> ~/.aws/credentials
           echo "source_profile = uala-operaciones" >> ~/.aws/credentials
-          echo "[profile uala-mex-websites-dev]" > ~/.aws/config
+          echo "[profile uala-mex-websites-prod]" > ~/.aws/config
           echo "region = us-east-1" >> ~/.aws/config
         env:
-          AWS_IAM_GITHUB_ACTIONS_ROLE_ARN_DEV: ${{ secrets.AWS_IAM_GITHUB_ACTIONS_ROLE_ARN_DEV }}
+          AWS_IAM_GITHUB_ACTIONS_ROLE_ARN_PROD: ${{ secrets.AWS_IAM_GITHUB_ACTIONS_ROLE_ARN_PROD }}
         working-directory: tools/scripts         
 
-      - name: Test Role Assumed
-        run: aws s3 ls --profile uala-mex-websites-dev
-
       - name: S3 Bucket Sync
-        # run: aws s3 cp index.html s3://uala-mex-frontend-websites-dev --profile uala-mex-websites-dev
-        run: aws s3 sync . s3://uala-mex-frontend-websites-dev --profile uala-mex-websites-dev --exclude ".git*"
+        run: aws s3 sync . s3://uala-mex-frontend-websites-prod --profile uala-mex-websites-prod --exclude ".git*"
   
       - name: CloudFront Invalidation
-        run: aws cloudfront create-invalidation --distribution-id E3CGS3UAQQ9X5Y --paths "/*" --profile uala-mex-websites-dev
+        run: aws cloudfront create-invalidation --distribution-id E1IWGYZ0Q6KTK7 --paths "/*" --profile uala-mex-websites-prod
       
       # - name: Send Slack Message
       #   run: python3 slack.py

@@ -2,6 +2,7 @@
 
 .promoListContainer {
     flex-wrap: wrap;
+    padding: 64px 0;
 }
 
 .promoListContainer .searchContainer {
@@ -40,7 +41,7 @@
 }
 
 .promoLogo img {
-    width: 72px;
+    width: 150px;
 }
 
 .promotion {
@@ -73,6 +74,7 @@
 
 .promoConditionLogo {
     margin-right: 32px;
+    display: contents;
 }
 
 .promoConditionTitle {
@@ -83,7 +85,7 @@
 .promoConditionSubtitle {
     color: #787878;
     font-size: 20px;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
 }
 
 .promoConditionTime {
@@ -118,10 +120,44 @@ p.conditions {
 
 .promoHomeConditionContainer {
     display: flex;
+    margin-top: 32px;
 }
 
 .promoConditionsContainer {
     margin-top: 64px;
+}
+
+.promoLogo {
+    height: 72px;
+}
+
+.promoConditionLogo img {
+    margin-bottom: 32px;
+}
+
+.promoConditionData {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.promoConditionTitle {
+    flex-basis: 100%;
+}
+
+.promoConditionSubtitle {
+    flex-basis: 100%;
+}
+
+.promoConditionButtom {
+    flex-basis: 100%;
+}
+
+.promoConditionTime {
+    margin-right: 16px;
+}
+
+.promoConditionLocation .fas {
+    color: #1f97de;
 }
 
 @media only screen and (max-width: 1080px) {

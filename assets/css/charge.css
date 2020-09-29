@@ -1,36 +1,40 @@
 
-.chargeContainer {
-    
-    height: 1300px;
-} 
 
 .chargeList {
     display: flex;
     flex-basis: 100%;
     margin-top: 64px;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .charge {
     flex-basis: 50%;
+    display: flex;
 }
 
 .chargeContent {
     background: white;
     margin: 16px;
     padding: 16px;
+    flex-basis: 100%;
     border-radius: 12px;
     text-align: center;
 }
 
 .chargeContent .price {
     margin-top: 24px;
-    color: #5c5c5c;
+    color: #3a3a3a;
     font-size: 78px;
 }
 
 .chargeTitle {
     font-size: 22px;
+}
+
+.chargeContainerPadding{
+    padding: 0;
+    padding-bottom: 64px;
 }
 
 @media only screen and (max-width: 1080px) {

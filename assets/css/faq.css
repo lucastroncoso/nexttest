@@ -1,8 +1,9 @@
 .faqsBanner {
-    background: linear-gradient(to top,#000000ad,#00000061), url(/assets/images/bg/faqBg.png);
+    background: linear-gradient(to top,#000000ad,#00000061), url(/assets/images/bg/hero-image.jpg);
     height: 35vw;
     background-size: 100%;
     margin-top: 64px;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,6 +12,7 @@
 
 .searchContainer {
     display: flex;
+    z-index: 1;
     background: white;
     padding: 0px 24px;
     margin-top: -10vw;
@@ -46,27 +48,37 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+    justify-content: space-between;
 }
 
 .faqCardContainer {
-    flex-basis: calc(100% / 3);
+    display: flex;
+    flex-basis: calc((100% / 3) - 16px);
 }
 
 .faqCard {
-    margin: 12px;
+    cursor: pointer;
+    flex-basis: 100%;
+    margin: 12px 0;
     background: white;
     box-shadow: 0px 0px 4px 3px #92929233;
     padding: 24px;
+    border-radius: 4px;
+}
+
+.faqCard:hover {
+    box-shadow: 0px 0px 4px 3px #9292924a;
 }
 
 .faqCardTitle {
     color: var(--color-primary);
     margin-bottom: 12px;
+    font-size: 18px;
 }
 
 .faqCardSubtitle {
     color: #8c8c8c;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .smile {
@@ -101,6 +113,7 @@
 }
 
 .faqResponse {
+    cursor: pointer;
     margin: 12px 0;
     box-shadow: 0px 0px 4px 3px #92929233;
     padding: 24px;
@@ -111,7 +124,8 @@
 }
 
 .faqResponseBody {
-    margin-top: 12px;
+    line-height: 1.6;
+    margin-top: 16px;
     color: #8e8e8e;
 }
 
@@ -133,6 +147,7 @@
 }
 
 .sectionBack {
+    cursor: pointer;
     display: flex;
     font-size: 16px;
     align-items: center;
@@ -147,6 +162,21 @@
     align-items: center;
 }
 
+.close .faqResponseBody {
+    display: none;
+}
+
+.faqResponseContainer .headerArrow .fa-chevron-down {
+    display: none;
+}
+
+.faqResponseContainer.close .headerArrow .fa-chevron-up {
+    display: none;
+}
+
+.faqResponseContainer.close .headerArrow .fa-chevron-down {
+    display: block;
+}
 
 @media only screen and (max-width: 1080px) {
 
