@@ -1,7 +1,7 @@
 export const categories = [
     { id: 1, title : "Sobre Ualá", description : "Qué es Ualá y cómo funciona" },
     { id: 2, title : "Usuario y cuenta", description : "Empieza a usar Ualá" },
-    { id: 3, title : "Depósitos y retiros", description : "Toda tu dinero en un solo lugar" },
+    { id: 3, title : "Depósitos y retiros", description : "Todo tu dinero en un solo lugar" },
     { id: 4, title : "La tarjeta", description : "Compra con tu tarjeta de débito Ualá Mastercard" },
     { id: 5, title : "Claves y seguridad", description : "Siéntete segur@ mientras manejas tu dinero" },
     { id: 6, title : "Transferencias", description : "Recibe y envía dinero al momento" },
