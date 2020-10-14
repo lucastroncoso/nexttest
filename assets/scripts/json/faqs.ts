@@ -236,7 +236,7 @@ export const content = [
     {
       
       "question": "Se contactaron conmigo por redes sociales pidiéndome los datos de mi tarjeta Ualá, ¿qué hago?",
-      "answer": "Nunca compartas los datos de tu tarjeta, ni muestres los números que están adelante y atrás de ella. Tampoco respondas un mail o un llamado telefónico pidiéndote los datos de tu tarjeta, incluso si parece venir de Ualá.",
+      "answer": "Nunca compartas los datos de tu tarjeta, ni muestres los números que están adelante y atrás de ella. Tampoco respondas un mail o un llamado telefónico pidiéndote los datos de tu tarjeta, incluso si parece venir de Ualá.  ¡Aquí te dejamos un tutorial con algunos consejos que seguro te ayudarán! https://youtu.be/kYivqwf5scg",
       "category": 5
     },
     {
