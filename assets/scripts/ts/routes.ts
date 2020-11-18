@@ -17,7 +17,7 @@ export class Routes {
         "/privacidad" : { page: "privacy", header: true, footer: true },
         "/transferencias" : { page: "transfers", header: true, footer: true },
         //"/pagos" : { page: "payments", header: true, footer: true },
-        "/costos" : { page: "charge", header: true, footer: true },
+        "/Consulta-los-costos-y-las-comisiones-de-nuestros-productos" : { page: "charge", header: true, footer: true },
         //"/inversiones" : { page: "investment", header: true, footer: true },
        // "/psp" : { page: "psp", header: true, footer: true },
         "/contrato" : { page: "contract", header: true, footer: true },

@@ -28,6 +28,11 @@ export const content = [
       "category": 1
     },
     {
+      "question": "¿Después de registrarme me llega mi tarjeta Ualá? ",
+      "answer": "No. Una vez que validemos tus datos te llegará una notificación a tu celular para crear tu PIN y tu código de seguridad que te servirá para hacer transferencias y pagos. Recuerda que para que el envío de tu tarjeta se realice necesitas crear tu PIN y código, de lo contrario no podremos enviarte tu tarjeta Ualá.",
+      "category": 2
+    },
+    {
       "question": "¿Qué necesito para poder descargar la app Ualá?",
       "answer": "Puedes descargar la app de Ualá desde un teléfono celular con sistema operativo Android (versión 4.4 o superior) o iOS (9 o superior) y una conexión a internet wifi o red móvil. La puedes descargar gratis desde Play Store o App Store.",
       "category": 2
@@ -82,7 +87,7 @@ export const content = [
     {
       
       "question": "¿Tiene algún costo hacer un depósito en efectivo a mi tarjeta de débito Ualá Mastercard?",
-      "answer": "¡No tiene ningún costo! \nAl momento de realizar un depósito en cualquiera de las tiendas de autoservicio, se te cobrará una comisión de entre $8 hasta $10 pesos, que solicita el lugar donde lo realizaste, monto que te bonificaremos SIEMPRE al día siguiente.",
+      "answer": "¡No tiene ningún costo! Al momento de realizar un depósito en cualquiera de las tiendas de autoservicio, se te cobrará una comisión de entre $8 hasta $10 pesos, que solicita el lugar donde lo realizaste, monto que te bonificaremos SIEMPRE todos los viernes.",
       "category": 3
     },
     {
