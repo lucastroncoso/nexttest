@@ -6,12 +6,14 @@ const modulesFolder = "assets/html/modules";
 import { Navbar } from './navbar'
 import { Faq } from './faq'
 import { Home } from './home'
+import { Carrers } from './carrers'
 
 export class Routes {
  
     actualRoute;
     routes = {
         "/" : { page: "home", header: true, footer: true },
+        "/sumate" : { page: "carrers-list", header: false, footer: false },
         "/seguridad" : { page: "security", header: true, footer: true },
         "/faqs" : { page: "faq", header: true, footer: true },
         "/privacidad" : { page: "privacy", header: true, footer: true },
@@ -52,7 +54,8 @@ export class Routes {
     constructor(
         private _navbar = new Navbar(),
         private _faq = new Faq(),
-        private _home = new Home()
+        private _home = new Home(),
+        private _carrers = new Carrers()
     ){
         this.actualRoute = this.routes[path];
     }
@@ -73,6 +76,9 @@ export class Routes {
             switch(this.actualRoute.page){
                 case "home":
                     this._home.load()
+                break
+                case "carrers-list":
+                    this._carrers.init()
                 break
                 case "faq":
                     this._faq.load()
