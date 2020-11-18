@@ -60,6 +60,125 @@ ul.boxUl li i {
     flex-basis: auto;
 }
 
+.carrerHeader .marginContainer {
+    padding: 32px 0;
+    align-items: center;
+}
+
+.carrerMenu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.carrerMenu ul {
+    display: flex;
+}
+
+.carrerMenu ul li {
+    margin-left: 16px;
+}
+
+.carrerHeader .logo img {
+    width: 100%;
+}
+
+.carrerHeader .logo {
+    flex-basis: 140px;
+}
+
+.marginContainer.carrerListContainer {
+    flex-wrap: wrap;
+}
+
+.carrerCategory {
+    flex-basis: 100%;
+    margin-bottom: 64px;
+}
+
+.carrerList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.carrerContainer {
+    flex-basis: 32%;
+    margin-bottom: 32px;
+    display: flex;
+}
+
+.carrer {
+    padding: 16px;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    flex-basis: 100%;
+    cursor: pointer;
+}
+
+.carrerTitle {
+    margin-bottom: 32px;
+}
+
+.carrerCategoryTitle {
+    margin-bottom: 32px;
+    font-size: 32px;
+    font-weight: 600;
+    color: #3e3e3e;
+}
+
+.carrerTitle {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1290cc;
+}
+
+.carrerSubtitle {
+    color: #767676;
+}
+
+.carrerUniqueDescriptionTitle {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.carrerUniqueTitle {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.location {
+    margin-bottom: 74px;
+}
+
+.carrerUniqueContainer {
+    color: #555555;
+}
+
+.carrerUniqueDescription ul {
+    list-style: disc;
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 0em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    line-height: 1.9;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.carrerUniqueDescription {
+    font-size: 18px;
+}
+
+.carrersLogin {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
 @media only screen and (max-width: 1080px) {
 
 .carrouselContent .image {
@@ -75,6 +194,27 @@ ul.boxUl li i {
 
 .imageFix .image {
     padding: 0 10%;
+}
+
+.carrerContainer {
+    flex-basis: 100%;
+    margin: 16px;
+}
+
+.carrerCategoryTitle {
+    margin: 16px;
+}
+
+.carrerHeader {
+    margin: 16px;
+}
+
+.marginContainer.carrerListContainer {
+    padding: 0;
+}
+
+.carrerUniqueContainer {
+    padding: 32px;
 }
 
 }
