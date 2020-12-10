@@ -139,6 +139,11 @@ export const content = [
       "category": 3
     },
     {
+      "question": "¿Tiene algún costo la reposición de la tarjeta?",
+      "answer": "La primera reposición al año no tiene costo. A partir de la segunda tendrá un costo de $130 MX + IVA (recuerda que para solicitarla te pediremos un saldo mínimo en tu cuenta de $130 MN + IVA, de lo contrario no podremos enviarte tu reposición).",
+      "category": 4
+    },
+    {
       "question": "¿Qué requisitos tengo que cumplir para poder solicitar la tarjeta de débito Ualá Mastercard internacional?",
       "answer": "Solo tienes que tener tu INE/ IFE vigente. Si vives en México, pero eres extranjero ¡también puedes pedir tu Ualá! Ten en cuenta que para hacer la solicitud necesitas tu tarjeta residencia temporal o permanente en México.",
       "category": 4
