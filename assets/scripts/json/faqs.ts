@@ -140,7 +140,7 @@ export const content = [
     },
     {
       "question": "¿Tiene algún costo la reposición de la tarjeta?",
-      "answer": "La primera reposición al año no tiene costo. A partir de la segunda tendrá un costo de $130 MX + IVA (recuerda que para solicitarla te pediremos un saldo mínimo en tu cuenta de $130 MN + IVA, de lo contrario no podremos enviarte tu reposición).",
+      "answer": "La primera reposición del año no tiene costo. A partir de la segunda tendrá un costo de $130 MX + IVA (recuerda que para solicitarla deberás tener disponible en tu cuenta al menos el costo de la reposición que es $130 MX + IVA, de lo contrario no podremos procesar tu solicitud y enviarte la reposición de tu tarjeta.",
       "category": 4
     },
     {
