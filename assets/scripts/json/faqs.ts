@@ -162,6 +162,12 @@ export const content = [
     },
     {
       
+      "question": "Olvidé mi PIN ¿Cómo puedo crear uno nuevo?",
+      "answer": 'Si olvidaste tu PIN de cajero o quieres cambiarlo tienes que ir a la sección "Tarjeta", después en "Seguridad" seleccionas la opción "Crear PIN de cajero" y escoges tu nuevo PIN de 4 dígitos. Una vez que el PIN fue creado con éxito, deberás acudir el mismo día a un HSBC, Scotiabank o CitiBanamex haciendo una consulta de saldo o retiro de dinero. Si no acudes el mismo día que generaste tu PIN en la app tendrás que crear uno nuevo y repetir el procedimiento.',
+      "category": 4
+    },
+    {
+      
       "question": "Solicité mi tarjeta y no ha llegado ¿Qué hago?",
       "answer": "Recuerda que el plazo de entrega puede ser de 2 hasta 5 días hábiles ( sin contar sábados, domingos, ni feriados) desde que creamos tu cuenta Ualá (es decir, desde que validamos tus datos y aprobamos tu usuario). Estafeta realizará 3 visitas a tu domicilio para dejar tu tarjeta Ualá, si ninguna entrega fue exitosa se quedará hasta 30 días en la sucursal de Estafeta más cercana. Después de 30 días la tarjeta se destruirá y tendrás que hacer el registro nuevamente. Si tienes dudas puedes escribirnos por el chat de la app de Ualá(recuerda mantenerte en línea así podemos responderte) o bien envíanos un mail a hola@uala.com.mx",
       "category": 4
