@@ -20,6 +20,7 @@ export class Routes {
         "/transferencias" : { page: "transfers", header: true, footer: true },
         //"/pagos" : { page: "payments", header: true, footer: true },
         "/Consulta-los-costos-y-las-comisiones-de-nuestros-productos" : { page: "charge", header: true, footer: true },
+        "/reseteo-de-pin" : { page: "landing-reset-pin", header: false, footer: false },
         //"/inversiones" : { page: "investment", header: true, footer: true },
        // "/psp" : { page: "psp", header: true, footer: true },
         "/contrato" : { page: "contract", header: true, footer: true },
