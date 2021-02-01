@@ -1967,7 +1967,7 @@ p.conditions {
 }
 
 .promoLogo {
-    height: 72px;
+    max-height: 72px;
 }
 
 .promoConditionLogo img {

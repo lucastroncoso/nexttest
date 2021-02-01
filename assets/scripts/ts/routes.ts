@@ -39,6 +39,8 @@ export class Routes {
         "/promociones-condiciones-simpleat" : { page: "promotions-conditions-simpleat", header: true, footer: true },
         "/promociones-condiciones-steam" : { page: "promotions-conditions-steam", header: true, footer: true },
         "/promociones-condiciones-tiendanube" : { page: "promotions-conditions-tiendanube", header: true, footer: true },
+        "/promociones-condiciones-educacionit" : { page: "promotions-conditions-educacionit", header: true, footer: true },
+        "/promociones-condiciones-educacionbiz" : { page: "promotions-conditions-educacionbiz", header: true, footer: true },
         "/tarjeta" : { page: "card", header: true, footer: true },
         "/extracciones" : { page: "extractions", header: true, footer: true },
         "/nosotr@s" : { page: "about", header: true, footer: true },
