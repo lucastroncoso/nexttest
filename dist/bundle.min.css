@@ -1950,6 +1950,7 @@ h1.sectionTitle {
 
 p.conditions {
     color: #888888;
+    word-break: break-word;
 }
 
 .conditionContainer {

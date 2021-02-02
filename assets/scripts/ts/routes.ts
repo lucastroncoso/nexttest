@@ -42,6 +42,7 @@ export class Routes {
         "/promociones-condiciones-tiendanube" : { page: "promotions-conditions-tiendanube", header: true, footer: true },
         "/promociones-condiciones-educacionit" : { page: "promotions-conditions-educacionit", header: true, footer: true },
         "/promociones-condiciones-educacionbiz" : { page: "promotions-conditions-educacionbiz", header: true, footer: true },
+        "/promociones-condiciones-dezba" : { page: "promotions-conditions-dezba", header: true, footer: true },
         "/tarjeta" : { page: "card", header: true, footer: true },
         "/extracciones" : { page: "extractions", header: true, footer: true },
         "/nosotr@s" : { page: "about", header: true, footer: true },
