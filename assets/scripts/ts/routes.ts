@@ -16,7 +16,7 @@ export class Routes {
         "/sumate" : { page: "carrers-list", header: false, footer: false },
         "/seguridad" : { page: "security", header: true, footer: true },
         "/faqs" : { page: "faq", header: true, footer: true },
-        "/privacidad" : { page: "privacy", header: true, footer: true },
+        //"/privacidad" : { page: "privacy", header: true, footer: true },
         "/transferencias" : { page: "transfers", header: true, footer: true },
         //"/pagos" : { page: "payments", header: true, footer: true },
         "/Consulta-los-costos-y-las-comisiones-de-nuestros-productos" : { page: "charge", header: true, footer: true },
