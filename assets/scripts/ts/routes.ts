@@ -21,6 +21,7 @@ export class Routes {
         //"/pagos" : { page: "payments", header: true, footer: true },
         "/Consulta-los-costos-y-las-comisiones-de-nuestros-productos" : { page: "charge", header: true, footer: true },
         "/reseteo-de-pin" : { page: "landing-reset-pin", header: false, footer: false },
+        "/promocion50pesos" : { page: "landing-promocion50pesos", header: false, footer: false },
         //"/inversiones" : { page: "investment", header: true, footer: true },
        // "/psp" : { page: "psp", header: true, footer: true },
         "/contrato" : { page: "contract", header: true, footer: true },
@@ -77,7 +78,9 @@ export class Routes {
         if(this.actualRoute.header) $("header").load(`${modulesFolder}/header.html`, () => {
             this._navbar.bind()
         });
+
         
+
         if(this.actualRoute.footer) $("footer").load(`${modulesFolder}/footer.html`);
 
         $("main").load(`${pagesFolder}/${this.actualRoute.page}.html`, () => {
