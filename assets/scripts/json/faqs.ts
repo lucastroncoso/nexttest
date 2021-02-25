@@ -81,7 +81,7 @@ export const content = [
     },
     {
       "question": "¿Cómo puedo depositar dinero a mi tarjeta Ualá?",
-      "answer": "Puedes depositar a tu tarjeta Ualá de tres diferentes formas: 1.- Con efectivo en cualquier Walmart, Superama, Sam's Club, Bodega Aurrera, Farmacias Guadalajara, Farmacias Benavides, Farmacias del Ahorro, 7-Eleven, Kiosko, Alsuper, El Asturiano , Waldo's, Cajeros PagoRápido, Gestopago, A-tiendas, Multirecargas. 2.-Puedes hacerlo por medio de una transferencia electrónica SPEI con tu cuenta CLABE. 3.-También tienes la opción de hacer una transferencia de una cuenta Ualá a otra. En este tutorial te explicamos cómo hacerlo 👇 https://www.youtube.com/watch?v=PN95vo49eIs",
+      "answer": "Puedes depositar a tu tarjeta Ualá de tres diferentes formas: 1.- Con efectivo en cualquier Walmart, Superama, Sam's Club, Bodega Aurrera, Farmacias Guadalajara, Farmacias Benavides, Farmacias del Ahorro, 7-Eleven, Kiosko, Alsuper, El Asturiano , Waldo's, Cajeros PagoRápido, Gestopago, A-tiendas, Multirecargas. 2.-Puedes hacerlo por medio de una transferencia electrónica SPEI con tu cuenta CLABE. 3.-También tienes la opción de hacer una transferencia de una cuenta Ualá a otra. En este tutorial te explicamos cómo hacerlo 👇 [url]https://www.youtube.com/watch?v=PN95vo49eIs[/url]",
       "category": 3
     },
     {
@@ -163,7 +163,7 @@ export const content = [
     {
       
       "question": "Olvidé mi PIN ¿Cómo puedo crear uno nuevo?",
-      "answer": 'Si olvidaste tu PIN de cajero o quieres cambiarlo tienes que ir a la sección "Tarjeta", después en "Seguridad" seleccionas la opción "Crear PIN de cajero" y escoges tu nuevo PIN de 4 dígitos. Una vez que el PIN fue creado con éxito, deberás acudir el mismo día a un HSBC, Scotiabank o CitiBanamex haciendo una consulta de saldo o retiro de dinero. Si no acudes el mismo día que generaste tu PIN en la app tendrás que crear uno nuevo y repetir el procedimiento.',
+      "answer": 'Si olvidaste tu PIN de cajero o quieres cambiarlo tienes que ir a la sección "Tarjeta", después en "Seguridad" seleccionas la opción "Crear PIN de cajero" y escoges tu nuevo PIN de 4 dígitos. Una vez que el PIN fue creado con éxito, deberás acudir el mismo día a un HSBC, Scotiabank o CitiBanamex haciendo una consulta de saldo o retiro de dinero. (Debes hacer esta visita a cualquiera de las tres redes en menos de 24 horas, de lo contrario tendrás que realizar el proceso nuevamente). ',
       "category": 4
     },
     {
@@ -181,7 +181,7 @@ export const content = [
     {
       
       "question": "Llegó mi tarjeta de débito Ualá Mastercard, ¿qué pasos tengo que seguir?",
-      "answer": "La tarjeta llega inactiva, entonces para poder activarla solo tienes que poner el código PIN que registraste antes de recibir tu tarjeta Ualá. ¡Así de fácil y sencillo podrás usar tu tarjeta de débito Ualá Mastercard internacional dónde quieras! Recuerda, si aceptan Mastercard, aceptan Ualá.",
+      "answer": "La tarjeta llega inactiva, para poder activarla solo tienes que poner los últimos 4 dígitos de tu tarjeta y la fecha de vencimiento. ¡Así de fácil y sencillo podrás usar tu tarjeta de débito Ualá Mastercard internacional donde quieras! Recuerda, si aceptan Mastercard, aceptan Ualá.",
       "category": 4
     },
     {
@@ -227,6 +227,24 @@ export const content = [
       "category": 4
     },
     {
+      
+      "question": "¿Tengo que activar el PIN que me fue asignado?",
+      "answer": "No, el PIN que te fue asignado ya viene activado y listo para utilizar en todas tus compras físicas y retiros de efectivo, solo tienes activar la tarjeta en la app al momento de recibirla con los últimos 4 dígitos y la fecha de vencimiento.",
+      "category": 4
+    },
+    {
+      
+      "question": "¿Puedo cambiar mi PIN que me fue asignado?",
+      "answer": `
+      Sí. Y te lo contamos en 3 fáciles pasos: [br][br]
+1.-Abre tu app de Ualá ☺️, ve a la sección "Tarjeta" 💳, "Seguridad" 🔑[br]
+2.-Selecciona la opción "Crear PIN de cajero"[br]
+3.-Crea un nuevo PIN de 4 dígitos. ✅[br][br]
+Ve a un cajero de HSBC, Scotiabank o CitiBanamex y haz una consulta de saldo o retiro de dinero (Debes hacer esta visita a cualquiera de las tres redes en menos de 24 horas, de lo contrario tendrás que realizar el proceso nuevamente). 
+      `,
+      "category": 4
+    },
+    {
       "question": "Perdí o me robaron mi tarjeta Ualá, ¿qué hago?",
       "answer": "¡Hola! Tienes que denunciar la pérdida o robo de la tarjeta. Para hacerlo, primero congela la tarjeta para que nadie más pueda usarla. Ve a \"tarjeta” y desliza el botón “Congelar tarjeta” hacia la derecha. Ahí va a aparecer un botón que dice “Denunciar pérdida o robo”. 2.Llama al teléfono de denuncia al  (55) 8896 8252 o al *UALA (*8252) desde tu celular. Una vez que confirmas la denuncia, nosotros vamos a crear y emitir una nueva tarjeta que vamos a mandarte al domicilio de entrega que indicaste cuando te registraste en la app en un lapso de 2 a 5 días hábiles. Si te quedó alguna duda, escríbenos al mail hola@uala.com.mx o bien en el chat de la app de Ualá recuerda mantenerte en línea así podemos responderte.",
       "category": 5
@@ -252,7 +270,7 @@ export const content = [
     {
       
       "question": "Se contactaron conmigo por redes sociales pidiéndome los datos de mi tarjeta Ualá, ¿qué hago?",
-      "answer": "Nunca compartas los datos de tu tarjeta, ni muestres los números que están adelante y atrás de ella. Tampoco respondas un mail o un llamado telefónico pidiéndote los datos de tu tarjeta, incluso si parece venir de Ualá.  ¡Aquí te dejamos un tutorial con algunos consejos que seguro te ayudarán! https://youtu.be/kYivqwf5scg",
+      "answer": "Nunca compartas los datos de tu tarjeta, ni muestres los números que están adelante y atrás de ella. Tampoco respondas un mail o un llamado telefónico pidiéndote los datos de tu tarjeta, incluso si parece venir de Ualá.  ¡Aquí te dejamos un tutorial con algunos consejos que seguro te ayudarán! [url]https://youtu.be/kYivqwf5scg[/url]",
       "category": 5
     },
     {
@@ -311,18 +329,6 @@ export const content = [
       
       "question": "¿Cómo puedo hacer una recarga de tiempo aire desde la app de Ualá?",
       "answer": "¡Fácil, rápido y sencillo!. En tu app de Ualá tendrás que ir a la sección de \"Pagos\" y \"recargas de tiempo aire\", después tendrás que seleccionar qué compañía, número de celular y monto a recargar. Recuerda tener saldo en tu Ualá para recargar tiempo aire.",
-      "category": 7
-    },
-    {
-      
-      "question": "¿Qué son las tarjetas de regalo?",
-      "answer": "Las tarjetas de regalo o también conocidos como pines electrónicos son productos enfocados en la recarga de saldo para adquirir un servicio o producto. Al hacer la venta de un PIN o tarjeta de regalo se genera un código para que puedas hacer uso del servicio o producto deseado.",
-      "category": 7
-    },
-    {
-      
-      "question": "Quiero comprar una tarjeta de regalo ¿Qué tengo que hacer?",
-      "answer": "Para comprar una tarjeta de regalo o pin electrónico tendrás que ingresar a la app de Ualá en la sección de \"Pagos\" y \"Tarjetas de regalo\". Despúes elige cuál es la tarjeta que quieres regalar, aquí podrás ver las opciones de monto que tenemos disponibles y por último tendrás que seleccionar el número de celular de la persona a la cual le quieres enviar la tarjeta de regalo o bien buscarlo desde tus contactos. ¡Y listo! La persona recibirá un código por SMS para canjear su tarjeta de regalo.",
       "category": 7
     }
   ]
