@@ -7,6 +7,7 @@ import { Navbar } from './navbar'
 import { Faq } from './faq'
 import { Home } from './home'
 import { Carrers } from './carrers'
+import { Promotion } from './promotion'
 
 export class Routes {
  
@@ -46,6 +47,9 @@ export class Routes {
         "/promociones-condiciones-dezba" : { page: "promotions-conditions-dezba", header: true, footer: true },
         "/promociones-condiciones-cabify" : { page: "promotions-conditions-cabify", header: true, footer: true },
         "/promociones-condiciones-marti" : { page: "promotions-conditions-marti", header: true, footer: true },
+        "/promociones-condiciones-delivery" : { page: "promotions-conditions-delivery", header: true, footer: true },
+        "/promociones-condiciones-suscripciones" : { page: "promotions-conditions-suscriptions", header: true, footer: true },
+        "/promociones-condiciones-canastarosa" : { page: "promotions-conditions-canastarosa", header: true, footer: true },
         "/tarjeta" : { page: "card", header: true, footer: true },
         "/extracciones" : { page: "extractions", header: true, footer: true },
         "/nosotr@s" : { page: "about", header: true, footer: true },
@@ -59,14 +63,16 @@ export class Routes {
         "/prensa-articulo-3" : { page: "press-article-3", header: true, footer: true },
         "/prensa-articulo-4" : { page: "press-article-4", header: true, footer: true },
         "/prensa-articulo-5" : { page: "press-article-5", header: true, footer: true },
-        "/prensa-articulo-6" : { page: "press-article-6", header: true, footer: true }
+        "/prensa-articulo-6" : { page: "press-article-6", header: true, footer: true },
+        "/promociones-condiciones" : { page: "promotions-conditions", header: true, footer: true }
     }; 
 
     constructor(
         private _navbar = new Navbar(),
         private _faq = new Faq(),
         private _home = new Home(),
-        private _carrers = new Carrers()
+        private _carrers = new Carrers(),
+        private _promotion = new Promotion()
     ){
         this.actualRoute = this.routes[path];
     }
@@ -95,6 +101,18 @@ export class Routes {
                 break
                 case "faq":
                     this._faq.load()
+                break
+                case "promotions":
+                    this._promotion.getAllPromotions()
+                break
+                case "promotions-conditions":
+
+                    let url = new URL(window.location.href);
+                    let id = url.searchParams.get("id");
+
+                    this._promotion.getPromotion(id);
+
+                    
                 break
             }
 
