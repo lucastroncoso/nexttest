@@ -232,7 +232,7 @@ export class Templates {
         <div class="promoHomeConditionContainer breakContainer">
             <div class="leftContainer wrapContainer">
                 <div class="promoConditionLogo">
-                    <img src="/assets/images/promotions/${promotion.image}" alt="">
+                    <img src="https://uala-mex-frontend-promotions-dev.s3.amazonaws.com/${promotion.image}" alt="">
                 </div>
                 <div class="promoConditionData">
                     <div class="promoConditionTitle">${promotion.title}</div>
