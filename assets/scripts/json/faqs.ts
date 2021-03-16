@@ -87,7 +87,7 @@ export const content = [
     {
       
       "question": "¿Tiene algún costo hacer un depósito en efectivo a mi tarjeta de débito Ualá Mastercard?",
-      "answer": "¡No tiene ningún costo! Al momento de realizar un depósito en cualquiera de las tiendas de autoservicio, se te cobrará una comisión de entre $8 hasta $10 pesos, que solicita el lugar donde lo realizaste, monto que te bonificaremos SIEMPRE todos los viernes.",
+      "answer": "¡No tiene ningún costo! Al momento de realizar un depósito en cualquiera de las tiendas de autoservicio, se te cobrará una comisión de entre $8 hasta $10 pesos, que solicita el lugar donde lo realizaste, monto que te bonificaremos SIEMPRE.",
       "category": 3
     },
     {
