@@ -46,6 +46,8 @@ export class Routes {
         "/promociones-condiciones-dezba" : { page: "promotions-conditions-dezba", header: true, footer: true },
         "/promociones-condiciones-cabify" : { page: "promotions-conditions-cabify", header: true, footer: true },
         "/promociones-condiciones-marti" : { page: "promotions-conditions-marti", header: true, footer: true },
+        "/promociones-condiciones-delivery" : { page: "promotions-conditions-delivery", header: true, footer: true },
+        "/promociones-condiciones-suscripciones" : { page: "promotions-conditions-suscriptions", header: true, footer: true },
         "/tarjeta" : { page: "card", header: true, footer: true },
         "/extracciones" : { page: "extractions", header: true, footer: true },
         "/nosotr@s" : { page: "about", header: true, footer: true },
