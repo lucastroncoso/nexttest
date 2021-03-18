@@ -1946,6 +1946,8 @@ h1.sectionTitle {
     border: 1px solid #3e69fb;
     border-radius: 50px;
     color: #3e69fb;
+    display: flex;
+    align-items: center;
 }
 
 p.conditions {
@@ -1965,6 +1967,7 @@ p.conditions {
 
 .promoConditionsContainer {
     margin-top: 64px;
+    flex-basis: 100%;
 }
 
 .promoLogo {

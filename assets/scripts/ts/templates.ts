@@ -93,7 +93,7 @@ export class BBCode {
 
 export class Templates {
 
-    faqCategory(data){
+    faqCategory(data) {
 
         return `
         <div class="faqCardContainer" data-category="${data.id}">
@@ -103,15 +103,76 @@ export class Templates {
             </div>
         </div>
         `
-    
+
     }
 
-    faqContent(data){
+    carrerData(carrer) {
+
+        return `
+        
+        <div class="carrerUniqueTitle full">${carrer.name}</div>
+        <div class="location full">${carrer.department} - <i class="fa fa-map-marker" aria-hidden="true"></i></div>
+        <div class="carrerUniqueDescription full">
+            <div class="carrerUniqueDescriptionTitle">Descripciòn</div>
+            <div id="description">${carrer.details[0]["value"]}</div>
+        </div>
+        <div class="carrerUniqueDescription full">
+            <div class="carrerUniqueDescriptionTitle">Requerimentos</div>
+            <div id="requeriments">${carrer.details[1]["value"]}</div>
+        </div>
+        <div class="apply full" id="apply">
+        
+            <script type="comeet-applyform" data-position-uid="${carrer.uid}"></script>
+        </div>
+        `
+
+    }
+
+    carrers(carrers) {
+
+        let html = "";
+
+        carrers.forEach(carrer => {
+
+            html += `
+            <div class="carrerContainer" data-carrer="${carrer.uid}">
+                <div class="carrer">
+                    <div class="carrerTitle">${carrer.name}</div>
+                    <div class="carrerSubtitle">${carrer.department ? carrer.department : ""} ${carrer.experience_level ? ` - ${carrer.experience_level}` : ''}</div>
+                </div>
+            </div>
+            `
+        })
+
+        return html;
+
+    }
+
+    carrerCategories(data) {
+
+        let html = "";
+
+        Object.keys(data).forEach(category => {
+
+
+            html += `
+                <div class="carrerCategory">
+                    <div class="carrerCategoryTitle">${data[category].categoryTitle}</div>
+                    <div class="carrerList">${this.carrers(data[category].carrers)}</div>
+                </div>
+            `;
+
+        });
+
+        return html;
+
+    }
+
+    faqContent(data) {
 
         let bbcode = new BBCode();
 
         return `
-
         <div class="faqResponseContainer close">
             <div class="faqResponse">
                 <div class="faqReponseHeader">
@@ -126,77 +187,68 @@ export class Templates {
         </div>
         
         `
-    
+
+
     }
 
-    carrerData(carrer){
-        
+    promotionHome(promotion) {
+
         return `
-        
-        <div class="carrerUniqueTitle full">${carrer.name}</div>
-
-        <div class="location full">${carrer.department} - <i class="fa fa-map-marker" aria-hidden="true"></i></div>
-
-        <div class="carrerUniqueDescription full">
-            <div class="carrerUniqueDescriptionTitle">Descripciòn</div>
-            <div id="description">${carrer.details[0]["value"]}</div>
+        <div class="promotionContainer">
+            <div class="promotion">
+                <div class="promoLogo">
+                    <img src="https://uala-mex-frontend-promotions-prod.s3.amazonaws.com/${promotion.image}" alt="">
+                </div>
+                <div class="promoTime">${promotion.date}</div>
+                <div class="promoText">${promotion.previewTitle}</div>
+                <a href="/promociones-condiciones?id=${promotion.promotionsid}" class="promoMore blue">Ver mas</a>
+            </div>
         </div>
+        `;
 
-        <div class="carrerUniqueDescription full">
-            <div class="carrerUniqueDescriptionTitle">Requerimentos</div>
-            <div id="requeriments">${carrer.details[1]["value"]}</div>
+    }
+
+    promotionConditions(promotion){
+
+
+        return `
+        <div class="sectionTitle">
+            <div class="sectionBack">
+                <div class="sectionBackIcon">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <a href="/promociones" class="sectionBackTitle">
+                    Promociones
+                </a>
+            </div>
         </div>
-
-        <div class="apply full" id="apply">
-        
-            <script type="comeet-applyform" data-position-uid="${carrer.uid}"></script>
-
-        </div>
+        <div class="promoHomeConditionContainer breakContainer">
+            <div class="leftContainer wrapContainer">
+                <div class="promoConditionLogo">
+                    <img src="https://uala-mex-frontend-promotions-prod.s3.amazonaws.com/${promotion.image}" alt="">
+                </div>
+                <div class="promoConditionData">
+                    <div class="promoConditionTitle">${promotion.title}</div>
+                    <div class="promoConditionSubtitle">${promotion.description}</div>
+                    <div class="promoConditionTime">${promotion.date}</div>
+                    ${ promotion.location ? `<div class="promoConditionLocation"><i class="fas fa-map-marker-alt"></i> ${ promotion.location }</div>`: "" }
+                    ${ promotion.actionText ? `<div class="promoConditionButtom">
+                        <a target="_BLANK" href="${promotion.actionUrl}" class="conditionButtom">${promotion.actionText}</a>
+                    </div>`: "" }
+                </div>
+            </div>
+            <div class="rightContainer desktop">
+                    <div class="image">
+                        <img src="/assets/images/gif/promotions.gif" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="promoConditionsContainer">
+                <h2>Bases y condiciones</h2>
+                <p class="conditions">${promotion.conditions}</p>
+            </div>
         `
 
     }
-
-    carrers(carrers){
-        
-        let html = "";
-
-        carrers.forEach(carrer => {
-
-            html += `
-            <div class="carrerContainer" data-carrer="${carrer.uid}">
-                <div class="carrer">
-                    <div class="carrerTitle">${carrer.name}</div>
-                    <div class="carrerSubtitle">${carrer.department ? carrer.department : ""} ${ carrer.experience_level ? ` - ${carrer.experience_level}` : '' }</div>
-                </div>
-            </div>
-            `
-        })
-
-        return html;
-    
-    }
-
-    carrerCategories(data){
-
-        let html = "";
-
-        Object.keys(data).forEach(category => {
-
-    
-            html += `
-                <div class="carrerCategory">
-                    <div class="carrerCategoryTitle">${ data[category].categoryTitle }</div>
-                    <div class="carrerList">${ this.carrers(data[category].carrers) }</div>
-                </div>
-            `;
-            
-        });
- 
-        return html;
-
-    }
-
-
-   
 
 }
