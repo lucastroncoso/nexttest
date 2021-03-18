@@ -203,7 +203,7 @@ export class Templates {
         <div class="promotionContainer">
             <div class="promotion">
                 <div class="promoLogo">
-                    <img src="https://uala-mex-frontend-promotions-dev.s3.amazonaws.com/${promotion.image}" alt="">
+                    <img src="https://uala-mex-frontend-promotions-prod.s3.amazonaws.com/${promotion.image}" alt="">
                 </div>
                 <div class="promoTime">${promotion.date}</div>
                 <div class="promoText">${promotion.previewTitle}</div>
@@ -232,7 +232,7 @@ export class Templates {
         <div class="promoHomeConditionContainer breakContainer">
             <div class="leftContainer wrapContainer">
                 <div class="promoConditionLogo">
-                    <img src="https://uala-mex-frontend-promotions-dev.s3.amazonaws.com/${promotion.image}" alt="">
+                    <img src="https://uala-mex-frontend-promotions-prod.s3.amazonaws.com/${promotion.image}" alt="">
                 </div>
                 <div class="promoConditionData">
                     <div class="promoConditionTitle">${promotion.title}</div>
