@@ -29,7 +29,7 @@ export const content = [
     },
     {
       "question": "¿Después de registrarme me llega mi tarjeta Ualá? ",
-      "answer": "No. Una vez que validemos tus datos te llegará una notificación a tu celular para crear tu PIN y tu código de seguridad que te servirá para hacer transferencias y pagos. Recuerda que para que el envío de tu tarjeta se realice necesitas crear tu PIN y código, de lo contrario no podremos enviarte tu tarjeta Ualá.",
+      "answer": "¡Sí! Recuerda que tendrás que activarla desde la app con los últimos 4 dígitos y la fecha de vencimiento.",
       "category": 2
     },
     {
@@ -205,7 +205,7 @@ export const content = [
     {
       
       "question": "¿Cómo realizo una compra con mi tarjeta de débito Ualá Mastercard?",
-      "answer": "Para poder realizar una compra, primero tienes que hacer un depósito a tu tarjeta Ualá, ya sea en una tienda de autoservicio, por transferencia electrónica SPEI o desde otra cuenta Ualá. Una vez que se acredite el saldo en tu cuenta de Ualá, puedes usar tu tarjeta en cualquier comercio y/o sitio web del mundo que acepte Mastercard. En este tutorial te explicamos el paso a paso 👇",
+      "answer": "Para poder realizar una compra, primero tienes que hacer un depósito a tu tarjeta Ualá, ya sea en una tienda de autoservicio, por transferencia electrónica SPEI o desde otra cuenta Ualá. Una vez que se acredite el saldo en tu cuenta de Ualá, puedes usar tu tarjeta en cualquier comercio y/o sitio web del mundo que acepte Mastercard. En este tutorial te explicamos el paso a paso: [url]https://youtu.be/0eohCrIKzTw[/url]",
       "category": 4
     },
     {
