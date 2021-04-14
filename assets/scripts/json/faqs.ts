@@ -12,7 +12,7 @@ export const content = [
     {
       
       "question": "¿Qué es Ualá?",
-      "answer": "Ualá es una app para el manejo más fácil de tu cuenta + una tarjeta de débito Mastercard internacional gratis que te permitirá utilizarla para disponer de tus fondos. Con la tarjeta Ualá puedes comprar en cualquier comercio y sitio web del mundo que acepte Mastercard. Además, puedes enviar y recibir dinero a cuentas de otros bancos y usuarios que tengan la tarjeta Ualá gratis e instantáneamente. Conoce más sobre Ualá en este tutorial 👇",
+      "answer": "Ualá es una app para el manejo más fácil de tu cuenta + una tarjeta de débito Mastercard internacional gratis que te permitirá utilizarla para disponer de tus fondos. Con la tarjeta Ualá puedes comprar en cualquier comercio y sitio web del mundo que acepte Mastercard. Además, puedes enviar y recibir dinero a cuentas de otros bancos y usuarios que tengan la tarjeta Ualá gratis e instantáneamente. Conoce más sobre Ualá en este tutorial 👇 [youtube]0eohCrIKzTw[/youtube] ",
       "category": 1
     },
     {

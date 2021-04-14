@@ -30,6 +30,7 @@ export class BBCode {
         '\\[url=(.+?)\\|onclick\\](.+?)\\[/url\\]':      '<a onclick="$1">$2</a>',
         '\\[url=(.+?)\\starget=(.+?)\\](.+?)\\[/url\\]': '<a href="$1" target="$2">$3</a>',
         '\\[url=(.+?)\\](.+?)\\[/url\\]':                '<a href="$1">$2</a>',
+        '\\[youtube\\](.+?)\\[/youtube\\]':  '<iframe style="margin-top:16px; width: 100%; min-height: 300px;" src="https://www.youtube.com/embed/$1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
     
         '\\[a=(.+?)\\](.+?)\\[/a\\]': '<a href="$1" name="$1">$2</a>',
     
