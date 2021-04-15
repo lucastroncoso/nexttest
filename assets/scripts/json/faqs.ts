@@ -80,6 +80,12 @@ export const content = [
       "category": 2
     },
     {
+      
+      "question": "¿Eres extranjero y no puedes ver la app de Ualá en la Play Store ni en App Store?  ", 
+      "answer": "¡Hola! La app está disponible para México. En este caso, tu Play Store o App Store debe estar configurado en otro país. Te explicamos a continuación qué tienes que hacer para poder descargar Ualá en tu celular. [br][br] Si tu celular es Android, sigue estos pasos: ingresa a “Ajustes” o “Configuración” en tu celular, elige “Cuentas” y selecciona “Añadir una cuenta de Google”. Ahí creas una nueva cuenta de Google siguiendo los pasos que te indique el sistema. Una vez que termines de crear la cuenta, vas al Play Store, seleccionas el “Menú” y eliges el nuevo usuario que creaste. Con esta cuenta que creaste en México no deberías tener problemas para bajarte la app. 👌 [br][br] Si tu celular es iOS, sigue estos pasos: ingresa a tu App Store, entra a tu cuenta, selecciona tu cuenta de Apple ID, sobre la opción “País/Región” y luego “Cambiar el país o la región”. Elige México y acepta los Términos y Condiciones. Por último, Apple va a pedirte cambiar los datos de facturación de tu Apple ID: como “Método de pago” selecciona “Ninguno”, completa los datos de facturación con tu domicilio de México y ¡listo! Para más información, ingresa a este link: [url]https://support.apple.com/es-es/HT201389[/url] 👈 ¡Saludos!",
+      "category": 2
+    },
+    {
       "question": "¿Cómo puedo depositar dinero a mi tarjeta Ualá?",
       "answer": "Puedes depositar a tu tarjeta Ualá de tres diferentes formas: 1.- Con efectivo en cualquier Walmart, Superama, Sam's Club, Bodega Aurrera, Farmacias Guadalajara, Farmacias Benavides, Farmacias del Ahorro, 7-Eleven, Kiosko, Alsuper, El Asturiano , Waldo's, Cajeros PagoRápido, Gestopago, A-tiendas, Multirecargas. 2.-Puedes hacerlo por medio de una transferencia electrónica SPEI con tu cuenta CLABE. 3.-También tienes la opción de hacer una transferencia de una cuenta Ualá a otra. En este tutorial te explicamos cómo hacerlo 👇 [url]https://www.youtube.com/watch?v=PN95vo49eIs[/url]",
       "category": 3
