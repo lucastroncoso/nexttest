@@ -64,7 +64,9 @@ export class Routes {
         "/prensa-articulo-4" : { page: "press-article-4", header: true, footer: true },
         "/prensa-articulo-5" : { page: "press-article-5", header: true, footer: true },
         "/prensa-articulo-6" : { page: "press-article-6", header: true, footer: true },
-        "/promociones-condiciones" : { page: "promotions-conditions", header: true, footer: true }
+        "/promociones-condiciones" : { page: "promotions-conditions", header: true, footer: true },
+        "/giveawayInstagram" : { page: "promotions-conditions", header: false, footer: false, redirect: "https://statics.mx.ua.la/tyc/Dina%CC%81mica_Giveaway_Instagram_Uala%CC%81_Me%CC%81xico%20_2021.pdf" },
+        "/giveawayTwitter" : { page: "promotions-conditions", header: false, footer: false, redirect: "https://statics.mx.ua.la/tyc/Dina%CC%81mica_Giveaway_Twitter_Uala%CC%81_Me%CC%81xico_2021.pdf" }
     }; 
 
     constructor(
@@ -80,6 +82,11 @@ export class Routes {
     init(){
  
         if(!this.isValid()) window.location.replace("/");
+
+        if(this.actualRoute.redirect){
+            window.location.href = this.actualRoute.redirect;
+            return false;
+        }
 
         if(this.actualRoute.header) $("header").load(`${modulesFolder}/header.html`, () => {
             this._navbar.bind()
