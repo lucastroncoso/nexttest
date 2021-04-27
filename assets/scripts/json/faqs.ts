@@ -145,6 +145,18 @@ export const content = [
       "category": 3
     },
     {
+      
+      "question": "¿Cómo puedo saber dónde está mi tarjeta?",
+      "answer": `¡Seguir el rastreo de tu tarjeta es muy sencillo! Primero que nada debes de tener actualizada la app de Ualá, cuando verifiquemos tus datos (entre 24 y 72 horas hábiles) podrás seguir el recorrido de tu tarjeta. Entra desde tu celular [url=https://www.uala.com.ar]aquí[/url] o directamente abre tu app en la sección de inicio y luego en "Tu tarjeta está en camino". ¡Así de fácil! Bienvenid@ a Ualá. `,
+      "category": 3
+    },
+    {
+      
+      "question": "¿Cómo puedo depositar en Farmacias del ahorro y Guadalajara?",
+      "answer": `En farmacias de Guadalajara debes de indicarle al cajero que debe seleccionar la opción de pagos a aerolíneas. Esto se debe a una configuración del sistema propio de esas farmacias. Luego de esto, tendrás que darle tu código de barras o código de referencia para que puedan identificar tu cuenta.  `,
+      "category": 3
+    },
+    {
       "question": "¿Tiene algún costo la reposición de la tarjeta?",
       "answer": "La primera reposición del año no tiene costo. A partir de la segunda tendrá un costo de $130 MX + IVA (recuerda que para solicitarla deberás tener disponible en tu cuenta al menos el costo de la reposición que es $130 MX + IVA, de lo contrario no podremos procesar tu solicitud y enviarte la reposición de tu tarjeta.",
       "category": 4
