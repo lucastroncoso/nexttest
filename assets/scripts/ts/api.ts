@@ -1,5 +1,5 @@
 const api = {};
-const API_HOST = "http://localhost:2082";
+const API_HOST = "https://cms.prod.websites.uala.com.mx:2082";
 
 export default class Api {
 
@@ -12,7 +12,7 @@ export default class Api {
       method: 'GET'
     }).then((response) => response.json());
   
-  };
+  }; 
 
 
 }
