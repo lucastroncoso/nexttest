@@ -46,7 +46,7 @@ export const content = [
     {
       
       "question": "¿Qué costo tiene descargar la app de Ualá?",
-      "answer": "¡Ninguno! Además, la tarjeta de débito Ualá Mastercard internacional que vas a obtener es sin cargo de emisión, mantenimiento o cierre. Puedes ver todos nuestros precios en la sección de Comisiones de nuestra web. 👉",
+      "answer": "¡Ninguno! Además, la tarjeta de débito Ualá Mastercard internacional que vas a obtener es sin cargo de emisión, mantenimiento o cierre. Puedes ver todos nuestros precios en la sección de Comisiones de nuestra web. 👉 [url]https://www.uala.com.mx/Consulta-los-costos-y-las-comisiones-de-nuestros-productos[/url]",
       "category": 2
     },
     {
@@ -87,7 +87,7 @@ export const content = [
     },
     {
       "question": "¿Cómo puedo depositar dinero a mi tarjeta Ualá?",
-      "answer": "Puedes depositar a tu tarjeta Ualá de tres diferentes formas: 1.- Con efectivo en cualquier Walmart, Superama, Sam's Club, Bodega Aurrera, Farmacias Guadalajara, Farmacias Benavides, Farmacias del Ahorro, 7-Eleven, Kiosko, Alsuper, El Asturiano , Waldo's, Cajeros PagoRápido, Gestopago, A-tiendas, Multirecargas. 2.-Puedes hacerlo por medio de una transferencia electrónica SPEI con tu cuenta CLABE. 3.-También tienes la opción de hacer una transferencia de una cuenta Ualá a otra. En este tutorial te explicamos cómo hacerlo 👇 [url]https://www.youtube.com/watch?v=PN95vo49eIs[/url]",
+      "answer": "Puedes depositar a tu tarjeta Ualá de tres diferentes formas: 1.- Con efectivo en cualquier Walmart, Superama, Sam's Club, Bodega Aurrera, Farmacias Guadalajara, Farmacias Benavides, Farmacias del Ahorro, 7-Eleven, Kiosko, Alsuper, El Asturiano , Waldo's, Cajeros PagoRápido, Gestopago, A-tiendas, Multirecargas. 2.-Puedes hacerlo por medio de una transferencia electrónica SPEI con tu cuenta CLABE. 3.-También tienes la opción de hacer una transferencia de una cuenta Ualá a otra. En este tutorial te explicamos cómo hacerlo 👇 [youtube]PN95vo49eIs[/youtube]",
       "category": 3
     },
     {
@@ -99,7 +99,7 @@ export const content = [
     {
       
       "question": "No tengo una cuenta bancaria, ¿cómo hago un depósito a mi tarjeta Ualá con efectivo?",
-      "answer": "Para hacer depósitos a tu tarjeta Ualá no necesitas tener una cuenta bancaria. Desde la app de Ualá selecciona la categoría de \"Tarjeta\", después en \"Formas de depositar\" ve a la opción de \"En Efectivo\". Aquí tendrás dos opciones: 1.-Hacer un depósito con código de barras. 2.- Con tu código de referencia, para esto tendrás que mencionar en la tienda de autoservicio que el depósito es por OpenPay o PayNet. Una vez acreditado te llegará una notificación a tu celular con el monto del depósito que hiciste.",
+      "answer": "Para hacer depósitos a tu tarjeta Ualá no necesitas tener una cuenta bancaria. Desde la app de Ualá selecciona la categoría de \"Tarjeta\", después en \"Formas de depositar\" ve a la opción de \"En Efectivo\". Aquí tendrás dos opciones: 1.-Hacer un depósito con código de barras. 2.- Con tu código de referencia, para esto tendrás que mencionar en la tienda de autoservicio que el depósito es por OpenPay o PayNet. Una vez acreditado te llegará una notificación a tu celular con el monto del depósito que hiciste. [youtube]PN95vo49eIs[/youtube]",
       "category": 3
     },
     {
@@ -147,7 +147,7 @@ export const content = [
     {
       
       "question": "¿Cómo puedo saber dónde está mi tarjeta?",
-      "answer": `¡Seguir el rastreo de tu tarjeta es muy sencillo! Primero que nada debes de tener actualizada la app de Ualá, cuando verifiquemos tus datos (entre 24 y 72 horas hábiles) podrás seguir el recorrido de tu tarjeta. Entra desde tu celular [url=https://www.uala.com.ar]aquí[/url] o directamente abre tu app en la sección de inicio y luego en "Tu tarjeta está en camino". ¡Así de fácil! Bienvenid@ a Ualá. `,
+      "answer": `¡Seguir el rastreo de tu tarjeta es muy sencillo! Cuando verifiquemos tus datos (entre 24 y 72 horas hábiles) podrás seguir el recorrido de tu tarjeta. Entra desde tu celular aquí o directamente abre tu app en la sección de inicio y luego en "Tu tarjeta está en camino". ¡Así de fácil! Bienvenid@ a Ualá. `,
       "category": 3
     },
     {
@@ -193,7 +193,7 @@ export const content = [
     {
       
       "question": "Después de llenar mis datos en la App de Ualá ¿Qué sigue?",
-      "answer": "Una vez que completaste el registro en la App y tus datos están validados, te enviaremos una notificación por mail o celular para que tú generes tu código PIN. Cuando llegue tu tarjeta Ualá necesitarás el código que registraste para activarla. Es importante no olvidar o perder el PIN, ya que si lo extravías tendrás que activar tu tarjeta Ualá directamente en un ATM.",
+      "answer": `Una vez que completaste el registro en la App y tus datos están validados, te enviaremos una notificación por mail o celular para que tú generes tu código PIN. Cuando llegue tu tarjeta Ualá necesitarás el código que registraste para activarla. Es importante no olvidar o perder el PIN, ya que si lo extravías tendrás que activar tu tarjeta Ualá directamente en un ATM.`,
       "category": 4
     },
     {
