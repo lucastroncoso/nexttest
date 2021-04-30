@@ -87,7 +87,7 @@ export const content = [
     },
     {
       "question": "¿Cómo puedo depositar dinero a mi tarjeta Ualá?",
-      "answer": "Puedes depositar a tu tarjeta Ualá de tres diferentes formas: 1.- Con efectivo en cualquier Walmart, Superama, Sam's Club, Bodega Aurrera, Farmacias Guadalajara, Farmacias Benavides, Farmacias del Ahorro, 7-Eleven, Kiosko, Alsuper, El Asturiano , Waldo's, Cajeros PagoRápido, Gestopago, A-tiendas, Multirecargas. 2.-Puedes hacerlo por medio de una transferencia electrónica SPEI con tu cuenta CLABE. 3.-También tienes la opción de hacer una transferencia de una cuenta Ualá a otra. En este tutorial te explicamos cómo hacerlo 👇 [youtube]PN95vo49eIs[/youtube]",
+      "answer": "Puedes depositar a tu tarjeta Ualá de tres diferentes formas: 1.- Con efectivo en cualquier Farmacias Guadalajara, Farmacias Benavides, Farmacias del Ahorro, 7-Eleven, Kiosko, Alsuper, El Asturiano , Waldo's, Cajeros PagoRápido, Gestopago, A-tiendas, Multirecargas. 2.-Puedes hacerlo por medio de una transferencia electrónica SPEI con tu cuenta CLABE. 3.-También tienes la opción de hacer una transferencia de una cuenta Ualá a otra. En este tutorial te explicamos cómo hacerlo 👇 [youtube]PN95vo49eIs[/youtube]",
       "category": 3
     },
     {
