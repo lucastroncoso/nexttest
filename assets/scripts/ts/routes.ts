@@ -66,7 +66,8 @@ export class Routes {
         "/prensa-articulo-6" : { page: "press-article-6", header: true, footer: true },
         "/promociones-condiciones" : { page: "promotions-conditions", header: true, footer: true },
         "/giveawayInstagram" : { page: "promotions-conditions", header: false, footer: false, redirect: "https://statics.mx.ua.la/tyc/Dina%CC%81mica_Giveaway_Instagram_Uala%CC%81_Me%CC%81xico%20_2021.pdf" },
-        "/giveawayTwitter" : { page: "promotions-conditions", header: false, footer: false, redirect: "https://statics.mx.ua.la/tyc/Dina%CC%81mica_Giveaway_Twitter_Uala%CC%81_Me%CC%81xico_2021.pdf" }
+        "/giveawayTwitter" : { page: "promotions-conditions", header: false, footer: false, redirect: "https://statics.mx.ua.la/tyc/Dina%CC%81mica_Giveaway_Twitter_Uala%CC%81_Me%CC%81xico_2021.pdf" },
+        "/legales50pesos" : { page: "", header: false, footer: false, redirect: "/legal/Legales Promo 50 pesos Pending_User_Action.pdf" }
     }; 
 
     constructor(
