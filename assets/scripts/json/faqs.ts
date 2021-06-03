@@ -12,7 +12,7 @@ export const content = [
     {
       
       "question": "¿Qué es Ualá?",
-      "answer": "Ualá es una app para el manejo más fácil de tu cuenta + una tarjeta de débito Mastercard internacional gratis que te permitirá utilizarla para disponer de tus fondos. Con la tarjeta Ualá puedes comprar en cualquier comercio y sitio web del mundo que acepte Mastercard. Además, puedes enviar y recibir dinero a cuentas de otros bancos y usuarios que tengan la tarjeta Ualá gratis e instantáneamente. Conoce más sobre Ualá en este tutorial 👇 [youtube]0eohCrIKzTw[/youtube] ",
+      "answer": "Ualá es una app para el manejo más fácil de tus finanzas + una cuenta y una tarjeta de débito Mastercard internacional gratis que te permitirá utilizarla para disponer de tus fondos. Con la tarjeta Ualá puedes comprar en cualquier comercio y sitio web del mundo que acepte Mastercard. Además, con tu cuenta Ualá puedes enviar y recibir dinero a cuentas de otros bancos y usuarios que tengan la cuenta Ualá gratis e instantáneamente. La cuenta Ualá y la tarjeta Ualá son emitidas y operadas por Belanea México S.A.P.I. de C.V. Conoce más sobre Ualá en este tutorial 👇 [youtube]0eohCrIKzTw[/youtube] ",
       "category": 1
     },
     {
@@ -24,7 +24,7 @@ export const content = [
     {
       
       "question": "¿Mis datos están seguros al compartirlos con Ualá?",
-      "answer": "Todos los datos personales que proporcionas con motivos de registro a través de la Aplicación están protegidos en apego a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares y Aviso de Privacidad que Ualá pone a su disposición a través de la Aplicación y Página Web.",
+      "answer": "Todos los datos personales que proporcionas con motivos de registro a través de la Aplicación están protegidos en apego a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares y Aviso de Privacidad que Ualá pone a su disposición a través de la Aplicación y Página Web. Adicionalmente, se da cumplimiento a la obligación de confidencialidad a que se refiere el artículo 73 de la Ley para Regular a las Instituciones de Tecnología Financiera.",
       "category": 1
     },
     {
@@ -87,7 +87,7 @@ export const content = [
     },
     {
       "question": "¿Cómo puedo depositar dinero a mi tarjeta Ualá?",
-      "answer": "Puedes depositar a tu tarjeta Ualá de tres diferentes formas: 1.- Con efectivo en cualquier Farmacias Guadalajara, Farmacias Benavides, Farmacias del Ahorro, 7-Eleven, Kiosko, Alsuper, El Asturiano , Waldo's, Cajeros PagoRápido, Gestopago, A-tiendas, Multirecargas. 2.-Puedes hacerlo por medio de una transferencia electrónica SPEI con tu cuenta CLABE. 3.-También tienes la opción de hacer una transferencia de una cuenta Ualá a otra. En este tutorial te explicamos cómo hacerlo 👇 [youtube]PN95vo49eIs[/youtube]",
+      "answer": "Puedes depositar a tu tarjeta Ualá de tres diferentes formas: 1.- Con efectivo en cualquier Farmacias Guadalajara, Farmacias Benavides, Farmacias del Ahorro, 7-Eleven, Kiosko, Alsuper, El Asturiano , Waldo's, Cajeros PagoRápido, Gestopago, A-tiendas, Multirecargas. 2.-Puedes hacerlo por medio de una transferencia electrónica SPEI con tu cuenta CLABE. 3.-También tienes la opción de hacer una transferencia de una cuenta Ualá a otra. En este tutorial te explicamos cómo hacerlo 👇 [youtube]9oOcZ9b_8zU[/youtube]",
       "category": 3
     },
     {
