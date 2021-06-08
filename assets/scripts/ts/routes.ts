@@ -65,9 +65,10 @@ export class Routes {
         "/prensa-articulo-5" : { page: "press-article-5", header: true, footer: true },
         "/prensa-articulo-6" : { page: "press-article-6", header: true, footer: true },
         "/promociones-condiciones" : { page: "promotions-conditions", header: true, footer: true },
-        "/giveawayInstagram" : { page: "promotions-conditions", header: false, footer: false, redirect: "https://statics.mx.ua.la/tyc/Dina%CC%81mica_Giveaway_Instagram_Uala%CC%81_Me%CC%81xico%20_2021.pdf" },
-        "/giveawayTwitter" : { page: "promotions-conditions", header: false, footer: false, redirect: "https://statics.mx.ua.la/tyc/Dina%CC%81mica_Giveaway_Twitter_Uala%CC%81_Me%CC%81xico_2021.pdf" },
+        "/giveawayInstagram" : { page: "", header: false, footer: false, redirect: "https://statics.mx.ua.la/tyc/Dina%CC%81mica_Giveaway_Instagram_Uala%CC%81_Me%CC%81xico%20_2021.pdf" },
+        "/giveawayTwitter" : { page: "", header: false, footer: false, redirect: "https://statics.mx.ua.la/tyc/Dina%CC%81mica_Giveaway_Twitter_Uala%CC%81_Me%CC%81xico_2021.pdf" },
         "/legales50pesos" : { page: "", header: false, footer: false, redirect: "/legal/Legales Promo 50 pesos Pending_User_Action.pdf" },
+        "/promo50pesosmayo" : { page: "", header: false, footer: false, redirect: "https://statics.mx.ua.la/tyc/Campana_50_pesos_2021.pdf" },
         "/tyc_programa_referidos" : { page: "tyc_programa_referidos", header: false, footer: false }
     }; 
  
