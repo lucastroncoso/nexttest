@@ -205,7 +205,7 @@ export const content = [
     {
       
       "question": "¿Cuál es el saldo disponible que tengo para comprar con mi tarjeta de débito Ualá Mastercard?",
-      "answer": "La tarjeta Ualá es una tarjeta de débito; el saldo que ingreses en la cuenta será el mismo que tengas para hacer tus compas o pagos de servicios. Puedes verlo desde el “inicio” de la app de Ualá. Ingresa a la app de Ualá con tu usuario y contraseña, y revisa el saldo que tienes disponible.",
+      "answer": "La tarjeta Ualá es una tarjeta de débito; el saldo que ingreses en la cuenta será el mismo que tengas para hacer tus compras o pagos de servicios. Puedes verlo desde el “inicio” de la app de Ualá. Ingresa a la app de Ualá con tu usuario y contraseña, y revisa el saldo que tienes disponible.",
       "category": 4
     },
     {
@@ -293,7 +293,7 @@ Ve a un cajero de HSBC, Scotiabank o CitiBanamex y haz una consulta de saldo o r
     },
     {
       "question": "¿Puedo hacer una transferencia bancaria desde la app de Ualá?",
-      "answer": "¡Claro! Desde tu app debes de acceder en la categoría de transferencias y después a la sección \"No tiene Ualá\". Posteriormente tendrás que poner la CLABE, el banco al cual quieres transferir el dinero y el nombre del titular de la tarjeta. Finalmente verificar que los datos estén correctos e ingresar el monto que deseas transferir.",
+      "answer": `¡Claro! Desde tu app debes de acceder en la categoría de transferencias y después a la sección "No tiene Ualá". Posteriormente tendrás que poner la CLABE y el nombre del titular de la tarjeta. Finalmente verificar que los datos estén correctos e ingresar el monto que deseas transferir.`,
       "category": 6
     },
     {
