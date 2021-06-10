@@ -9,26 +9,27 @@ import { Home } from './home'
 import { Carrers } from './carrers'
 import { Promotion } from './promotion'
 
-export class Routes { 
- 
+export class Routes {
+
     actualRoute;
     routes = {
-        "/" : { page: "home", header: true, footer: true },
-        "/sumate" : { page: "carrers-list", header: false, footer: false },
-        "/seguridad" : { page: "security", header: true, footer: true },
-        "/faqs" : { page: "faq", header: true, footer: true },
+        "/": { page: "home", header: true, footer: true },
+        "/sumate": { page: "carrers-list", header: false, footer: false },
+        "/seguridad": { page: "security", header: true, footer: true },
+        "/faqs": { page: "faq", header: true, footer: true },
         //"/privacidad" : { page: "privacy", header: true, footer: true },
-        "/transferencias" : { page: "transfers", header: true, footer: true },
+        "/transferencias": { page: "transfers", header: true, footer: true },
         //"/pagos" : { page: "payments", header: true, footer: true },
-        "/Consulta-los-costos-y-las-comisiones-de-nuestros-productos" : { page: "charge", header: true, footer: true },
-        "/reseteo-de-pin" : { page: "landing-reset-pin", header: false, footer: false },
-        "/promocion50pesos" : { page: "landing-promocion50pesos", header: false, footer: false },
+        "/Consulta-los-costos-y-las-comisiones-de-nuestros-productos": { page: "charge", header: true, footer: true },
+        "/reseteo-de-pin": { page: "landing-reset-pin", header: false, footer: false },
+        "/promocion50pesos": { page: "landing-promocion50pesos", header: false, footer: false },
+        "/promocion50pesosMayo": { page: "landing-promocion50pesosMayo", header: false, footer: false },
         //"/inversiones" : { page: "investment", header: true, footer: true },
-       // "/psp" : { page: "psp", header: true, footer: true },
-        "/contrato" : { page: "contract", header: true, footer: true },
-        "/contacto" : { page: "contact", header: true, footer: true },
-        "/terminos-y-condiciones" : { page: "conditions", header: true, footer: true },
-        "/promociones" : { page: "promotions", header: true, footer: true },
+        // "/psp" : { page: "psp", header: true, footer: true },
+        "/contrato": { page: "contract", header: true, footer: true },
+        "/contacto": { page: "contact", header: true, footer: true },
+        "/terminos-y-condiciones": { page: "conditions", header: true, footer: true },
+        "/promociones": { page: "promotions", header: true, footer: true },
         // "/promociones-condiciones-coderhouse" : { page: "promotions-conditions-coderhouse", header: true, footer: true },
         // "/promociones-condiciones-justo" : { page: "promotions-conditions-justo", header: true, footer: true },
         // "/promociones-condiciones-openenglish" : { page: "promotions-conditions-openenglish", header: true, footer: true },
@@ -50,93 +51,93 @@ export class Routes {
         // "/promociones-condiciones-delivery" : { page: "promotions-conditions-delivery", header: true, footer: true },
         // "/promociones-condiciones-suscripciones" : { page: "promotions-conditions-suscriptions", header: true, footer: true },
         // "/promociones-condiciones-canastarosa" : { page: "promotions-conditions-canastarosa", header: true, footer: true },
-        "/tarjeta" : { page: "card", header: true, footer: true },
-        "/extracciones" : { page: "extractions", header: true, footer: true },
-        "/nosotr@s" : { page: "about", header: true, footer: true },
-        "/trabajar-en-uala" : { page: "carrers", header: true, footer: true },
-        "/prensa" : { page: "press", header: true, footer: true },
-        "/prensa-sobre" : { page: "press-about", header: true, footer: true },
-        "/prensa-pier" : { page: "press-founder", header: true, footer: true },
-        "/prensa-comunicados" : { page: "press-articles", header: true, footer: true },
-        "/prensa-articulo-1" : { page: "press-article-1", header: true, footer: true },
-        "/prensa-articulo-2" : { page: "press-article-2", header: true, footer: true },
-        "/prensa-articulo-3" : { page: "press-article-3", header: true, footer: true },
-        "/prensa-articulo-4" : { page: "press-article-4", header: true, footer: true },
-        "/prensa-articulo-5" : { page: "press-article-5", header: true, footer: true },
-        "/prensa-articulo-6" : { page: "press-article-6", header: true, footer: true },
-        "/promociones-condiciones" : { page: "promotions-conditions", header: true, footer: true },
-        "/giveawayInstagram" : { page: "", header: false, footer: false, redirect: "https://statics.mx.ua.la/tyc/Dina%CC%81mica_Giveaway_Instagram_Uala%CC%81_Me%CC%81xico%20_2021.pdf" },
-        "/giveawayTwitter" : { page: "", header: false, footer: false, redirect: "https://statics.mx.ua.la/tyc/Dina%CC%81mica_Giveaway_Twitter_Uala%CC%81_Me%CC%81xico_2021.pdf" },
-        "/legales50pesos" : { page: "", header: false, footer: false, redirect: "/legal/Legales Promo 50 pesos Pending_User_Action.pdf" },
-        "/promo50pesosmayo" : { page: "", header: false, footer: false, redirect: "https://statics.mx.ua.la/tyc/Campana_50_pesos_2021.pdf" },
-        "/tyc_programa_referidos" : { page: "tyc_programa_referidos", header: false, footer: false }
-    }; 
- 
+        "/tarjeta": { page: "card", header: true, footer: true },
+        "/extracciones": { page: "extractions", header: true, footer: true },
+        "/nosotr@s": { page: "about", header: true, footer: true },
+        "/trabajar-en-uala": { page: "carrers", header: true, footer: true },
+        "/prensa": { page: "press", header: true, footer: true },
+        "/prensa-sobre": { page: "press-about", header: true, footer: true },
+        "/prensa-pier": { page: "press-founder", header: true, footer: true },
+        "/prensa-comunicados": { page: "press-articles", header: true, footer: true },
+        "/prensa-articulo-1": { page: "press-article-1", header: true, footer: true },
+        "/prensa-articulo-2": { page: "press-article-2", header: true, footer: true },
+        "/prensa-articulo-3": { page: "press-article-3", header: true, footer: true },
+        "/prensa-articulo-4": { page: "press-article-4", header: true, footer: true },
+        "/prensa-articulo-5": { page: "press-article-5", header: true, footer: true },
+        "/prensa-articulo-6": { page: "press-article-6", header: true, footer: true },
+        "/promociones-condiciones": { page: "promotions-conditions", header: true, footer: true },
+        "/giveawayInstagram": { page: "", header: false, footer: false, redirect: "https://statics.mx.ua.la/tyc/Dina%CC%81mica_Giveaway_Instagram_Uala%CC%81_Me%CC%81xico%20_2021.pdf" },
+        "/giveawayTwitter": { page: "", header: false, footer: false, redirect: "https://statics.mx.ua.la/tyc/Dina%CC%81mica_Giveaway_Twitter_Uala%CC%81_Me%CC%81xico_2021.pdf" },
+        "/legales50pesosAbril": { page: "", header: false, footer: false, redirect: "/legal/legales-promocion-50-pesos-Abril.pdf" },
+        "/legales50pesosMayo": { page: "", header: false, footer: false, redirect: "/legal/legales-promocion-50-pesos-mayo.pdf" },
+        "/tyc_programa_referidos": { page: "tyc_programa_referidos", header: false, footer: false }
+    };
+
     constructor(
         private _navbar = new Navbar(),
         private _faq = new Faq(),
         private _home = new Home(),
         private _carrers = new Carrers(),
         private _promotion = new Promotion()
-    ){
+    ) {
         this.actualRoute = this.routes[path];
     }
 
-    init(){
- 
-        if(!this.isValid()) window.location.replace("/");
+    init() {
 
-        if(this.actualRoute.redirect){
+        if (!this.isValid()) window.location.replace("/");
+
+        if (this.actualRoute.redirect) {
             window.location.href = this.actualRoute.redirect;
             return false;
         }
 
-        if(this.actualRoute.header) $("header").load(`${modulesFolder}/header.html`, () => {
+        if (this.actualRoute.header) $("header").load(`${modulesFolder}/header.html`, () => {
             this._navbar.bind()
         });
 
-        
 
-        if(this.actualRoute.footer) $("footer").load(`${modulesFolder}/footer.html`);
+
+        if (this.actualRoute.footer) $("footer").load(`${modulesFolder}/footer.html`);
 
         $("main").load(`${pagesFolder}/${this.actualRoute.page}.html`, () => {
-            
-            
-            switch(this.actualRoute.page){
+
+
+            switch (this.actualRoute.page) {
                 case "home":
                     this._home.load()
-                break
+                    break
                 case "carrers-list":
                     this._carrers.init()
-                break
+                    break
                 case "faq":
                     this._faq.load()
-                break
+                    break
                 case "promotions":
                     this._promotion.getAllPromotions()
-                break
-                case "promotions-conditions": 
+                    break
+                case "promotions-conditions":
 
                     let url = new URL(window.location.href);
                     let id = url.searchParams.get("id");
 
                     this._promotion.getPromotion(id);
-                    
-                break
+
+                    break
             }
 
-            if(window.location.hash != ""){
-          
-                    document.getElementById(window.location.hash.slice(1)).scrollIntoView();
-              
+            if (window.location.hash != "") {
+
+                document.getElementById(window.location.hash.slice(1)).scrollIntoView();
+
             }
         });
 
-        
+
 
     }
 
-    isValid(){
+    isValid() {
         return !!this.routes[path];
     }
 
