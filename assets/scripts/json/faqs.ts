@@ -187,7 +187,7 @@ export const content = [
     {
       
       "question": "Solicité mi tarjeta y no ha llegado ¿Qué hago?",
-      "answer": "Recuerda que el plazo de entrega puede ser de 2 hasta 5 días hábiles ( sin contar sábados, domingos, ni feriados) desde que creamos tu cuenta Ualá (es decir, desde que validamos tus datos y aprobamos tu usuario). Estafeta realizará 3 visitas a tu domicilio para dejar tu tarjeta Ualá, si ninguna entrega fue exitosa se quedará hasta 30 días en la sucursal de Estafeta más cercana. Después de 30 días la tarjeta se destruirá y tendrás que hacer el registro nuevamente. Si tienes dudas puedes escribirnos por el chat de la app de Ualá(recuerda mantenerte en línea así podemos responderte) o bien envíanos un mail a hola@uala.com.mx",
+      "answer": "Una vez que completaste el registro en la App y tus datos están validados, te enviaremos tu tarjeta Ualá. Cuando llegue tu tarjeta podrás ver el PIN que se te asignó, te sirve para hacer retiros en ATM´s y compras físicas. Si quieres cambiar tu PIN tendrás que seguir estos 3 simples pasos: https://www.uala.com.mx/reseteo-de-pin",
       "category": 4
     },
     {

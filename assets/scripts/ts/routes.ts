@@ -18,7 +18,7 @@ export class Routes {
         "/seguridad": { page: "security", header: true, footer: true },
         "/faqs": { page: "faq", header: true, footer: true },
         //"/privacidad" : { page: "privacy", header: true, footer: true },
-        "/transferencias": { page: "transfers", header: true, footer: true },
+        "/transferencias": { page: "transfers", header: true, footer: true }, 
         //"/pagos" : { page: "payments", header: true, footer: true },
         "/Consulta-los-costos-y-las-comisiones-de-nuestros-productos": { page: "charge", header: true, footer: true },
         "/reseteo-de-pin": { page: "landing-reset-pin", header: false, footer: false },
