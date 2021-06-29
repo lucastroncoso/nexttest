@@ -69,7 +69,7 @@ export class Routes {
         "/giveawayInstagram": { page: "", header: false, footer: false, redirect: "https://statics.mx.ua.la/tyc/Dina%CC%81mica_Giveaway_Instagram_Uala%CC%81_Me%CC%81xico%20_2021.pdf" },
         "/giveawayTwitter": { page: "", header: false, footer: false, redirect: "https://statics.mx.ua.la/tyc/Dina%CC%81mica_Giveaway_Twitter_Uala%CC%81_Me%CC%81xico_2021.pdf" },
         "/legales50pesosAbril": { page: "", header: false, footer: false, redirect: "/legal/legales-promocion-50-pesos-Abril.pdf" },
-        "/legales50pesosMayo": { page: "", header: false, footer: false, redirect: "/legal/Campaña 50 pesos P.U.A Mayo-20_06_21.pdf" },
+        "/legales50pesosMayo": { page: "", header: false, footer: false, redirect: "legal/legales50pesos.pdf" },
         "/tyc_programa_referidos": { page: "tyc_programa_referidos", header: false, footer: false }
     };
 
