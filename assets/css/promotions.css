@@ -23,6 +23,15 @@
     display: flex;
 }
 
+.promoListText {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #4470fa;
+    margin-bottom: 64px;
+    margin: 0 10%;
+}
+
 .loadingPromotions {
     width: 100%;
     text-align: center;
