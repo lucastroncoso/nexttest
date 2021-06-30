@@ -200,8 +200,8 @@ export class Templates {
                 <div class="promoLogo">
                     <img src="https://uala-mex-frontend-promotions-prod.s3.amazonaws.com/${promotion.image}" alt="">
                 </div>
-                <div class="promoTime">${promotion.date}</div>
                 <div class="promoText">${promotion.previewTitle}</div>
+                <div class="promoTime">${promotion.date}</div>
                 <a href="/promociones-condiciones?id=${promotion.promotionsid}" class="promoMore blue">Ver mas</a>
             </div>
         </div>

@@ -1848,6 +1848,7 @@ h1.sectionTitle {
 .promoListContainer {
     flex-wrap: wrap;
     padding: 64px 0;
+    width: 100%;
 }
 
 .promoListContainer .searchContainer {
@@ -1867,20 +1868,26 @@ h1.sectionTitle {
     display: flex;
 }
 
+.loadingPromotions {
+    width: 100%;
+    text-align: center;
+}
+
 .promotion {
     background: white;
     flex-basis: 100%;
     margin: 16px;
-    border-radius: 4px;
-    padding: 16px;
-    height: 15vw;
-    align-content: center;
+    box-shadow: 0px 2px 9px #d4d4d4;
+    border-radius: 32px;
+    padding: 24px 16px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .promoLogo {
-    /* display: flex; */
+    height: 72px;
+    display: flex;
+    align-items: center;
     justify-content: center;
     margin-bottom: 16px;
 }
@@ -2010,8 +2017,34 @@ p.conditions {
     color: #1f97de;
 }
 
+.bannerPromotions {
+    flex-basis: 100%;
+}
+
+.bannerPromotions img {
+    width: 100%;
+}
+
+.imageBanner {
+    margin-top: 72px;
+}
+
+
+.imageBanner img {
+    width: 100%;
+}
+
+.promotionsContainer {
+    padding-top: 0px;
+}
+
+
 @media only screen and (max-width: 1080px) {
 
+
+    .imageBanner {
+        margin-top: 48px;
+    }
     .promotionContainer {
         flex-basis: 100%;
     }
