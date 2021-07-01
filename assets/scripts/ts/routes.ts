@@ -17,6 +17,7 @@ export class Routes {
         "/sumate": { page: "carrers-list", header: false, footer: false },
         "/seguridad": { page: "security", header: true, footer: true },
         "/faqs": { page: "faq", header: true, footer: true },
+        "/legales" : { page: "privacy", header: true, footer: true },
         //"/privacidad" : { page: "privacy", header: true, footer: true },
         "/transferencias": { page: "transfers", header: true, footer: true },
         //"/pagos" : { page: "payments", header: true, footer: true },
