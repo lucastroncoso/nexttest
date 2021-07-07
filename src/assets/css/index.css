@@ -1,0 +1,6 @@
+.blueWaveContainer {
+    background: url(/assets/images/bg/waveTopDesktopBlue.svg) top /100% auto, url(/assets/images/bg/waveBottomDesktopBlue.svg) bottom/100% auto, linear-gradient(#dee8ff,#f2f7ff) content-box;
+    background-repeat: no-repeat;
+    padding-bottom: 3.2vw;
+    padding-top: 4vw;
+}
