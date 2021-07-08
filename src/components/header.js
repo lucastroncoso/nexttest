@@ -1,7 +1,55 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+function MenuList(props) {
+
+    return (
+        <div className="menu-list shadow-md bg-white border border-gray-100 absolute w-64 -ml-16 rounded-md py-4 z-10">
+            {
+                props.list.map(option=> (
+                    <div className="py-2 px-6 hover:bg-gray-50 cursor-pointer">
+                        { option.href ? <Link href={option.href}><div>{option.title}</div></Link> : <div>{option.title}</div> }
+                    </div>
+                ))
+            }
+        </div>
+    )
+
+}
+
+function MenuOption(props) {
+
+    return (
+        <div className="ml-12 relative menu-option">
+            <div className="cursor-pointer">
+                {
+                    props.href ? <Link href={props.href}><div>{props.title}</div></Link> : <div>{props.title}</div>
+                }
+            </div>
+            {
+                props.list && <MenuList list={props?.list}/>
+            }
+        </div>
+    )
+
+}
+
 export default function Header(props) {
+
+    const menu = [
+        {
+            title: "Funcionalidades",
+            list: [
+                { title: "Tarjeta", href: "/tarjeta" },
+                { title: "Transferencias", href: "/transferencias" },
+                { title: "Retiros", href: "/extracciones" }
+            ]
+        },
+        { title: "Ayuda y Seguridad" },
+        { title: "Sobre Ualá" },
+        { title: "Costos", href: "/costos" },
+        { title: "Promociones" },
+    ]
 
     return (
         <div className="">
@@ -14,11 +62,9 @@ export default function Header(props) {
                     </div>
                     <div className="col-span-8 flex items-center">
                         <div className="flex w-full justify-end text-lg text-gray-500 mt-2">
-                            <div className="ml-12">Funcionalidades</div>
-                            <div className="ml-12">Ayuda y Seguridad</div>
-                            <div className="ml-12">Sobre Ualá</div>
-                            <div className="ml-12">Costos</div>
-                            <div className="ml-12">Promociones</div>
+                            {
+                                menu.map(option => <MenuOption {...option} />)
+                            }
                         </div>
                     </div>
 

@@ -11,3 +11,5 @@
 .text { @apply text-gray-500 text-lg leading-9 }
 .link { @apply text-blue-500 underline }
 p { @apply my-4 }
+.menu-list { @apply hidden }
+.menu-option:hover .menu-list { @apply block }
