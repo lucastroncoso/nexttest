@@ -4,3 +4,7 @@
     padding-bottom: 3.2vw;
     padding-top: 4vw;
 }
+
+
+.title-2 { @apply text-blue-500 text-4xl font-medium; } 
+.link { @apply text-blue-500 underline }

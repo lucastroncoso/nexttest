@@ -10,7 +10,7 @@ export default function Header(props){
                         <Image width={80} height={40} src="/assets/images/logotipo.svg"></Image>
                     </div>
                     <div className="col-span-8 flex items-center">
-                        <div className="flex w-full justify-end text-lg text-gray-600 mt-2">
+                        <div className="flex w-full justify-end text-lg text-gray-500 mt-2">
                             <div className="ml-12">Funcionalidades</div>
                             <div className="ml-12">Ayuda y Seguridad</div>
                             <div className="ml-12">Sobre Ualà</div>
