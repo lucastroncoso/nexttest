@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { useState, useEffect, useRef } from "react";
 import Layout from "../components/layout"
 import Image from "next/image";
 import Animation from "./../components/animation";
@@ -46,7 +47,48 @@ function Box(props) {
 
 }
 
-export default function Home() {
+function Onboarding() {
+
+  const [step, setStep] = useState(1);
+  const prevScrollY = useRef(0);
+
+  const handleScroll = () => {
+
+      const currentScrollY = window.scrollY;
+
+      if (prevScrollY.current < currentScrollY) {
+          changePosition(currentScrollY);
+          prevScrollY.current = currentScrollY;
+      }
+
+  };
+
+  const changePosition = scrollY => {
+
+    let element =  document.querySelector('#onboardingSteps');
+    let bodyRect = document.body.getBoundingClientRect(),
+        elemRect = element.getBoundingClientRect(),
+        offset   = elemRect.top - bodyRect.top;
+
+    let actual = scrollY - (offset - window.innerHeight);
+    let from = offset - window.innerHeight;
+    let to = offset - window.innerHeight + elemRect.height;
+    let percent = actual / (elemRect.height + (window.innerHeight / 5)) * 100;
+    let step = Math.floor(percent / (100 / 4));
+
+    console.log(bodyRect)
+    if(step > 0 && step <= 4){
+      setStep(step)
+    }
+  }
+
+  useEffect(() => {
+
+      // Bind scoll
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+
+  }, []);
 
   const onboardingSteps = [
     { image: "descargar.png", text: "Descarga la app desde Play Store o App Store en tu celular." },
@@ -54,6 +96,28 @@ export default function Home() {
     { image: "pin.png", text: "Recibe tu tarjeta Ualá dentro de los 5 días hábiles, gratis y en todo el país." },
     { image: "tarjeta.png", text: "¡Activa tu tarjeta desde la app y carga saldo para empezar a usarla!" }
   ];
+
+  return (
+    <div className="grid grid-cols-4 pt-8 pb-20 relative">
+      <div style={{ left: "5%" }} className={`absolute duration-1000 ease-in-out transition-width w-0 w-${step - 1 }/4  bg-blue-500 h-2 top-20 rounded-full`}></div>
+      {
+        onboardingSteps.map((s, index) => (
+          <div onClick={() => setStep(4)} key={index} className={`transition delay-200 ${index >= step ? 'opacity-0' : ''}`}>
+            <div className=""><Image src={`/assets/images/${s.image}`} width={100} height={100} /></div>
+            <div className="mt-4 w-5/6">
+              <span className="text-blue-600 mr-1">{index + 1}.</span>
+              <span className="text-gray-500">{s.text}</span>
+            </div>
+          </div>
+        )
+        )
+      }
+    </div>
+  )
+
+}
+
+export default function Home() {
 
   const features = [
     { image: "retiro.svg", title: "Retiros de efectivo", text: "Retira efectivo cuando lo necesites desde cualquier cajero ATM del país y en el extranjero", link: "/extracciones" },
@@ -108,27 +172,12 @@ export default function Home() {
 
         </Container>
         {/* Blue wave */}
-        <div className="blueWaveContainer my-16">
+        <div className="blueWaveContainer my-16"  id="onboardingSteps">
           <Container>
             <div className="mt-8 mb-4">
               <span className="title-2">¿Cómo sumarte a Ualá?</span>
             </div>
-            <div className="grid grid-cols-4 pt-8 pb-20 relative">
-              <div style={{ left: "5%", width: "75%"}} className="absolute transition delay-200 bg-blue-500 h-2 top-20 rounded-full"></div>
-              {
-                onboardingSteps.map((step, index) => (
-                  <div key={index} className="">
-                    <div className="opacity-50"><Image src={`/assets/images/${step.image}`} width={100} height={100} /></div>
-                    <div className="mt-4 w-5/6">
-                      <span className="text-blue-600 mr-1">{index + 1}.</span>
-                      <span className="text-gray-500">{step.text}</span>
-                    </div>
-                  </div>
-                )
-                )
-              }
-            </div>
-
+            <Onboarding />
           </Container>
         </div>
         {/* Depositos */}

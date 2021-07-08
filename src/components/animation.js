@@ -4,16 +4,10 @@ export default function Animation(props) {
 
     const width = 4096;
     const height = 2730;
+    const frame = { width: width / 10, height: height / 4 };
     const [zoom, setZoom] = useState(props.zoom || 1);
-
-    const frame = { width: width / 10, height: height / 4 }
-
     const [animationPosition, setAnimationPosition] = useState({ x: 10, y: 4 });
-
-    console.log(zoom) 
     const [animationSize, setAnimationSize] = useState({ height: frame.height, width: frame.width * 1.3 })
-
- 
     const prevScrollY = useRef(0);
 
     const handleScroll = () => {
