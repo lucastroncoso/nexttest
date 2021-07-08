@@ -37,7 +37,7 @@ export default function Tarjeta(props) {
                 {/* ¿Cómo depositar dinero a tu Ualá? */}
                 <Container>
                     <div className="grid lg:grid-cols-2 my-24">
-                        <div className="flex items-center mr-12">
+                        <div className="flex mr-12">
                             <div>
                                 <div className="mb-4">
                                     <Image src="/assets/images/transferIcon1.svg" width={68} height={68}/>
@@ -48,7 +48,7 @@ export default function Tarjeta(props) {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex items-center ml-12">
+                        <div className="flex ml-12">
                             <div>
                                 <div className="mb-4">
                                     <Image src="/assets/images/transferIcon2.svg" width={68} height={68}/>
