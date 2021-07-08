@@ -1,23 +1,10 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import { useState, useEffect, useRef } from "react";
 import Layout from "../components/layout"
 import Image from "next/image";
 import Animation from "./../components/animation";
+import Container from '../components/container';
 
-function Container(props) {
-
-  return (
-    <div className="container mx-auto">
-      <div className="grid grid-cols-12">
-        <div className="col-span-10 col-start-2">
-          {props.children}
-        </div>
-      </div>
-    </div>
-  )
-
-}
 
 function Box(props) {
 
@@ -128,10 +115,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Ualá</title>
       </Head>
-
       <Layout>
         {/* Phone */}
         <Container>
@@ -139,8 +124,8 @@ export default function Home() {
             <div className="flex content-center flex-wrap">
 
               <div className="w-full">
-                <h1 className="text-blue-600 text-4xl font-semibold w-2/3">
-                  <div className="mb-3">La usas una vez,</div>
+                <h1 className="title-1 w-2/3">
+                  <div className="">La usas una vez,</div>
                   <div>la usas siempre</div>
                 </h1>
               </div>
@@ -172,7 +157,7 @@ export default function Home() {
 
         </Container>
         {/* Blue wave */}
-        <div className="blueWaveContainer my-16"  id="onboardingSteps">
+        <div className="bg-blue-wave my-16"  id="onboardingSteps">
           <Container>
             <div className="mt-8 mb-4">
               <span className="title-2">¿Cómo sumarte a Ualá?</span>
@@ -233,13 +218,13 @@ export default function Home() {
             <div className="mt-16 grid grid-cols-11">
               <div></div>
               {
-                features.map(feature => <Box {...feature} />)
+                features.map((feature, index) => <Box key={index} {...feature} />)
               }
             </div>
           </div>
         </Container>
         {/* Blue wave */}
-        <div className="blueWaveContainer my-16">
+        <div className="bg-blue-wave my-16">
           <Container>
 
             <div className="my-16">
