@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="59px" height="59px" viewBox="0 0 59 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 6</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.780392 0 0 0 0 0.831373 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <polygon id="path-2" points="0 0 59 0 59 59 0 59"></polygon>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Transferencias---desktop" transform="translate(-180.000000, -665.000000)">
+            <g id="Group-6" transform="translate(180.000000, 665.000000)">
+                <g filter="url(#filter-1)" id="Group-3">
+                    <g>
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-2"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path d="M47.7379015,59 L11.2620985,59 C5.0421133,59 0,53.9578867 0,47.7379015 L0,11.2620985 C0,5.04239857 5.0421133,0 11.2620985,0 L47.7379015,0 C53.9578867,0 59,5.04239857 59,11.2620985 L59,47.7379015 C59,53.9578867 53.9578867,59 47.7379015,59" id="Fill-1" fill="#3E6BFD" mask="url(#mask-3)"></path>
+                    </g>
+                </g>
+                <g id="Group-4" transform="translate(13.000000, 13.000000)" stroke="#668AFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <line x1="5.279868" y1="34.0003923" x2="5.279868" y2="0.000392307692" id="Stroke-1"></line>
+                    <polyline id="Stroke-3" points="-0.000132 5.23116154 5.46192358 0.000392307692 10.559868 4.88246837"></polyline>
+                    <line x1="27.719868" y1="0.000392307692" x2="27.719868" y2="34.0003923" id="Stroke-5"></line>
+                    <polyline id="Stroke-7" points="32.999868 28.7696231 27.9019236 34.0003923 22.439868 28.7696231"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

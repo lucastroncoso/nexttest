@@ -16,7 +16,8 @@ export default function Header(props) {
                         <div className="flex w-full justify-end text-lg text-gray-500 mt-2">
                             <div className="ml-12">Funcionalidades</div>
                             <div className="ml-12">Ayuda y Seguridad</div>
-                            <div className="ml-12">Sobre Ualà</div>
+                            <div className="ml-12">Sobre Ualá</div>
+                            <div className="ml-12">Costos</div>
                             <div className="ml-12">Promociones</div>
                         </div>
                     </div>
