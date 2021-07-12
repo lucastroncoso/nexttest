@@ -151,7 +151,7 @@ export default function Home() {
             <div className="relative" style={{ height: 550 }}>
               <div className="absolute top-8 bg-blue-200 left-8 rounded-full" style={{ height: 450, width: 450 }}></div>
               <div className="absolute "><Animation src="/assets/images/animation/celu_alta_Mx.png" zoom={0.85} className="right-0" /></div>
-              <div className="absolute top-20"><Animation src="/assets/images/animation/Tarjeta_alta_Arg.png" zoom={0.75} /></div>
+              <div className="absolute top-20"><Animation src="/assets/images/animation/Tarjeta_alta_Mx.png" zoom={0.75} /></div>
             </div>
           </div>
 
