@@ -48,7 +48,7 @@ export default function Header(props) {
         { title: "Ayuda y Seguridad" },
         { title: "Sobre Ualá" },
         { title: "Costos", href: "/costos" },
-        { title: "Promociones" },
+        { title: "Promociones", href: "/promociones" },
     ]
 
     return (
