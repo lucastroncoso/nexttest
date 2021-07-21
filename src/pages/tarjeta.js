@@ -56,7 +56,7 @@ export default function Tarjeta(props) {
                 {/* ¿Cómo depositar dinero a tu Ualá? */}
                 <Container>
                     <div className="grid lg:grid-cols-2 my-24">
-                        <div className="flex items-center ml-12">
+                        <div className="flex items-center mr-12">
                             <div>
                                 <div className="mb-4">
                                     <Image src="/assets/images/icono-efectivo.png" width={68} height={68}/>
@@ -103,8 +103,8 @@ export default function Tarjeta(props) {
                 </Container>
                 {/* ¿Perdiste o te robaron tu Ualá? */}
                 <Container>
-                    <div className="grid lg:grid-cols-2 my-24">
-                        <div className="flex items-center ml-12">
+                    <div className="grid lg:grid-cols-2 my-24" id="reporte">
+                        <div className="flex items-center mr-12">
                             <div>
                                 <div className="title-3 mb-12">¿Perdiste o te robaron tu Ualá?</div>
                                 <div className="mb-12">

@@ -5,6 +5,22 @@
     padding-top: 4vw;
 }
 
+.bg-gray-wave-top {
+    background: url(/assets/images/waveTopDesktopGray.svg) top /100% auto, linear-gradient(#eeeeee,#eeeeee) content-box;
+    background-repeat: no-repeat;
+    padding-top: 4vw;
+}
+
+.footer {
+    background: red;
+}
+
+.bg-faqs {
+    background: linear-gradient(to top,#000000ad,#00000061), url(/assets/images/hero-image.jpeg);
+    background-size: 100%;
+    background-position: center;
+}
+
 .title-1 { @apply text-blue-600 text-4xl font-semibold leading-normal  }
 .title-2 { @apply text-blue-500 text-4xl font-medium } 
 .title-3 { @apply text-gray-700 text-4xl font-medium } 
@@ -13,3 +29,17 @@
 p { @apply my-4 }
 .menu-list { @apply hidden }
 .menu-option:hover .menu-list { @apply block }
+
+.list-dot li:before {
+        content: "\2022";
+        color: #3e6afb;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -20px;
+        position: absolute;
+}
+
+.list-dot{
+    margin-left: 25px;
+}

@@ -45,7 +45,16 @@ export default function Header(props) {
                 { title: "Retiros", href: "/extracciones" }
             ]
         },
-        { title: "Ayuda y Seguridad" },
+        { 
+            title: "Ayuda y Seguridad",
+            list: [
+                { title: "Preguntas frecuentes", href: "/faqs" },
+                { title: "Métodos de contacto", href: "/contacto" },
+                { title: "Comunidad Ualá", href: "" },
+                { title: "Consejos de seguridad", href: "/seguridad" },
+                { title: "Reporte por robo o pérdida", href: "/tarjeta#reporte" },
+            ]
+        },
         { title: "Sobre Ualá" },
         { title: "Costos", href: "/costos" },
         { title: "Promociones", href: "/promociones" },
