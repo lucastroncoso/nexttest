@@ -63,7 +63,7 @@ function Onboarding() {
     let percent = actual / (elemRect.height + (window.innerHeight / 5)) * 100;
     let step = Math.floor(percent / (100 / 4));
 
-    console.log(bodyRect)
+   
     if(step > 0 && step <= 4){
       setStep(step)
     }

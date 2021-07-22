@@ -85,9 +85,7 @@ export default function Animation(props) {
         width: frame.width,
         height: frame.height
     }
-
-    console.log(animationPosition)
-
+    
     return (
 
         <div className="flex justify-center">

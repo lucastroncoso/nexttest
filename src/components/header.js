@@ -55,7 +55,15 @@ export default function Header(props) {
                 { title: "Reporte por robo o pérdida", href: "/tarjeta#reporte" },
             ]
         },
-        { title: "Sobre Ualá" },
+        { 
+            title: "Sobre Ualá",
+            list: [
+                { title: "Nosotr@s", href: "/nosotr@s" },
+                { title: "Búsquedas laborales", href: "/trabajar-en-uala" },
+                { title: "Prensa", href: "/prensa" },
+                { title: "El blog de Ualá", href: "http://blog.uala.com.mx/" }
+            ]
+        },
         { title: "Costos", href: "/costos" },
         { title: "Promociones", href: "/promociones" },
     ]

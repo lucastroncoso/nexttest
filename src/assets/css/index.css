@@ -21,6 +21,26 @@
     background-position: center;
 }
 
+.bg-about {
+    background: linear-gradient(to top,#000000ad,#00000061), url(/assets/images/aboutBg.jpeg);
+    background-size: 100%;
+    background-position: center;
+}
+
+.list-dot li:before {
+    content: "\2022";
+    color: #3e6afb;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -20px;
+    position: absolute;
+}
+
+.list-dot{
+    margin-left: 25px;
+}
+
 .title-1 { @apply text-blue-600 text-4xl font-semibold leading-normal  }
 .title-2 { @apply text-blue-500 text-4xl font-medium } 
 .title-3 { @apply text-gray-700 text-4xl font-medium } 
@@ -29,17 +49,3 @@
 p { @apply my-4 }
 .menu-list { @apply hidden }
 .menu-option:hover .menu-list { @apply block }
-
-.list-dot li:before {
-        content: "\2022";
-        color: #3e6afb;
-        font-weight: bold;
-        display: inline-block;
-        width: 1em;
-        margin-left: -20px;
-        position: absolute;
-}
-
-.list-dot{
-    margin-left: 25px;
-}
