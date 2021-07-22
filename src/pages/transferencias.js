@@ -71,7 +71,7 @@ export default function Tarjeta(props) {
                     </div>
                 </Container>
                 {/* Clave de seguridad */}
-                <div className="bg-blue-wave">
+                <div className="bg-blue-wave mb-16">
                     <Container>
                         <div className="my-24 grid lg:grid-cols-2">
                             

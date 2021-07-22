@@ -74,7 +74,7 @@ export default function About(props) {
                         {/* En qué creemos */}
                         <div className="my-16">
                             <div className="text-2xl text-gray-700 font-medium">En qué creemos</div>
-                            <div className="text-gray-600 mt-6 text-lg">
+                            <div className="text-gray-600 mt-4 mb-8 text-lg">
                                 <p>Tenemos 5 pilares que nos guían en cada una de las decisiones que tomamos:</p>
                             </div>
                             <div className="grid grid-cols-3 gap-5">

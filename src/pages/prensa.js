@@ -52,9 +52,9 @@ export default function Carrers(props) {
                                 {
 
                                     news.map(notice => (
-                                        <div className="shadow-md rounded-md p-6 border border-gray-100">
+                                        <div className="shadow-md rounded-md p-6 border border-gray-100 flex flex-col">
                                             <div className="text-gray-500 font-medium mb-4">{notice.date}</div>
-                                            <div className="text-gray-700 font-medium mb-4">{notice.title}</div>
+                                            <div className="text-gray-700 text-xl font-medium mb-4 flex-grow">{notice.title}</div>
                                             <div className="link">Leer más</div>
                                         </div>
                                     ))

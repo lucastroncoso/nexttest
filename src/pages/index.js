@@ -15,7 +15,7 @@ function Box(props) {
         <div className="mx-3 border border-gray-100 rounded-md shadow-md p-6 flex flex-col">
           {/* Image */}
           <div>
-            <Image src={`/assets/images/${props.image}`} width={72} height={72} />
+            <Image alt="icon" src={`/assets/images/${props.image}`} width={72} height={72} />
           </div>
           <div className="flex-grow">
             {/* Title */}
@@ -90,7 +90,7 @@ function Onboarding() {
       {
         onboardingSteps.map((s, index) => (
           <div onClick={() => setStep(4)} key={index} className={`transition delay-200 ${index >= step ? 'opacity-0' : ''}`}>
-            <div className=""><Image src={`/assets/images/${s.image}`} width={100} height={100} /></div>
+            <div className=""><Image alt="step" src={`/assets/images/${s.image}`} width={100} height={100} /></div>
             <div className="mt-4 w-5/6">
               <span className="text-blue-600 mr-1">{index + 1}.</span>
               <span className="text-gray-500">{s.text}</span>
@@ -140,10 +140,10 @@ export default function Home() {
               <div className="w-full mt-8">
                 <div className="flex items-center">
                   <div className="mr-8">
-                    <Image src="/assets/images/icono-playstore.svg" width={30} height={34} />
+                    <Image alt="playstore" src="/assets/images/icono-playstore.svg" width={30} height={34} />
                   </div>
                   <div>
-                    <Image src="/assets/images/apple-store.svg" width={33} height={37} />
+                    <Image alt="applestore" src="/assets/images/apple-store.svg" width={33} height={37} />
                   </div>
                 </div>
               </div>
@@ -174,7 +174,7 @@ export default function Home() {
                 {/* Transferencia */}
                 <div className="grid grid-cols-12">
                   <div className="col-span-2">
-                    <Image src="/assets/images/icono-transferencia.png" width={64} height={64} />
+                    <Image alt="transferencia" src="/assets/images/icono-transferencia.png" width={64} height={64} />
                   </div>
                   <div className="col-span-10 flex items-center">
                     <div className="w-2/3">Depósito por transferencia bancaria (SPEI)</div>
@@ -183,7 +183,7 @@ export default function Home() {
                 {/* Efectivo */}
                 <div className="grid grid-cols-12 mt-8">
                   <div className="col-span-2">
-                    <Image src="/assets/images/icono-efectivo.png" width={64} height={64} />
+                    <Image alt="efectivo" src="/assets/images/icono-efectivo.png" width={64} height={64} />
                   </div>
                   <div className="col-span-10 flex items-center">
                     <div className="w-2/3">Depósito en efectivo</div>
@@ -192,7 +192,7 @@ export default function Home() {
               </div>
               <div className="mt-16">
                 <div>
-                  <Image src="/assets/images/logos_depositos.png" width={364} height={174} />
+                  <Image alt="depositos" src="/assets/images/logos_depositos.png" width={364} height={174} />
                 </div>
                 <div className="mt-4">
                   <span className="link">Ver tiendas afiliadas</span>
@@ -203,7 +203,7 @@ export default function Home() {
               <div className="title-2 w-5/6">¡Úsala en todo el mundo!</div>
               <div className="mt-16">
                 <div>
-                  <Image src="/assets/images/card4.gif" width={500} height={280} />
+                  <Image alt="card" src="/assets/images/card4.gif" width={500} height={280} />
                 </div>
               </div>
             </div>
@@ -230,7 +230,7 @@ export default function Home() {
             <div className="my-16">
               <div className="grid grid-cols-2">
                 <div>
-                  <Image src="/assets/images/celular_tarjeta.png" width={510} height={523} />
+                  <Image alt="celular tarjeta" src="/assets/images/celular_tarjeta.png" width={510} height={523} />
                 </div>
                 <div className="flex content-center flex-wrap">
                   <div className="w-full">

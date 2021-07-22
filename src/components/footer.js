@@ -17,7 +17,7 @@ export default function Footer(props) {
 
                             {/* Isologotipo */}
                             <div>
-                                <Image src="/assets/images/isologotipo.png" width={69} height={38}/>
+                                <Image alt="isologotipo" src="/assets/images/isologotipo.png" width={69} height={38}/>
                             </div> 
 
                             {/* Redes sociales */}
@@ -30,13 +30,13 @@ export default function Footer(props) {
                             </div>
 
                             <div className="mt-6">
-                                <Image src="/assets/images/undostres_logo.svg" width={162} height={33}/>
+                                <Image alt="undostres" src="/assets/images/undostres_logo.svg" width={162} height={33}/>
                             </div>
 
                             {/* Stores */}
                             <div className="mt-16 flex">
-                                <div className="mr-4"><Image src="/assets/images/applestore.png" width={116} height={36}/></div>
-                                <div><Image src="/assets/images/androidstore.png" width={116} height={35}/></div>
+                                <div className="mr-4"><Image alt="applestore" src="/assets/images/applestore.png" width={116} height={36}/></div>
+                                <div><Image alt="playstore" src="/assets/images/androidstore.png" width={116} height={35}/></div>
                             </div>
 
                         </div>

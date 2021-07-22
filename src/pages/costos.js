@@ -41,12 +41,12 @@ export default function Tarjeta(props) {
                         <div className="flex justify-center" >
                             <div className="mt-16">
                                 <Image src="/assets/images/charge.gif" width={500} height={400} />
-                            </div>
+                            </div> 
                         </div>
                     </div>
                 </Container>
 
-                <div className="bg-blue-wave">
+                <div className="bg-blue-wave mb-24">
                     <Container>
                         <div className="my-20 grid grid-cols-2">
                             {

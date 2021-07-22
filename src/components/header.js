@@ -74,7 +74,7 @@ export default function Header(props) {
                 <div className="grid grid-cols-12 py-10">
                     <div className="col-span-2 col-start-2">
                         <Link href="/">
-                            <Image className="cursor-pointer" width={80} height={40} src="/assets/images/logotipo.svg"></Image>
+                            <Image alt="logo" className="cursor-pointer" width={80} height={40} src="/assets/images/logotipo.svg"></Image>
                         </Link>
                     </div>
                     <div className="col-span-8 flex items-center">
