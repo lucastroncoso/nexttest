@@ -1,10 +1,19 @@
 import Container from "./container"
 import Image from "next/image"
+import Link from "next/link"
 import { faInstagram, faFacebookSquare, faTwitter, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons'
 //import { fabInstagram } from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Footer(props) {
+
+    const social = [
+        { name: "instagram", href: "https://www.instagram.com/uala_mx/", icon: faInstagram },
+        { name: "facebook", href: "https://www.facebook.com/uala.mx/", icon: faFacebookSquare },
+        { name: "twitter", href: "https://twitter.com/uala_mx", icon: faTwitter },
+        { name: "linkedin", href: "https://www.linkedin.com/company/ual%C3%A1/", icon: faLinkedin },
+        { name: "youtube", href: "https://www.youtube.com/channel/UCGVDc5uFy4ZcrCafcnTGIng", icon: faYoutube }
+    ]
 
     return (
         <div className="bg-gray-wave-top">
@@ -22,11 +31,7 @@ export default function Footer(props) {
 
                             {/* Redes sociales */}
                             <div className="text-4xl text-gray-400 mt-6"> 
-                                <a className="mr-2" target="_BLANK" href="https://www.instagram.com/uala_mx/"><FontAwesomeIcon icon={faInstagram} /></a>
-                                <a className="mr-2" target="_BLANK" href="https://www.facebook.com/uala.mx/"><FontAwesomeIcon icon={faFacebookSquare} /></a>
-                                <a className="mr-2" target="_BLANK" href="https://twitter.com/uala_mx"><FontAwesomeIcon icon={faTwitter} /></a>
-                                <a className="mr-2" target="_BLANK" href="https://www.linkedin.com/company/ual%C3%A1/"><FontAwesomeIcon icon={faLinkedin} /></a>
-                                <a className="mr-2" target="_BLANK" href="https://www.youtube.com/channel/UCGVDc5uFy4ZcrCafcnTGIng"><FontAwesomeIcon icon={faYoutube} /></a>
+                                { social.map(red => <div key={red.href} className="mr-2 inline cursor-pointer"><a alt="social" aria-label={red.name} href={red.href}><FontAwesomeIcon icon={red.icon} /></a></div>) } 
                             </div>
 
                             <div className="mt-6">

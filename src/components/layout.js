@@ -7,7 +7,7 @@ export default function Layout(props) {
     return (
         <>
             <Head>
-            <meta name="description" content="Ualá es una App que te Brinda una Tarjeta Prepaga Mastercard Internacional." />
+                <meta name="description" content="Ualá es una App que te Brinda una Tarjeta Prepaga Mastercard Internacional." />
             </Head>
             <Header/>
             { props.children }

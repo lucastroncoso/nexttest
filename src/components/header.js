@@ -7,9 +7,9 @@ function MenuList(props) {
         <div className="menu-list shadow-md bg-white border border-gray-100 absolute w-64 -ml-16 rounded-md py-4 z-10">
             {
                 props.list.map(option=> (
-                    <div className="py-2 px-6 hover:bg-gray-50 cursor-pointer">
-                        { option.href ? <Link href={option.href}><div>{option.title}</div></Link> : <div>{option.title}</div> }
-                    </div>
+                    <div key={option.title} className="py-2 px-6 hover:bg-gray-50 cursor-pointer">
+                        { option.href ? <Link  href={option.href}><div>{option.title}</div></Link> : <div>{option.title}</div> }
+                    </div> 
                 ))
             }
         </div>
@@ -27,7 +27,7 @@ function MenuOption(props) {
                 }
             </div>
             {
-                props.list && <MenuList list={props?.list}/>
+                props.list && <MenuList  list={props?.list}/>
             }
         </div>
     )
@@ -74,13 +74,13 @@ export default function Header(props) {
                 <div className="grid grid-cols-12 py-10">
                     <div className="col-span-2 col-start-2">
                         <Link href="/">
-                            <Image alt="logo" className="cursor-pointer" width={80} height={40} src="/assets/images/logotipo.svg"></Image>
+                            <a><Image alt="logo" className="cursor-pointer" width={80} height={40} src="/assets/images/logotipo.svg"/></a>
                         </Link>
                     </div>
                     <div className="col-span-8 flex items-center">
                         <div className="flex w-full justify-end text-lg text-gray-500 mt-2">
                             {
-                                menu.map(option => <MenuOption {...option} />)
+                                menu.map(option => <MenuOption key={option.title} {...option} />)
                             }
                         </div>
                     </div>
