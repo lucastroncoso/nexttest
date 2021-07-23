@@ -14,7 +14,7 @@ export default function Footer(props) {
         { name: "linkedin", href: "https://www.linkedin.com/company/ual%C3%A1/", icon: faLinkedin },
         { name: "youtube", href: "https://www.youtube.com/channel/UCGVDc5uFy4ZcrCafcnTGIng", icon: faYoutube }
     ]
-
+ 
     return (
         <div className="bg-gray-wave-top">
             <Container>
