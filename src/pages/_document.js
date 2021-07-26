@@ -10,7 +10,9 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="es">
-        <Head />
+        <Head>
+          <meta name="robots" content="all" />
+        </Head>
         <body>
           <Main />
           <NextScript />
