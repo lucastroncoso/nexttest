@@ -11,7 +11,6 @@ class MyDocument extends Document {
     return (
       <Html lang="es">
         <Head>
-          <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
         </Head>
         <body>
           <Main />
