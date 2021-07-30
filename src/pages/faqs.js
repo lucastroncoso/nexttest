@@ -29,12 +29,12 @@ function Faq(props) {
     return (
         <div className="border mb-4 p-6 rounded-md shadow-md cursor-pointer" onClick={() => open()}>
             <div>
-               <span className="text-2xl text-gray-700 font-medium">{ props.faq.question }</span>
+                <span className="text-2xl text-gray-700 font-medium">{props.faq.question}</span>
             </div>
             {
-                isOpen && 
+                isOpen &&
                 <div className="mt-4 text-gray-600">
-                    { props.faq.answer }
+                    {props.faq.answer}
                 </div>
             }
         </div>
@@ -70,16 +70,16 @@ export default function Faqs(props) {
 
             <Container>
                 <div className="pt-24 pb-6">
-                    
+
                     {
-                        category && 
+                        category &&
                         <div className="mb-6 cursor-pointer" onClick={() => setCategory(null)}>
                             <span className="mr-4 text-blue-600"><FontAwesomeIcon icon={faChevronLeft} /></span>
                             <span className="text-blue-600 font-medium">Categorias</span>
                         </div>
                     }
                     <div><span className="text-blue-600 font-medium text-4xl">¿Alguna duda?</span></div>
-                    
+
                 </div>
                 {
                     category
@@ -92,11 +92,11 @@ export default function Faqs(props) {
                         </div>
                         :
                         // Faq category list
-                        <div className="py-6 grid grid-cols-3 gap-4"> {categories.map(category => <FaqCategory key={category.faqcategoriesid} category={category} onClick={category => setCategory(category)} />)} </div>
+                        <div className="py-6 grid lg:grid-cols-3 gap-4"> {categories.map(category => <FaqCategory key={category.faqcategoriesid} category={category} onClick={category => setCategory(category)} />)} </div>
                 }
                 <div className="grid grid-cols-12 my-12">
 
-                    <div className="grid grid-cols-4 col-span-4">
+                    <div className="grid grid-cols-4 lg:col-span-4 col-span-12">
                         <div>
                             <div className="text-blue-500 bg-blue-200 h-20 w-20 flex items-center justify-center text-5xl rounded-lg"><FontAwesomeIcon icon={faSmile} /></div>
                         </div>
@@ -104,7 +104,7 @@ export default function Faqs(props) {
                             <span className="text-xl text-gray-600">¿No encontraste la respuesta?</span>
                         </div>
                     </div>
-                    <div className="col-span-8">
+                    <div className="lg:col-span-8 col-span-12 mt-8 lg:mt-0">
                         <div className="flex h-full items-center">
                             <span className="text-xl text-gray-600">Entra en la <a href="" className="link">Comunidad Ualá</a>, vas a encontrar muchos usuarios con ganas de ayudarte a resolver tus dudas.</span>
                         </div>
