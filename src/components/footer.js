@@ -2,7 +2,6 @@ import Container from "./container"
 import Image from "next/image"
 import Link from "next/link"
 import { faInstagram, faFacebookSquare, faTwitter, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons'
-//import { fabInstagram } from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Footer(props) {

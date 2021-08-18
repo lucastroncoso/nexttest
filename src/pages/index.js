@@ -41,21 +41,21 @@ function Onboarding() {
 
   const handleScroll = () => {
 
-      const currentScrollY = window.scrollY;
+    const currentScrollY = window.scrollY;
 
-      if (prevScrollY.current < currentScrollY) {
-          changePosition(currentScrollY);
-          prevScrollY.current = currentScrollY;
-      }
+    if (prevScrollY.current < currentScrollY) {
+      changePosition(currentScrollY);
+      prevScrollY.current = currentScrollY;
+    }
 
   };
 
   const changePosition = scrollY => {
 
-    let element =  document.querySelector('#onboardingSteps');
+    let element = document.querySelector('#onboardingSteps');
     let bodyRect = document.body.getBoundingClientRect(),
-        elemRect = element.getBoundingClientRect(),
-        offset   = elemRect.top - bodyRect.top;
+      elemRect = element.getBoundingClientRect(),
+      offset = elemRect.top - bodyRect.top;
 
     let actual = scrollY - (offset - window.innerHeight);
     let from = offset - window.innerHeight;
@@ -63,17 +63,17 @@ function Onboarding() {
     let percent = actual / (elemRect.height + (window.innerHeight / 5)) * 100;
     let step = Math.floor(percent / (100 / 4));
 
-   
-    if(step > 0 && step <= 4){
+
+    if (step > 0 && step <= 4) {
       setStep(step)
     }
   }
 
   useEffect(() => {
 
-      // Bind scoll
-      window.addEventListener("scroll", handleScroll);
-      return () => window.removeEventListener("scroll", handleScroll);
+    // Bind scoll
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
 
   }, []);
 
@@ -85,13 +85,13 @@ function Onboarding() {
   ];
 
   return (
-    <div className="grid grid-cols-4 pt-8 pb-20 relative">
-      <div style={{ left: "5%" }} className={`absolute duration-1000 ease-in-out transition-width w-0 w-${step - 1 }/4  bg-blue-500 h-2 top-20 rounded-full`}></div>
+    <div className="grid lg:grid-cols-4 pt-8 pb-20 relative">
+      <div style={{ left: "5%" }} className={`absolute duration-1000 ease-in-out transition-width lg:w-0 lg:w-${step - 1}/4  bg-blue-500 lg:h-2 top-20 rounded-full`}></div>
       {
         onboardingSteps.map((s, index) => (
-          <div onClick={() => setStep(4)} key={index} className={`transition delay-200 ${index >= step ? 'opacity-0' : ''}`}>
+          <div key={index} className={`transition mb-8 flex lg:mb-0 lg:block delay-200 ${index >= step ? 'opacity-0' : ''}`}>
             <div className=""><Image alt="step" src={`/assets/images/${s.image}`} width={100} height={100} /></div>
-            <div className="mt-4 w-5/6">
+            <div className="ml-4 lg:ml-0 mt-4 w-5/6">
               <span className="text-blue-600 mr-1">{index + 1}.</span>
               <span className="text-gray-500">{s.text}</span>
             </div>
@@ -120,23 +120,28 @@ export default function Home() {
       <Layout>
         {/* Phone */}
         <Container>
-          <div className="grid lg:grid-cols-2 mt-16">
-            <div className="flex content-center flex-wrap">
+          <div className="lg:grid lg:grid-cols-2 flex flex-col-reverse mt-16">
 
+            {/* Title */}
+            <div className="flex content-center flex-wrap">
               <div className="w-full">
-                <h1 className="title-1 w-2/3">
+                <h1 className="title-1 lg:w-2/3">
                   <div className="">La usas una vez,</div>
                   <div>la usas siempre</div>
                 </h1>
               </div>
+
+              {/* Subtitle */}
               <div className="w-full mt-8">
-                <div className="text-gray-500 text-xl w-2/3 leading-8">
+                <div className="text-gray-500 text-xl lg:w-2/3 leading-8">
                   Somos Ualá. Una tarjeta de débito
                   Mastercard gratis y una app para
                   manejar tu dinero mucho más fácil.
                   Simple, seguro y 100% online
                 </div>
               </div>
+
+              {/* Stores */}
               <div className="w-full mt-8">
                 <div className="flex items-center">
                   <div className="mr-8">
@@ -147,17 +152,20 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+
             </div>
+
             <div className="relative" style={{ height: 550 }}>
-              <div className="absolute top-8 bg-blue-200 left-8 rounded-full" style={{ height: 450, width: 450 }}></div>
-              <div className="absolute "><Animation src="/assets/images/animation/celu_alta_Mx.png" zoom={0.85} className="right-0" /></div>
+              <div className="absolute top-8 bg-blue-200 left-8 rounded-full hidden lg:block" style={{ height: 450, width: 450 }}></div>
+              <div className="absolute top-8 bg-blue-200 left-8 w-72 h-72 rounded-full lg:hidden"></div>
+              <div className="absolute "><Animation src="/assets/images/animation/celu_alta_Mx.png" zoom={0.85} className="lg:right-0 left-48" /></div>
               <div className="absolute top-20"><Animation src="/assets/images/animation/Tarjeta_alta_Mx.png" zoom={0.75} /></div>
             </div>
           </div>
 
         </Container>
         {/* Blue wave */}
-        <div className="bg-blue-wave my-16"  id="onboardingSteps">
+        <div className="bg-blue-wave my-16" id="onboardingSteps">
           <Container>
             <div className="mt-8 mb-4">
               <span className="title-2">¿Cómo sumarte a Ualá?</span>
