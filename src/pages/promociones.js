@@ -1,7 +1,6 @@
 import Layout from "../components/layout";
 import Container from "../components/container";
 import Head from 'next/head';
-import Image from "next/image";
 
 function Promotion(props) {
 
@@ -38,7 +37,7 @@ export default function Promociones(props) {
                 </div>
                 <Container>
                     <div className="text-center my-16 text-blue-600 text-3xl font-medium">No te pierdas estas súper promociones</div>
-                    <div className="my-16 grid grid-cols-3">
+                    <div className="my-16 grid lg:grid-cols-3">
                         {
                             Array(10).fill().map(promotion => <Promotion {...promotion} />)
                         }

@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import Layout from "../components/layout";
 import Container from "../components/container";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronLeft, faSearch, faSmile } from "@fortawesome/free-solid-svg-icons";
 
 function FaqCategory(props) {
 

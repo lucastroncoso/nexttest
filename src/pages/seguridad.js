@@ -10,17 +10,17 @@ export default function Seguridad(props) {
                 <div className="grid lg:grid-cols-2 my-24">
                     <div className="flex content-center flex-wrap">
                         <div className="w-full">
-                            <h1 className="title-1 w-2/3">
+                            <h1 className="title-1 lg:w-2/3">
                                 <div className="">Tu seguridad es lo más importante</div>
                             </h1>
                         </div>
                         <div className="w-full mt-4">
-                            <div className="text-gray-500 text-xl w-2/3 leading-8">
+                            <div className="text-gray-500 text-xl lg:w-2/3 leading-8">
                                 Sigue estos consejos para manejar tu Ualá de forma segura.
                             </div>
                         </div>
                     </div>
-                    <div className="flex justify-center items-center" >
+                    <div className="flex justify-center items-center mt-12 lg:mt-0" >
                         <div>
                             <Image src="/assets/images/security.gif" width={500} height={370} />
                         </div>
@@ -30,12 +30,15 @@ export default function Seguridad(props) {
             <Container>
                 <div className="my-16">
                     <div className="grid grid-cols-12">
-                        <div className="col-span-3">
+                        <div className="col-span-3 hidden lg:block">
                             <Image src="/assets/images/security_password.svg" width={177} height={177} />
                         </div>
-                        <div className="col-span-9">
-                            <div className="text-3xl">
-                                <span className="text-red-400">1.</span> <span className="text-gray-500">Seguridad de tus claves</span>
+                        <div className="lg:col-span-9 col-span-12">
+                            <div className="lg:text-3xl text-xl flex lg:block items-center mb-2 lg:mb-0">
+                                <div className="col-span-3 lg:hidden mr-4">
+                                    <img src="/assets/images/security_password.svg" className="w-24" />
+                                </div>
+                                <span className="text-red-400 mr-2 lg:mr-0">1.</span> <span className="text-gray-500">Seguridad de tus claves</span>
                             </div>
                             <div>
                                 <ul class="text-gray-600 py-4 list-dot">
@@ -49,12 +52,15 @@ export default function Seguridad(props) {
                 </div>
                 <div className="my-16">
                     <div className="grid grid-cols-12">
-                        <div className="col-span-3">
+                        <div className="col-span-3 hidden lg:block">
                             <Image src="/assets/images/security_phone.svg" width={177} height={177} />
                         </div>
-                        <div className="col-span-9">
-                            <div className="text-3xl">
-                                <span className="text-red-400">2.</span> <span className="text-gray-500">Seguridad de tu dispositivo</span>
+                        <div className="lg:col-span-9 col-span-12">
+                            <div className="lg:text-3xl text-xl flex lg:block items-center mb-2 lg:mb-0">
+                                <div className="col-span-3 lg:hidden mr-4">
+                                    <img src="/assets/images/security_password.svg" className="w-24" />
+                                </div>
+                                <span className="text-red-400 mr-2 lg:mr-0">2.</span> <span className="text-gray-500">Seguridad de tu dispositivo</span>
                             </div>
                             <div>
                                 <ul class="text-gray-600 py-4 list-dot">
@@ -68,12 +74,15 @@ export default function Seguridad(props) {
                 </div>
                 <div className="my-16">
                     <div className="grid grid-cols-12">
-                        <div className="col-span-3">
+                        <div className="col-span-3 hidden lg:block">
                             <Image src="/assets/images/security_mail.svg" width={177} height={177} />
                         </div>
-                        <div className="col-span-9">
-                            <div className="text-3xl">
-                                <span className="text-red-400">3.</span> <span className="text-gray-500">Seguridad en tus operaciones</span>
+                        <div className="lg:col-span-9 col-span-12">
+                            <div className="lg:text-3xl text-xl flex lg:block items-center mb-2 lg:mb-0">
+                                <div className="col-span-3 lg:hidden mr-4">
+                                    <img src="/assets/images/security_password.svg" className="w-24" />
+                                </div>
+                                <span className="text-red-400 mr-2 lg:mr-0">3.</span> <span className="text-gray-500">Seguridad en tus operaciones</span>
                             </div>
                             <div>
                                 <ul class="text-gray-600 py-4 list-dot">

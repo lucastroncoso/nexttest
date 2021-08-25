@@ -48,7 +48,7 @@ export default function Tarjeta(props) {
 
                 <div className="bg-blue-wave mb-24">
                     <Container>
-                        <div className="my-20 grid grid-cols-2">
+                        <div className="my-20 grid lg:grid-cols-2">
                             {
                                 charges.map(charge=> (
                                     <div className="grid">

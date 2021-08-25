@@ -10,7 +10,7 @@ export default function Contacto(props) {
                     <div className="grid lg:grid-cols-2 my-24">
                         <div className="flex content-center flex-wrap">
                             <div className="w-full">
-                                <h1 className="title-1 w-2/3">
+                                <h1 className="title-1 lg:w-2/3">
                                     <div className="">¿Necesitas ponerte en contacto con nosotros?</div>
                                 </h1>
                             </div>
@@ -24,8 +24,8 @@ export default function Contacto(props) {
                 </Container>
             <div className="bg-blue-wave mb-16">
                 <Container>
-                    <div className="grid lg:grid-cols-2 my-24">
-                        <div className="flex mr-12">
+                    <div className="grid lg:grid-cols-2 mt-24 lg:my-24">
+                        <div className="flex lg:mr-12">
                             <div>
                                 <div className="mb-4">
                                     <Image src="/assets/images/contactIcon1.svg" width={68} height={68} />
@@ -39,7 +39,7 @@ export default function Contacto(props) {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex ml-12">
+                        <div className="flex lg:ml-12 mt-12 lg:mt-0">
                             <div>
                                 <div className="mb-4">
                                     <Image src="/assets/images/contactIcon2.svg" width={68} height={68} />
@@ -52,8 +52,8 @@ export default function Contacto(props) {
                             </div>
                         </div>
                     </div>
-                    <div className="grid lg:grid-cols-2 my-24">
-                        <div className="flex mr-12">
+                    <div className="grid lg:grid-cols-2 mb-24 lg:my-24 mt-12">
+                        <div className="flex lg:mr-12">
                             <div>
                                 <div className="mb-4">
                                     <Image src="/assets/images/contactIcon4.svg" width={68} height={68} />
@@ -66,7 +66,7 @@ export default function Contacto(props) {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex ml-12">
+                        <div className="flex lg:ml-12 mt-12 lg:mt-0">
                             <div>
                                 <div className="mb-4">
                                     <Image src="/assets/images/contactIcon2.svg" width={68} height={68} />
