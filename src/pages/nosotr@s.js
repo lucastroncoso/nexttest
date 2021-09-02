@@ -28,10 +28,10 @@ export default function About(props) {
                     <div className="my-16">
                         {/* Quienes somos */}
                         <div className="grid grid-cols-12 mb-12">
-                            <div className="col-span-4">
+                            <div className="col-span-full mb-4 lg:mb-0 lg:col-span-4">
                                 <div className="text-4xl font-medium text-gray-800">Quiénes somos</div>
                             </div>
-                            <div className="col-span-8">
+                            <div className="col-span-full mb-4 lg:mb-0  lg:col-span-8">
                                 <div className="text-gray-500 text-xl leading-8">
                                     Somos una empresa dedicada a ayudar a mejorar la vida financiera de las personas a través de una app y una tarjeta. Fundada por el emprendedor argentino Pierpaolo Barbieri y lanzada, en octubre de 2017, con el objetivo de contribuir a la inclusión financiera en América Latina, ofreciendo a nuestros usuarios una experiencia innovadora, integrada, sin sucursales y de bajo costo.
                                 </div>
@@ -39,10 +39,10 @@ export default function About(props) {
                         </div>
                         {/* Asi empezo todo */}
                         <div className="grid grid-cols-12 mb-12">
-                            <div className="col-span-4">
+                            <div className="col-span-full mb-4 lg:mb-0 lg:col-span-4">
                                 <div className="text-4xl font-medium text-gray-800">Así empezó todo</div>
                             </div>
-                            <div className="col-span-8">
+                            <div className="col-span-full mb-4 lg:mb-0  lg:col-span-8">
                                 <div className="text-gray-500 text-xl leading-8">
                                     En 2015 empezamos a pensar en cómo revolucionar el sistema financiero. Conocé nuestra historia.
                                 </div>
@@ -54,7 +54,7 @@ export default function About(props) {
                         {/* Un mensaje de nuestro fundador */}
                         <div className="text-blue-600 text-4xl font-medium">Por qué lo hacemos</div>
                         <div className="text-gray-600 mt-6 text-lg">Un mensaje de nuestro fundador:</div>
-                        <ul className="list-dot grid grid-cols-2 mt-8">
+                        <ul className="list-dot grid lg:grid-cols-2 mt-8">
                             <li><div className="w-11/12 mb-4">Queremos que manejes tu dinero desde una app fácil, gratis y segura.</div></li>
                             <li><div className="w-11/12 mb-4">Queremos que compres con tu tarjeta lo que quieras, donde quieras. Si aceptan Mastercard, aceptan Ualá.</div></li>
                             <li><div className="w-11/12 mb-4">Queremos que puedas transferir dinero desde tu celular, rápido y simple.</div></li>
@@ -77,7 +77,7 @@ export default function About(props) {
                             <div className="text-gray-600 mt-4 mb-8 text-lg">
                                 <p>Tenemos 5 pilares que nos guían en cada una de las decisiones que tomamos:</p>
                             </div>
-                            <div className="grid grid-cols-3 gap-5">
+                            <div className="grid lg:grid-cols-3 gap-5">
                                 {
 
                                     pillars.map(pillar => (

@@ -1,6 +1,7 @@
 import Layout from "../components/layout";
 import Container from "../components/container";
 import Head from 'next/head';
+import { useEffect, useState } from "react";
 
 function Promotion(props) {
 
@@ -9,21 +10,31 @@ function Promotion(props) {
             <div className="flex flex-col m-4 shadow-lg p-4 rounded-3xl border border-gray-100">
                 <div className="flex justify-center">
                     <div>
-                        <img className="max-h-16" src="https://uala-mex-frontend-promotions-prod.s3.amazonaws.com/logo_Rappi.png" alt="" />
+                        <img className="max-h-16" src={`https://uala-mex-frontend-promotions-prod.s3.amazonaws.com/${props.image}`} alt="" />
                     </div>
                 </div>
                 <div className="text-center mt-4 font-medium flex-grow flex items-center">
-                    <div className="w-full">¡50% de descuento en tu primer pedido!</div>
+                    <div className="w-full">{ props.title }</div>
                 </div>
-                <div className="text-center mt-4 text-sm">Del 30/04/21 al 01/08/21</div>
+                <div className="text-center mt-4 text-sm">{ props.date }</div>
                 <div className="text-center mt-4"><a href="/condiciones" className="link">Ver mas</a></div>
             </div>
         </div>
     )
 
-}
+} 
 
 export default function Promociones(props) {
+
+    const [promotions, setPromotions] = useState(false); // Lista de promociones
+
+    useEffect(async () => {
+
+        let promotionList = await (await fetch("https://cms.prod.websites.uala.com.mx:2082/promotions")).json();
+
+        setPromotions(promotionList.payload)
+
+    }, [])
 
     return (
         <>
@@ -39,7 +50,7 @@ export default function Promociones(props) {
                     <div className="text-center my-16 text-blue-600 text-3xl font-medium">No te pierdas estas súper promociones</div>
                     <div className="my-16 grid lg:grid-cols-3">
                         {
-                            Array(10).fill().map(promotion => <Promotion {...promotion} />)
+                            !promotions ? <div className="text-center col-span-full">Cargando...</div> : promotions.map(promotion => <Promotion {...promotion} />)
                         }
                     </div>
                 </Container>

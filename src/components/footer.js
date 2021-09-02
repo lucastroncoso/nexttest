@@ -19,7 +19,7 @@ export default function Footer(props) {
             <Container>
                 <div className="my-12">
                     
-                    <div className="grid grid-cols-12">
+                    <div className="grid lg:grid-cols-12">
 
                         <div className="col-span-4">
 
@@ -38,7 +38,7 @@ export default function Footer(props) {
                             </div>
 
                             {/* Stores */}
-                            <div className="mt-16 flex">
+                            <div className="mt-8 mb-4 lg:mb-0 lg:mt-16 flex">
                                 <div className="mr-4"><Image alt="applestore" src="/assets/images/applestore.png" width={116} height={36}/></div>
                                 <div><Image alt="playstore" src="/assets/images/androidstore.png" width={116} height={35}/></div>
                             </div>
@@ -46,7 +46,7 @@ export default function Footer(props) {
                         </div>
                         <div className="col-span-8 flex items-center">
 
-                            <div className="grid grid-cols-3 gap-5 text-gray-600">
+                            <div className="grid lg:grid-cols-3 gap-5 text-gray-600">
                                 <div><span>Búsquedas laborales</span></div>
                                 <div><span>Términos y Condiciones</span></div>
                                 <div><span>Comunidad Ualá</span></div>

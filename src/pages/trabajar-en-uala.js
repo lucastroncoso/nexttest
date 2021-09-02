@@ -37,10 +37,10 @@ export default function Carrers(props) {
                     <div className="my-16">
                         {/* Por qué trabajar en Ualá */}
                         <div className="grid grid-cols-12 mb-12">
-                            <div className="col-span-4">
+                            <div className="col-span-full mb-4 lg:mb-0 lg:col-span-4">
                                 <div className="text-4xl font-medium text-gray-800">Por qué trabajar en Ualá</div>
                             </div>
-                            <div className="col-span-8">
+                            <div className="col-span-full mb-4 lg:mb-0 lg:col-span-8">
                                 <div className="text-gray-500 text-xl leading-8">
                                     En Ualá somos un equipo de profesionales innovadores y comprometidos que viene a revolucionar el sistema financiero, para hacerlo abierto y para tod@s. Y lo mejoramos todos los días con gente como tú. Trabajamos en un ambiente dinámico en pleno crecimiento donde todos podemos intercambiar, proponer e impulsar ideas para que sucedan.
                                 </div>
@@ -56,7 +56,7 @@ export default function Carrers(props) {
                             <div className="text-gray-600 mt-6 text-lg">
                                 <p>Estos son algunos de los beneficios:</p>
                             </div>
-                            <div className="grid grid-cols-3 gap-5">
+                            <div className="grid lg:grid-cols-3 gap-5">
                                 {
 
                                     benefits.map(benefit => (
@@ -96,7 +96,7 @@ export default function Carrers(props) {
                         </div>
 
                         <div className="py-12">
-                            <div className="grid grid-cols-2">
+                            <div className="grid lg:grid-cols-2">
                                 <div>
                                     <div>
                                         <Image src="/assets/images/logo-gptw.svg" width={68} height={68}/>

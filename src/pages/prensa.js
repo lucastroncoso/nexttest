@@ -48,7 +48,7 @@ export default function Carrers(props) {
                         {/* Últimos comunicados */}
                         <div className="py-8">
                             <div className="text-4xl font-medium text-gray-800">Últimos comunicados</div>
-                            <div className="grid grid-cols-3 gap-5 mt-8">
+                            <div className="grid lg:grid-cols-3 gap-5 mt-8">
                                 {
 
                                     news.map(notice => (
@@ -69,10 +69,10 @@ export default function Carrers(props) {
                         <div className="py-12">
 
                             <div className="grid grid-cols-12">
-                                <div className="col-span-4">
+                                <div className="col-span-full mb-4 lg:mb-0 lg:col-span-4">
                                     <div className="link text-3xl">Acerca de Ualá</div>
                                 </div>
-                                <div className="col-span-8">
+                                <div className="col-span-full mb-4 lg:mb-0 lg:col-span-8">
                                     <div className="link text-3xl">Acerca de Pierpaolo Barbieri, fundador y CEO de Ualá</div>
                                 </div>
                             </div>
@@ -81,7 +81,7 @@ export default function Carrers(props) {
 
                         <div className="py-8">
                             <div className="text-4xl font-medium text-gray-800">Descarga nuestro material institucional</div>
-                            <div className="grid grid-cols-12 mt-8 gap-4">
+                            <div className="grid lg:grid-cols-12 mt-8 gap-4">
                                 <div className="col-span-4 flex border border-blue-600 rounded-md p-4 items-center">
                                     <div className="flex-grow">
                                         <div className="link">Logo de Ualá</div>
@@ -112,7 +112,7 @@ export default function Carrers(props) {
                         {/* Ualá como caso de éxito */}
                         <div className="py-8">
                             <div className="text-4xl font-medium text-gray-800">Ualá como caso de éxito</div>
-                            <div className="grid grid-cols-3 gap-5 mt-8">
+                            <div className="grid lg:grid-cols-3 gap-5 mt-8">
                                 {
 
                                 stories.map(story => (
