@@ -60,11 +60,8 @@ export default function Animation(props) {
     useEffect(() => {
         
         if(window.innerWidth < 600){
-
-            // setZoom({
-            //     phone: (window.innerWidth / 1.5) / window.innerWidth,
-            //     mpos: (window.innerWidth / 2) / window.innerWidth
-            // })
+            
+            setZoom(0.5)
 
             setAnimationSize({ ...animationSize, height: frame.height - 200 });
      

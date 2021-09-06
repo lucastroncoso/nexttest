@@ -24,8 +24,8 @@ export default function Contacto(props) {
             </Container>
             <div className="bg-blue-wave mb-16">
                 <Container>
-                    <div className="grid lg:grid-cols-2 my-24">
-                        <div className="flex mr-12">
+                    <div className="grid lg:grid-cols-2 mt-24 lg:my-24">
+                        <div className="flex lg:mr-12">
                             <div>
                                 <div className="mb-4">
                                     <Image src="/assets/images/contactIcon1.svg" width={68} height={68} />

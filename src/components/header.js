@@ -69,19 +69,27 @@ export default function Header(props) {
     ]
 
     return (
-        <div className="">
+        <div>
             <div className="container mx-auto">
-                <div className="grid grid-cols-12 py-10">
+                <div className="grid grid-cols-12 py-4 lg:py-10 border-b lg:border-none">
+                    {/* Logo */}
                     <div className="col-span-2 col-start-2">
                         <Link href="/">
-                            <a><Image alt="logo" className="cursor-pointer" width={80} height={40} src="/assets/images/logotipo.svg"/></a>
+                            <a><img className="w-16 lg:w-auto" src="/assets/images/logotipo.svg"/></a>
                         </Link>
                     </div>
-                    <div className="col-span-8 flex items-center">
+                    {/* Menu desktop */}
+                    <div className="col-span-8 lg:flex items-center hidden">
                         <div className="flex w-full justify-end text-lg text-gray-500 mt-2">
                             {
                                 menu.map(option => <MenuOption key={option.title} {...option} />)
                             }
+                        </div>
+                    </div>
+                    {/* Menu mobile */}
+                    <div className="col-span-8 flex justify-end lg:hidden">
+                        <div className="flex items-center text-2xl text-gray-500">
+                           <img src="/assets/images/rearange.svg" alt="" />
                         </div>
                     </div>
 

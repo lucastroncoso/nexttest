@@ -16,7 +16,7 @@ export default function Tarjeta(props) {
                     <div className="grid lg:grid-cols-2 mt-24">
                         <div className="flex content-center flex-wrap">
                             <div className="w-full">
-                                <h1 className="title-1 w-2/3">
+                                <h1 className="title-1 lg:w-2/3">
                                     <div className="">Una tarjeta para tod@s y para todo</div>
                                 </h1>
                             </div>
@@ -45,7 +45,7 @@ export default function Tarjeta(props) {
                                 <Image src="/assets/images/card2.gif" width={500} height={500}/>
                             </div>
                         </div>
-                        <div className="flex items-center ml-12">
+                        <div className="flex items-center lg:ml-12">
                             <div>
                                 <div className="title-3 mb-4">La tarjeta</div>
                                 <div className="text">Una tarjeta de débito Mastercard internacional diseñada para mejorar la experiencia de compra. Con chip, para que tu información esté más protegida que nunca y tecnología contactless, para que tus compras sean mucho más seguras.</div>
@@ -56,7 +56,7 @@ export default function Tarjeta(props) {
                 {/* ¿Cómo depositar dinero a tu Ualá? */}
                 <Container>
                     <div className="grid lg:grid-cols-2 my-24">
-                        <div className="flex items-center mr-12">
+                        <div className="flex items-center lg:mr-12">
                             <div>
                                 <div className="mb-4">
                                     <Image src="/assets/images/icono-efectivo.png" width={68} height={68}/>
@@ -69,7 +69,7 @@ export default function Tarjeta(props) {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex justify-center items-center" >
+                        <div className="flex justify-center items-center mt-12 lg:mt-0" >
                             <div>
                                 <div><Image src="/assets/images/paynet.png" width={237} height={80}/></div>
                                 <div className="link mt-2">Ver tiendas afiliadas</div>
@@ -93,7 +93,7 @@ export default function Tarjeta(props) {
                                 <Image src="/assets/images/card4.gif" width={500} height={280}/>
                             </div>
                         </div>
-                        <div className="flex items-center ml-12">
+                        <div className="flex items-center lg:ml-12">
                             <div>
                                 <div className="title-3 mb-4">Lleva tu Ualá de viaje</div>
                                 <div className="text">Puedes utilizar tu Tarjeta Ualá Mastercard Internacional para realizar compras en el extranjero sin ningún costo. Disfruta de la seguridad de recibir notificación de los pagos que realices y poder congelar tu cuenta en caso de que extravíes tu tarjeta durante tu viaje.</div>
@@ -104,7 +104,7 @@ export default function Tarjeta(props) {
                 {/* ¿Perdiste o te robaron tu Ualá? */}
                 <Container>
                     <div className="grid lg:grid-cols-2 my-24" id="reporte">
-                        <div className="flex items-center mr-12">
+                        <div className="flex items-center lg:mr-12">
                             <div>
                                 <div className="title-3 mb-12">¿Perdiste o te robaron tu Ualá?</div>
                                 <div className="mb-12">

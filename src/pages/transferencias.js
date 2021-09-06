@@ -16,12 +16,12 @@ export default function Tarjeta(props) {
                     <div className="grid lg:grid-cols-2 my-24">
                         <div className="flex content-center flex-wrap">
                             <div className="w-full">
-                                <h1 className="title-1 w-2/3">
+                                <h1 className="title-1 lg:w-2/3">
                                     <div className="">Transfiere y recibe dinero de tod@s</div>
                                 </h1>
                             </div>
                             <div className="w-full mt-4">
-                                <div className="text-gray-500 text-xl w-2/3 leading-8">
+                                <div className="text-gray-500 text-xl lg:w-2/3 leading-8">
                                     Envia y recibe dinero desde cualquier cuenta bancaria y/o virtual, gratis y en el acto. También de tus amig@s o familiares que tengan Ualá.
                                 </div>
                             </div>
@@ -37,7 +37,7 @@ export default function Tarjeta(props) {
                 {/* ¿Cómo depositar dinero a tu Ualá? */}
                 <Container>
                     <div className="grid lg:grid-cols-2 my-24">
-                        <div className="flex mr-12">
+                        <div className="flex lg:mr-12">
                             <div>
                                 <div className="mb-4">
                                     <Image src="/assets/images/transferIcon1.svg" width={68} height={68}/>
@@ -48,7 +48,7 @@ export default function Tarjeta(props) {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex ml-12">
+                        <div className="flex lg:ml-12 mt-12 lg:mt-0">
                             <div>
                                 <div className="mb-4">
                                     <Image src="/assets/images/transferIcon2.svg" width={68} height={68}/>
@@ -75,7 +75,7 @@ export default function Tarjeta(props) {
                     <Container>
                         <div className="my-24 grid lg:grid-cols-2">
                             
-                        <div className="flex items-center mr-12">
+                        <div className="flex items-center lg:mr-12">
                             <div>
                                 <div className="mb-4">
                                     <Image src="/assets/images/icono-clave.svg" width={68} height={68}/>
@@ -87,7 +87,7 @@ export default function Tarjeta(props) {
                             </div>
                         </div>
 
-                        <div className="flex justify-center items-center" >
+                        <div className="flex justify-center items-center mt-12 lg:mt-0" >
                             <div>
                                 <Image src="/assets/images/imagen-celular-clave.svg" width={486} height={373}/>
                             </div>
