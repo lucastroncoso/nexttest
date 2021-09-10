@@ -137,7 +137,7 @@ export default function Home() {
             <div className="flex content-center flex-wrap">
               <div className="w-full">
                 <h1 className="title-1 lg:w-2/3 text-center lg:text-left">
-                  <div className="">La usas una vez,</div>
+                  <div className="">La usas una vez, </div>
                   <div>la usas siempre</div>
                 </h1>
               </div>
