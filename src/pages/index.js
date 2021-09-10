@@ -4,10 +4,18 @@ import Layout from "../components/layout"
 import Image from "next/image";
 import Animation from "./../components/animation";
 import Container from '../components/container';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+SwiperCore.use([Navigation])
+
 
 
 function Box(props) {
-
 
   return (
     <div className="col-span-3 grid">
@@ -33,6 +41,7 @@ function Box(props) {
   )
 
 }
+
 
 function Onboarding() {
 
@@ -87,6 +96,8 @@ function Onboarding() {
   return (
     <div className="grid lg:grid-cols-4 pt-8 pb-20 relative">
       <div style={{ left: "5%" }} className={`absolute duration-1000 ease-in-out transition-width lg:w-0 lg:w-${step - 1}/4  bg-blue-500 lg:h-2 top-20 rounded-full`}></div>
+      <div style={{ left: "12%", top: "6%", transition: "height 2s" }} className={`absolute duration-1000 ease-in-out  w-2 bg-blue-500 lg:h-2 h-0  ${step != 4 ? 'h-' + (step - 1) + '/4' : 'h-' + step + '/6'} rounded-full lg:hidden`}></div>
+
       {
         onboardingSteps.map((s, index) => (
           <div key={index} className={`transition mb-8 flex lg:mb-0 lg:block delay-200 ${index >= step ? 'opacity-0' : ''}`}>
@@ -120,12 +131,12 @@ export default function Home() {
       <Layout>
         {/* Phone */}
         <Container>
-          <div className="lg:grid lg:grid-cols-2 flex flex-col-reverse mt-16">
+          <div className="lg:grid lg:grid-cols-2 flex flex-col-reverse lg:mt-16 mt-8">
 
             {/* Title */}
             <div className="flex content-center flex-wrap">
               <div className="w-full">
-                <h1 className="title-1 lg:w-2/3">
+                <h1 className="title-1 lg:w-2/3 text-center lg:text-left">
                   <div className="">La usas una vez,</div>
                   <div>la usas siempre</div>
                 </h1>
@@ -133,7 +144,7 @@ export default function Home() {
 
               {/* Subtitle */}
               <div className="w-full mt-8">
-                <div className="text-gray-500 text-xl lg:w-2/3 leading-8">
+                <div className="text-gray-500 text-xl lg:w-2/3 leading-8 text-center lg:text-left">
                   Somos Ualá. Una tarjeta de débito
                   Mastercard gratis y una app para
                   manejar tu dinero mucho más fácil.
@@ -143,7 +154,7 @@ export default function Home() {
 
               {/* Stores */}
               <div className="w-full mt-8">
-                <div className="flex items-center">
+                <div className="flex items-center justify-center lg:justify-start	">
                   <div className="mr-8">
                     <Image alt="playstore" src="/assets/images/icono-playstore.svg" width={30} height={34} />
                   </div>
@@ -155,11 +166,16 @@ export default function Home() {
 
             </div>
 
-            <div className="relative" style={{ height: 550 }}>
+            <div className="relative hidden lg:block" style={{ height: 550 }}>
               <div className="absolute top-8 bg-blue-200 left-8 rounded-full hidden lg:block" style={{ height: 450, width: 450 }}></div>
-              <div className="absolute top-8 bg-blue-200 left-8 w-72 h-72 rounded-full lg:hidden"></div>
-              <div className="absolute "><Animation src="/assets/images/animation/celu_alta_Mx.png" zoom={0.85} className="lg:right-0 left-48" /></div>
-              <div className="absolute top-20"><Animation src="/assets/images/animation/Tarjeta_alta_Mx.png" zoom={0.75} /></div>
+              {/* <div className="absolute top-8 bg-blue-200 left-8 w-72 h-72 rounded-full lg:hidden"></div> */}
+              <div className="absolute hidden lg:block"><Animation src="/assets/images/animation/celu_alta_Mx.png" zoom={0.85} className="lg:right-0 left-48" /></div>
+              <div className="absolute top-20 hidden lg:block"><Animation src="/assets/images/animation/Tarjeta_alta_Mx.png" zoom={0.75} /></div>
+
+            </div>
+            <div className="lg:hidden">
+              <Image layout="responsive" width={800} height={800} src="/assets/images/home/Ecosistema_Mx.png"></Image>
+
             </div>
           </div>
 
@@ -175,7 +191,7 @@ export default function Home() {
         </div>
         {/* Depositos */}
         <Container>
-          <div className="grid grid-cols-2 my-16">
+          <div className="grid lg:grid-cols-2 my-16">
             <div>
               <div className="title-2 w-5/6">Deposita dinero en tu cuenta sin comisiones</div>
               <div className="mt-16 text-gray-600">
@@ -221,33 +237,67 @@ export default function Home() {
         <Container>
           <div className="my-16">
             <div>
-              <div className="title-2 w-1/3">Descubre todo lo que puedes hacer con tu cuenta Ualá</div>
+              <div className="title-2 lg:w-1/3">Descubre todo lo que puedes hacer con tu cuenta Ualá</div>
             </div>
-            <div className="mt-16 grid grid-cols-11">
+            <div className="mt-16 hidden lg:grid grid-cols-11">
               <div></div>
               {
                 features.map((feature, index) => <Box key={index} {...feature} />)
               }
             </div>
+
           </div>
         </Container>
+        <div className="mt-16 w-full lg:hidden swiper-container flex">
+          <Swiper
+            style={{}}
+            spaceBetween={20}
+            slidesPerView={1.2}
+            centeredSlides={true}
+            navigation
+            scrollbar={{ draggable: true }}
+          >
+            {
+              features.map((feature, index) =>
+
+                <SwiperSlide className="h-full " key={index}>
+                  <div className="mx-3 border border-gray-100 rounded-md shadow-md p-6 flex flex-col h-full">
+                    {/* Image */}
+                    <div>
+                      <Image alt="icon" src={`/assets/images/${feature.image}`} width={72} height={72} />
+                    </div>
+                    <div className="flex-grow">
+                      {/* Title */}
+                      <div className="text-blue-600 text-2xl font-medium mt-4">{feature.title}</div>
+                      {/* Text */}
+                      <div className="text-gray-500 mt-2">{feature.text}</div>
+                    </div>
+                    {/* Ver mas */}
+                    <div className="mt-8">
+                      <span className="px-12 py-3 border border-blue-600 text-blue-600 rounded-full">Ver más</span>
+                    </div>
+                  </div>
+                </SwiperSlide>)
+            }
+          </Swiper>
+        </div>
         {/* Blue wave */}
         <div className="bg-blue-wave my-16">
           <Container>
 
             <div className="my-16">
-              <div className="grid grid-cols-2">
+              <div className="grid lg:grid-cols-2 grid-cols-1">
                 <div>
                   <Image alt="celular tarjeta" src="/assets/images/celular_tarjeta.png" width={510} height={523} />
                 </div>
                 <div className="flex content-center flex-wrap">
                   <div className="w-full">
-                    <div className="text-4xl text-gray-500 font-medium leading-normal">
+                    <div className="lg:text-4xl text-2xl text-gray-500 font-medium leading-normal">
                       Bienacostúmbrate a manejar tu dinero fácil, gratis y seguro desde una sola app con Ualá.
                     </div>
                   </div>
                   <div className="w-full mt-8">
-                    <div className="text-4xl text-blue-600 font-semibold">
+                    <div className="lg:text-4xl text-xl text-blue-600 font-semibold">
                       #LaUsasUnaVezLaUsasSiempre
                     </div>
                   </div>
