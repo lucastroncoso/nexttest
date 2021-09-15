@@ -14,15 +14,15 @@ function Promotion(props) {
                     </div>
                 </div>
                 <div className="text-center mt-4 font-medium flex-grow flex items-center">
-                    <div className="w-full">{ props.title }</div>
+                    <div className="w-full">{props.title}</div>
                 </div>
-                <div className="text-center mt-4 text-sm">{ props.date }</div>
+                <div className="text-center mt-4 text-sm">{props.date}</div>
                 <div className="text-center mt-4"><a href="/condiciones" className="link">Ver mas</a></div>
             </div>
         </div>
     )
 
-} 
+}
 
 export default function Promociones(props) {
 
@@ -60,6 +60,7 @@ export default function Promociones(props) {
                         <div className="lg:hidden"><img src="/assets/images/MX_promos_banner_adquisicion_mobile.png" /></div>
                     </div>
                 </Container>
+
 
             </Layout>
         </>
