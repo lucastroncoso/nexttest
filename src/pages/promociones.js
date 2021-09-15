@@ -39,7 +39,6 @@ export default function Promociones(props) {
     return (
         <>
             <Head>
-
                 <title>Ualá</title>
             </Head>
             <Layout>
@@ -48,7 +47,7 @@ export default function Promociones(props) {
                     <div className="lg:hidden"><img src="/assets/images/MX_promos_Mainslideer_banner_mobile.jpeg" /></div>
                 </div>
                 <Container>
-                    <div className="text-center my-16 text-blue-600 text-3xl font-medium">No te pierdas estas súper promociones</div>
+                    <div className="text-center my-16 text-blue-600 text-3xl font-medium">No te pierdas estas súper promociones increibles</div>
                     <div className="my-16 grid lg:grid-cols-3">
                         {
                             !promotions ? <div className="text-center col-span-full">Cargando...</div> : promotions.map(promotion => <Promotion {...promotion} />)
