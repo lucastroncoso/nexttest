@@ -39,6 +39,7 @@ export default function Promociones(props) {
     return (
         <>
             <Head>
+
                 <title>Ualá</title>
             </Head>
             <Layout>
